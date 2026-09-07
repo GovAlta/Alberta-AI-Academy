@@ -20,6 +20,9 @@ concurrency:
 
 jobs:
   build:
+    # This repo is dual-pushed to GovAlta-EMU/AIM-AI-ACADEMY (private, authoritative)
+    # and GovAlta/Alberta-AI-Academy (public). Only the public one hosts the site.
+    if: github.repository == 'GovAlta/Alberta-AI-Academy'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

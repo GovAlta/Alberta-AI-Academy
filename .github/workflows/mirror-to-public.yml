@@ -1,0 +1,76 @@
+# Mirrors the authoritative private repo (GovAlta-EMU/AIM-AI-ACADEMY) to the public
+# repo that hosts the site (GovAlta/Alberta-AI-Academy).
+#
+# Why a snapshot instead of pushing the same commits: the private repo's history
+# contains files that were deliberately removed before publishing. Only the current
+# tree of `main` is copied; each sync becomes one commit in the public repo that
+# names the private commit it came from.
+#
+# Needs a repository secret PUBLIC_MIRROR_TOKEN in the private repo: a fine-grained
+# personal access token from an account with write access to the public repo,
+# scoped to that single repository with "Contents: Read and write".
+# (Deploy keys are disabled by GovAlta org policy, hence a token.)
+name: Mirror to public repo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: mirror-to-public
+  cancel-in-progress: false
+
+env:
+  PUBLIC_REPO: GovAlta/Alberta-AI-Academy
+
+jobs:
+  mirror:
+    if: github.repository == 'GovAlta-EMU/AIM-AI-ACADEMY'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out authoritative main
+        uses: actions/checkout@v4
+        with:
+          path: source
+
+      - name: Clone public repo
+        env:
+          TOKEN: ${{ secrets.PUBLIC_MIRROR_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::Repository secret PUBLIC_MIRROR_TOKEN is not set (Settings → Secrets and variables → Actions)."
+            exit 1
+          fi
+          git clone --quiet --depth 1 --branch main \
+            "https://x-access-token:${TOKEN}@github.com/${PUBLIC_REPO}.git" public
+
+      - name: Replace public tree with the authoritative tree
+        run: |
+          rsync -a --delete --exclude '.git' source/ public/
+          cd public
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Public repo already matches ${GITHUB_SHA}; nothing to sync."
+            echo "changed=false" >> "$GITHUB_ENV"
+          else
+            echo "changed=true" >> "$GITHUB_ENV"
+            git diff --cached --stat | tail -5
+          fi
+
+      - name: Commit and push snapshot
+        if: env.changed == 'true'
+        env:
+          SRC_SHA: ${{ github.sha }}
+          SRC_SUBJECT: ${{ github.event.head_commit.message }}
+          SRC_AUTHOR: ${{ github.event.head_commit.author.name }}
+        run: |
+          cd public
+          subject=$(printf '%s' "$SRC_SUBJECT" | head -n1)
+          [ -n "$subject" ] || subject="manual sync"
+          git -c user.name="Alberta AI Academy mirror" \
+              -c user.email="aiacademy@gov.ab.ca" \
+              commit -q -m "$subject" \
+                        -m "Mirrored from GovAlta-EMU/AIM-AI-ACADEMY@${SRC_SHA}${SRC_AUTHOR:+ (authored by $SRC_AUTHOR)}"
+          git push --quiet origin HEAD:main
+          echo "Pushed $(git rev-parse --short HEAD) to ${PUBLIC_REPO}; the Pages deploy starts there."

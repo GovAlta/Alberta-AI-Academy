@@ -23,7 +23,7 @@ All content editing on this site is done through [Claude Code](https://claude.ai
 2. Clone this repo and `cd` into it
 3. Run `claude` — Claude Code will read `CLAUDE.md` automatically
 
-> **GitHub access:** pushing requires write access to `GovAlta/Alberta-AI-Academy`. Ask the repository owners to be added.
+> **GitHub access:** `GovAlta-EMU/AIM-AI-ACADEMY` (private) is the authoritative source and the only repo you push to. A workflow there mirrors every push to `main` into `GovAlta/Alberta-AI-Academy` (public), which hosts the live site on GitHub Pages. Ask the repository owners for write access to the EMU repo.
 
 ### How to update content
 
@@ -96,7 +96,7 @@ npm run preview   # serves dist/ locally at http://localhost:4173
 
 ### Deployment
 
-Production is **GitHub Pages**. The workflow in `.github/workflows/deploy-pages.yml` builds `frontend/` and publishes `frontend/dist/` on every push to `main` (Settings → Pages → Source must be "GitHub Actions"). Progress is visible in the Actions tab; a deploy takes a few minutes.
+Production is **GitHub Pages**, served from the public `GovAlta/Alberta-AI-Academy` repo at https://albertaaiacademy.com. The workflow in `.github/workflows/deploy-pages.yml` builds `frontend/` and publishes `frontend/dist/` on every push to `main` there (Settings → Pages → Source must be "GitHub Actions"); it is a no-op in the private EMU repo. Progress is visible in the public repo's Actions tab; a deploy takes a few minutes.
 
 The app uses HTML5 history routing, so the workflow copies `index.html` to `404.html` to make deep links work on Pages. The public base path is detected automatically: `/` when a custom domain is configured, `/Alberta-AI-Academy/` otherwise (override with a `VITE_BASE` repository variable). Asset paths in content JSON stay root-relative; `src/utils/assetUrl.js` applies the base at render time.
 

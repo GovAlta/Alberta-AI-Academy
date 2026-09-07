@@ -42,13 +42,21 @@ For every JSON edit I will automatically:
 The Alberta AI Academy is a Vue 3 / Vite static site. All learning content is stored in
 four JSON files — no database or backend required for content.
 
-**One remote — push after every commit:**
+**Two repositories, one push:**
 ```bash
-git push origin main
+git push origin main      # origin = GovAlta-EMU/AIM-AI-ACADEMY; the public repo syncs automatically
 ```
-- `origin` = GovAlta/Alberta-AI-Academy (GitHub — source of truth)
-- Production is **GitHub Pages**, deployed automatically by `.github/workflows/deploy-pages.yml`
-  on every push to `main`. See "Deployment (GitHub Pages)" below.
+- `GovAlta-EMU/AIM-AI-ACADEMY` — private, the **authoritative source of truth**. Everyone pushes here only.
+- `GovAlta/Alberta-AI-Academy` — public mirror that hosts the live site on **GitHub Pages**.
+  `.github/workflows/mirror-to-public.yml` runs in the EMU repo on every push to `main` and copies the
+  current tree into the public repo as one snapshot commit; `deploy-pages.yml` then deploys it there.
+  Allow ~5–10 minutes from push to live site (mirror + build + Pages).
+
+Why snapshots and not the same commits: the EMU history contains files that were removed before
+publishing, so its history must never be pushed to the public repo. **Never `git push` directly to
+GovAlta/Alberta-AI-Academy** — the next mirror run would overwrite it anyway. Check the sync in the
+EMU repo's Actions tab ("Mirror to public repo"); if it fails, fix the cause and re-run it
+(workflow_dispatch) so the two repos do not drift.
 
 **Python:** use `py` on Windows, `python3` on Mac/Linux. Always pass `encoding='utf-8'` to `open()`.
 
