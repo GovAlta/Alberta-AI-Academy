@@ -634,9 +634,11 @@ The site is a static build published on GitHub Pages from this repo.
   (the audio folder makes the upload the slow step).
 - **Deep links:** Vue Router uses HTML5 history mode. The workflow copies `index.html` to `404.html`
   so `/level/level1` style URLs work on Pages.
-- **Base path:** the site is built for the root (`/`). It is served from a custom domain
-  (Settings → Pages → Custom domain), not from `govalta.github.io/Alberta-AI-Academy/`, where asset
-  paths would not resolve.
+- **Base path:** worked out automatically by the workflow. With a custom domain configured in
+  Settings → Pages the site is built for `/`; without one it is built for `/Alberta-AI-Academy/` so the
+  `govalta.github.io/Alberta-AI-Academy/` URL works too. A repository variable `VITE_BASE` overrides both.
+  Content JSON keeps absolute paths like `/images/x.png`; `frontend/src/utils/assetUrl.js` applies the
+  base at render time, so never hard-code the repo name into content.
 - **Size limit — important:** GitHub Pages refuses sites over **1 GB**. The published site is about
   700 MB, of which ~600 MB is narration audio. That is why `generate-audio.mjs` compresses every MP3
   to 48 kbps mono. Never commit audio at a higher bitrate; if in doubt run `npm run compress-audio`.

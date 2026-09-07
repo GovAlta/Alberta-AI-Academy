@@ -98,7 +98,7 @@ npm run preview   # serves dist/ locally at http://localhost:4173
 
 Production is **GitHub Pages**. The workflow in `.github/workflows/deploy-pages.yml` builds `frontend/` and publishes `frontend/dist/` on every push to `main` (Settings → Pages → Source must be "GitHub Actions"). Progress is visible in the Actions tab; a deploy takes a few minutes.
 
-The app uses HTML5 history routing, so the workflow copies `index.html` to `404.html` to make deep links work on Pages. The build assumes it is served from the site root via a custom domain.
+The app uses HTML5 history routing, so the workflow copies `index.html` to `404.html` to make deep links work on Pages. The public base path is detected automatically: `/` when a custom domain is configured, `/Alberta-AI-Academy/` otherwise (override with a `VITE_BASE` repository variable). Asset paths in content JSON stay root-relative; `src/utils/assetUrl.js` applies the base at render time.
 
 GitHub Pages has a hard **1 GB** limit per site. Narration audio (`frontend/public/audio/`) is the bulk of the site, which is why the audio scripts compress every MP3 to 48 kbps mono — see "Audio narration" in `frontend/README.md`.
 

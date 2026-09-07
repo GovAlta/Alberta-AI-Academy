@@ -11,6 +11,7 @@ import {
   TextRun,
   UnderlineType
 } from 'docx'
+import { absoluteAssetUrl } from '@/utils/assetUrl.js'
 
 const TYPE_LABELS = {
   video: '▶ Video',
@@ -24,7 +25,7 @@ const TYPE_LABELS = {
 /** Returns the primary navigable URL for a content item. */
 function getItemUrl(item) {
   if (!item) return null
-  return item.url || item.downloadUrl || null
+  return item.url || absoluteAssetUrl(item.downloadUrl) || null
 }
 
 /**

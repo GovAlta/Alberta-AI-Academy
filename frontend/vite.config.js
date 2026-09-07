@@ -9,7 +9,12 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, resolve(dirname(fileURLToPath(import.meta.url)), '..'), '')
   const ELEVENLABS_API_KEY = env.ELEVENLABS_API_KEY || ''
 
+  // Public base path. '/' for a custom domain or local dev; '/<repo>/' when served
+  // from github.io project pages. The deploy workflow sets VITE_BASE automatically.
+  const base = env.VITE_BASE || '/'
+
   return {
+    base,
     plugins: [
       vue(),
       VueI18nPlugin({

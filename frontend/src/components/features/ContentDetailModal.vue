@@ -19,6 +19,7 @@ import { useContentLocale } from '@/composables/useContentLocale.js'
 import { useFocusTrap } from '@/composables/useFocusTrap.js'
 import LanguageSwitcher from '@/components/common/LanguageSwitcher.vue'
 import AudioPlayer from '@/components/features/AudioPlayer.vue'
+import { assetUrl } from '@/utils/assetUrl.js'
 
 const { t } = useI18n()
 const { tc, tcArray, isMissing, locale } = useContentLocale()
@@ -395,7 +396,7 @@ function retakeModule() {
 
                 <!-- Image block -->
                 <figure v-else-if="block.type === 'image' && block.url" class="module-block__figure" role="button" tabindex="0" :aria-label="t('modal.enlargeImage', 'Enlarge image')" @click="lightboxUrl = block.url" @keydown.enter="lightboxUrl = block.url" @keydown.space.prevent="lightboxUrl = block.url">
-                  <img :src="block.url" :alt="tc(block.alt) || t('modal.image')" class="module-block__image module-block__image--zoomable" loading="lazy" />
+                  <img :src="assetUrl(block.url)" :alt="tc(block.alt) || t('modal.image')" class="module-block__image module-block__image--zoomable" loading="lazy" />
                 </figure>
 
                 <!-- Video block -->
@@ -528,7 +529,7 @@ function retakeModule() {
               />
             </div>
             <div v-else-if="item.imageUrl" class="detail-modal__image-wrapper">
-              <img :src="item.imageUrl" alt="" class="detail-modal__image" loading="lazy" />
+              <img :src="assetUrl(item.imageUrl)" alt="" class="detail-modal__image" loading="lazy" />
             </div>
 
             <h2 class="detail-modal__title">{{ tc(item.title) }}</h2>
@@ -561,7 +562,7 @@ function retakeModule() {
             <div class="detail-modal__actions">
               <a
                 v-if="item.type === 'download' && item.downloadUrl"
-                :href="item.downloadUrl"
+                :href="assetUrl(item.downloadUrl)"
                 class="btn btn--primary"
                 target="_blank"
                 rel="noopener noreferrer"

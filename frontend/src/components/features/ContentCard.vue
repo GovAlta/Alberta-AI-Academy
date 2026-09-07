@@ -1,6 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { useContentLocale } from '@/composables/useContentLocale.js'
+import { assetUrl } from '@/utils/assetUrl.js'
 
 const { t } = useI18n()
 const { tc, tcArray } = useContentLocale()
@@ -51,7 +52,7 @@ function getModuleStats(item) {
   <article class="content-card">
     <div class="content-card__image-wrapper" aria-hidden="true">
       <img
-        :src="item.imageUrl || getImageFallback(item.type)"
+        :src="assetUrl(item.imageUrl) || getImageFallback(item.type)"
         :alt="''"
         class="content-card__image"
         loading="lazy"
@@ -113,7 +114,7 @@ function getModuleStats(item) {
       </button>
       <a
         v-if="item.type === 'download' && item.downloadUrl"
-        :href="item.downloadUrl"
+        :href="assetUrl(item.downloadUrl)"
         class="btn btn--primary content-card__action-btn"
         target="_blank"
         rel="noopener noreferrer"

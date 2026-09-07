@@ -19,6 +19,7 @@
  */
 import { ref, shallowRef, onUnmounted } from 'vue'
 import audioManifest from '@/data/audio-manifest.json'
+import { assetUrl } from '@/utils/assetUrl.js'
 
 // ── Audio Manifest (imported statically, same as level JSON files) ──
 
@@ -37,11 +38,11 @@ export function getPreGeneratedAudio(itemId, locale, sectionIndex = null) {
   }
 
   if (sectionIndex !== null && entry.type === 'module') {
-    const url = entry.sections?.[sectionIndex]?.[locale]?.file || null
+    const url = assetUrl(entry.sections?.[sectionIndex]?.[locale]?.file) || null
     if (!url) console.log('[TTS] No section audio:', itemId, 'section', sectionIndex, locale, '| sections:', Object.keys(entry.sections || {}))
     return url
   }
-  return entry[locale]?.file || null
+  return assetUrl(entry[locale]?.file) || null
 }
 
 const SPEED_OPTIONS = [0.75, 1, 1.25, 1.5, 2]
