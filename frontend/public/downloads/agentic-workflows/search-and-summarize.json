@@ -1,0 +1,211 @@
+{
+  "workflow": {
+    "stages": [
+      {
+        "id": "stage-1759975082481",
+        "name": "Stage 1",
+        "nodes": [
+          {
+            "id": "agent-1759975084741",
+            "nodeType": "agent",
+            "name": "Search Expert",
+            "type": "researcher",
+            "systemPrompt": "Based on the topic, create a short and clear Google Search term which will return the highest results",
+            "userPrompt": "Evaluate the topic and provide a very clear search term for Google based on this input. Do not add any opinion or other thought, just the search term as it would be entered into Google: {input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1759975128943",
+        "name": "Stage 2",
+        "nodes": [
+          {
+            "id": "function-1759975136643",
+            "nodeType": "function",
+            "name": "Google Search",
+            "functionType": "google_search",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1759975142423",
+        "name": "Stage 3",
+        "nodes": [
+          {
+            "id": "function-1759975156483",
+            "nodeType": "function",
+            "name": "Extract URLs",
+            "functionType": "extract_urls",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1759975161983",
+        "name": "Stage 4",
+        "nodes": [
+          {
+            "id": "function-1759975169596",
+            "nodeType": "function",
+            "name": "Web Scrape",
+            "functionType": "web_scrape",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          },
+          {
+            "id": "function-1759976635042",
+            "nodeType": "function",
+            "name": "Web Scrape",
+            "functionType": "web_scrape",
+            "config": {
+              "returnHtml": true
+            },
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1759975185724",
+        "name": "Stage 5",
+        "nodes": [
+          {
+            "id": "agent-1759975369676",
+            "nodeType": "agent",
+            "name": "Dossier Writer",
+            "type": "summarizer",
+            "systemPrompt": "You analyze content for key individuals or businesses / entities and provide a clear dossier on any person",
+            "userPrompt": "Identify the topic of this content and provide a comprehensive briefing summary. Don't speak about the sources, just the content and the key information needed for any government official to know: {input}",
+            "tools": []
+          },
+          {
+            "id": "function-1759976670437",
+            "nodeType": "function",
+            "name": "Extract URLs",
+            "functionType": "extract_urls",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1759976700938",
+        "name": "Stage 8",
+        "nodes": [
+          {
+            "id": "function-1759976704211",
+            "nodeType": "function",
+            "name": "Concatenate",
+            "functionType": "string_concat",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1759976715546",
+        "name": "Stage 9",
+        "nodes": [
+          {
+            "id": "function-1759976723780",
+            "nodeType": "function",
+            "name": "Export to Markdown",
+            "functionType": "export_markdown",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          },
+          {
+            "id": "function-1759976726813",
+            "nodeType": "function",
+            "name": "Export to Word",
+            "functionType": "export_word",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn-1759975141208",
+        "fromNodeId": "agent-1759975084741",
+        "toNodeId": "function-1759975136643"
+      },
+      {
+        "id": "conn-1759975159805",
+        "fromNodeId": "function-1759975136643",
+        "toNodeId": "function-1759975156483",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1759975173469",
+        "fromNodeId": "function-1759975156483",
+        "toNodeId": "function-1759975169596",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1759975372641",
+        "fromNodeId": "function-1759975169596",
+        "toNodeId": "agent-1759975369676",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1759976675802",
+        "fromNodeId": "function-1759976635042",
+        "toNodeId": "function-1759976670437",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1759976713682",
+        "fromNodeId": "agent-1759975369676",
+        "toNodeId": "function-1759976704211"
+      },
+      {
+        "id": "conn-1759976729698",
+        "fromNodeId": "function-1759976704211",
+        "toNodeId": "function-1759976723780",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1759976732618",
+        "fromNodeId": "function-1759976704211",
+        "toNodeId": "function-1759976726813",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1759976811871",
+        "fromNodeId": "function-1759975156483",
+        "toNodeId": "function-1759976635042",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1759979242984",
+        "fromNodeId": "function-1759976670437",
+        "toNodeId": "function-1759976704211",
+        "fromOutputPort": "output"
+      }
+    ]
+  },
+  "userInput": "I want to learn about John Doe",
+  "workflowName": "Search and Summarize",
+  "customAgents": []
+}

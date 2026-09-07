@@ -1,0 +1,171 @@
+{
+  "workflow": {
+    "stages": [
+      {
+        "id": "stage-1760036573581",
+        "name": "Stage 1",
+        "nodes": [
+          {
+            "id": "agent-1760036592001",
+            "nodeType": "agent",
+            "name": "Search Expert",
+            "type": "researcher",
+            "systemPrompt": "You provide a clear search term for Google search based on the thing I want to know about.",
+            "userPrompt": "Without saying anything else, give me the best Google Search term for this topic: {input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760036573748",
+        "name": "Stage 2",
+        "nodes": [
+          {
+            "id": "function-1760036644018",
+            "nodeType": "function",
+            "name": "Google Search",
+            "functionType": "google_search",
+            "config": {
+              "numResults": 30,
+              "overrideQuery": ""
+            },
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1760036573885",
+        "name": "Stage 3",
+        "nodes": [
+          {
+            "id": "function-1760036829097",
+            "nodeType": "function",
+            "name": "Extract URLs",
+            "functionType": "extract_urls",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1760036822725",
+        "name": "Stage 4",
+        "nodes": [
+          {
+            "id": "function-1760036846410",
+            "nodeType": "function",
+            "name": "Web Scrape",
+            "functionType": "web_scrape",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1760036969469",
+        "name": "Stage 5",
+        "nodes": [
+          {
+            "id": "agent-1760036973885",
+            "nodeType": "agent",
+            "name": "Education Planner",
+            "type": "analyst",
+            "systemPrompt": "You prepare learning materials that are suitable for K-6 based on the topics provided, and structure them clearly for easy learning.",
+            "userPrompt": "Based on my goal of \"{prompt}\" analyze this content and prepare a learning plan for my 7 year old daughter {input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760037085630",
+        "name": "Stage 6",
+        "nodes": [
+          {
+            "id": "agent-1760037089752",
+            "nodeType": "agent",
+            "name": "Tutor",
+            "type": "analyst",
+            "systemPrompt": "You write clear, engaging learning materials for education. You work as a friendly tutor delivering meaningful lessons based on the content provided suitable for the age identified.",
+            "userPrompt": "Based on each module, create the content that follows this structure: {input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760037305639",
+        "name": "Stage 7",
+        "nodes": [
+          {
+            "id": "function-1760037309666",
+            "nodeType": "function",
+            "name": "Export to PDF",
+            "functionType": "export_pdf",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          },
+          {
+            "id": "function-1760037314331",
+            "nodeType": "function",
+            "name": "Export to Word",
+            "functionType": "export_word",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn-1760036647206",
+        "fromNodeId": "agent-1760036592001",
+        "toNodeId": "function-1760036644018"
+      },
+      {
+        "id": "conn-1760036831646",
+        "fromNodeId": "function-1760036644018",
+        "toNodeId": "function-1760036829097",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1760036848878",
+        "fromNodeId": "function-1760036829097",
+        "toNodeId": "function-1760036846410",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1760037039254",
+        "fromNodeId": "function-1760036846410",
+        "toNodeId": "agent-1760036973885",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1760037091558",
+        "fromNodeId": "agent-1760036973885",
+        "toNodeId": "agent-1760037089752"
+      },
+      {
+        "id": "conn-1760037313256",
+        "fromNodeId": "agent-1760037089752",
+        "toNodeId": "function-1760037309666"
+      },
+      {
+        "id": "conn-1760037316248",
+        "fromNodeId": "agent-1760037089752",
+        "toNodeId": "function-1760037314331"
+      }
+    ]
+  },
+  "userInput": "I want to learn about volcanoes in the pacific ocean",
+  "workflowName": "Web Search Researcher",
+  "customAgents": []
+}

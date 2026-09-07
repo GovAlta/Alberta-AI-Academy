@@ -1,0 +1,6184 @@
+{
+  "version": 1,
+  "generated": "2026-07-09T06:22:51.891Z",
+  "voiceId": "pNInz6obpgDQGcFmaJgB",
+  "modelId": "eleven_flash_v2_5",
+  "files": {
+    "l1-1.1.1": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "fc9de79ddd73",
+        "file": "/audio/en/l1-1.1.1.mp3",
+        "size": 1251125
+      },
+      "fr": {
+        "hash": "2f49a6a51388",
+        "file": "/audio/fr/l1-1.1.1.mp3",
+        "size": 1333881
+      }
+    },
+    "l1-1.1.2": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "cc47c7935517",
+        "file": "/audio/en/l1-1.1.2.mp3",
+        "size": 1362094
+      },
+      "fr": {
+        "hash": "e3d3c56becf2",
+        "file": "/audio/fr/l1-1.1.2.mp3",
+        "size": 1498923
+      }
+    },
+    "l1-1.1.3": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "25a5eb25416b",
+        "file": "/audio/en/l1-1.1.3.mp3",
+        "size": 2399991
+      },
+      "fr": {
+        "hash": "bd502a97b26f",
+        "file": "/audio/fr/l1-1.1.3.mp3",
+        "size": 2136990
+      }
+    },
+    "l1-1.1.4": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "f715d26daf2d",
+        "file": "/audio/en/l1-1.1.4.mp3",
+        "size": 1685594
+      },
+      "fr": {
+        "hash": "302a896fcd49",
+        "file": "/audio/fr/l1-1.1.4.mp3",
+        "size": 1903769
+      }
+    },
+    "l1-1.1.5": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "059a3e6e5d3f",
+        "file": "/audio/en/l1-1.1.5.mp3",
+        "size": 2478045
+      },
+      "fr": {
+        "hash": "e440c0778dcd",
+        "file": "/audio/fr/l1-1.1.5.mp3",
+        "size": 2122414
+      }
+    },
+    "l1-1.1.6": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "bbed58cb4a45",
+        "file": "/audio/en/l1-1.1.6.mp3",
+        "size": 87527
+      },
+      "fr": {
+        "hash": "10077f1a9df3",
+        "file": "/audio/fr/l1-1.1.6.mp3",
+        "size": 82198
+      }
+    },
+    "l1-1.1.7": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "a6932fa3c31b",
+            "file": "/audio/en/l1-1.1.7-s0.mp3",
+            "size": 485947
+          },
+          "fr": {
+            "hash": "3c75238e16ae",
+            "file": "/audio/fr/l1-1.1.7-s0.mp3",
+            "size": 605535
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "e5c7f9d20054",
+            "file": "/audio/en/l1-1.1.7-s1.mp3",
+            "size": 1155831
+          },
+          "fr": {
+            "hash": "36551f468ab8",
+            "file": "/audio/fr/l1-1.1.7-s1.mp3",
+            "size": 1356451
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "a5cf6782746a",
+            "file": "/audio/en/l1-1.1.7-s2.mp3",
+            "size": 294260
+          },
+          "fr": {
+            "hash": "167eb9b857ff",
+            "file": "/audio/fr/l1-1.1.7-s2.mp3",
+            "size": 348647
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "6965592665e6",
+            "file": "/audio/en/l1-1.1.7-s3.mp3",
+            "size": 399116
+          },
+          "fr": {
+            "hash": "620d19e4b317",
+            "file": "/audio/fr/l1-1.1.7-s3.mp3",
+            "size": 437202
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "175d2e8ac2c3",
+            "file": "/audio/en/l1-1.1.7-s4.mp3",
+            "size": 22952
+          },
+          "fr": {
+            "hash": "c2566151531a",
+            "file": "/audio/fr/l1-1.1.7-s4.mp3",
+            "size": 32670
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "f4ae818b7289",
+            "file": "/audio/en/l1-1.1.7-s5.mp3",
+            "size": 629202
+          },
+          "fr": {
+            "hash": "ba05c121c070",
+            "file": "/audio/fr/l1-1.1.7-s5.mp3",
+            "size": 658825
+          }
+        }
+      }
+    },
+    "l1-1.2.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "d6e6f7221e03",
+            "file": "/audio/en/l1-1.2.1-s0.mp3",
+            "size": 531086
+          },
+          "fr": {
+            "hash": "871a70a241a6",
+            "file": "/audio/fr/l1-1.2.1-s0.mp3",
+            "size": 605222
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "49d404eda728",
+            "file": "/audio/en/l1-1.2.1-s1.mp3",
+            "size": 512435
+          },
+          "fr": {
+            "hash": "0c1fd41ba11b",
+            "file": "/audio/fr/l1-1.2.1-s1.mp3",
+            "size": 581241
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "8223f0570108",
+            "file": "/audio/en/l1-1.2.1-s2.mp3",
+            "size": 257741
+          },
+          "fr": {
+            "hash": "b33a3ec8105e",
+            "file": "/audio/fr/l1-1.2.1-s2.mp3",
+            "size": 302880
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "2a4d4c76097d",
+            "file": "/audio/en/l1-1.2.1-s3.mp3",
+            "size": 110410
+          },
+          "fr": {
+            "hash": "923c3c7cc410",
+            "file": "/audio/fr/l1-1.2.1-s3.mp3",
+            "size": 133294
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "17e4cf3a6518",
+            "file": "/audio/en/l1-1.2.1-s4.mp3",
+            "size": 1314446
+          },
+          "fr": {
+            "hash": "e34c332ebe69",
+            "file": "/audio/fr/l1-1.2.1-s4.mp3",
+            "size": 1426355
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "6d3c34a53959",
+            "file": "/audio/en/l1-1.2.1-s5.mp3",
+            "size": 477953
+          },
+          "fr": {
+            "hash": "764e8fe19fe8",
+            "file": "/audio/fr/l1-1.2.1-s5.mp3",
+            "size": 550678
+          }
+        }
+      }
+    },
+    "l1-1.2.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "4de573f43184",
+            "file": "/audio/en/l1-1.2.2-s0.mp3",
+            "size": 1172288
+          },
+          "fr": {
+            "hash": "87b807ece950",
+            "file": "/audio/fr/l1-1.2.2-s0.mp3",
+            "size": 1250655
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "3d264e7e8d09",
+            "file": "/audio/en/l1-1.2.2-s1.mp3",
+            "size": 372000
+          },
+          "fr": {
+            "hash": "253476dd3f9e",
+            "file": "/audio/fr/l1-1.2.2-s1.mp3",
+            "size": 450838
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "f3e71be4c653",
+            "file": "/audio/en/l1-1.2.2-s2.mp3",
+            "size": 937969
+          },
+          "fr": {
+            "hash": "80121c314246",
+            "file": "/audio/fr/l1-1.2.2-s2.mp3",
+            "size": 1029659
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "627e03b5f8e5",
+            "file": "/audio/en/l1-1.2.2-s3.mp3",
+            "size": 765405
+          },
+          "fr": {
+            "hash": "bf3f1134a761",
+            "file": "/audio/fr/l1-1.2.2-s3.mp3",
+            "size": 843458
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "52d468f0d6f7",
+            "file": "/audio/en/l1-1.2.2-s4.mp3",
+            "size": 1793898
+          },
+          "fr": {
+            "hash": "8438143d9136",
+            "file": "/audio/fr/l1-1.2.2-s4.mp3",
+            "size": 1998123
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "b17c6de67966",
+            "file": "/audio/en/l1-1.2.2-s5.mp3",
+            "size": 363694
+          },
+          "fr": {
+            "hash": "3bb8923cc3d8",
+            "file": "/audio/fr/l1-1.2.2-s5.mp3",
+            "size": 454286
+          }
+        }
+      }
+    },
+    "l1-1.2.3": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "caa4e1625ba8",
+        "file": "/audio/en/l1-1.2.3.mp3",
+        "size": 218557
+      },
+      "fr": {
+        "hash": "0cad7f2677ac",
+        "file": "/audio/fr/l1-1.2.3.mp3",
+        "size": 252255
+      }
+    },
+    "l1-1.2.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "50338c86e856",
+            "file": "/audio/en/l1-1.2.4-s0.mp3",
+            "size": 340497
+          },
+          "fr": {
+            "hash": "e764365ddf91",
+            "file": "/audio/fr/l1-1.2.4-s0.mp3",
+            "size": 373411
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "668d84c3a70a",
+            "file": "/audio/en/l1-1.2.4-s1.mp3",
+            "size": 345826
+          },
+          "fr": {
+            "hash": "d6d7045537dc",
+            "file": "/audio/fr/l1-1.2.4-s1.mp3",
+            "size": 353349
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "172cbe694466",
+            "file": "/audio/en/l1-1.2.4-s2.mp3",
+            "size": 924020
+          },
+          "fr": {
+            "hash": "bb9b4608623d",
+            "file": "/audio/fr/l1-1.2.4-s2.mp3",
+            "size": 1047997
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "2f7414495fda",
+            "file": "/audio/en/l1-1.2.4-s3.mp3",
+            "size": 594720
+          },
+          "fr": {
+            "hash": "ffb414479e22",
+            "file": "/audio/fr/l1-1.2.4-s3.mp3",
+            "size": 622462
+          }
+        }
+      }
+    },
+    "l1-1.3.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "c5f1e1c2ae08",
+            "file": "/audio/en/l1-1.3.1-s0.mp3",
+            "size": 1172915
+          },
+          "fr": {
+            "hash": "ec6b251f146b",
+            "file": "/audio/fr/l1-1.3.1-s0.mp3",
+            "size": 1259746
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "420fe61249de",
+            "file": "/audio/en/l1-1.3.1-s1.mp3",
+            "size": 2247018
+          },
+          "fr": {
+            "hash": "0638dc7b3dfa",
+            "file": "/audio/fr/l1-1.3.1-s1.mp3",
+            "size": 2013169
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "37ed7d0950a2",
+            "file": "/audio/en/l1-1.3.1-s2.mp3",
+            "size": 93953
+          },
+          "fr": {
+            "hash": "15ab56d06e42",
+            "file": "/audio/fr/l1-1.3.1-s2.mp3",
+            "size": 104298
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "324a864e40d3",
+            "file": "/audio/en/l1-1.3.1-s3.mp3",
+            "size": 1316014
+          },
+          "fr": {
+            "hash": "ab028d37b7a3",
+            "file": "/audio/fr/l1-1.3.1-s3.mp3",
+            "size": 1381215
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "9e51955bd7c3",
+            "file": "/audio/en/l1-1.3.1-s4.mp3",
+            "size": 2304696
+          },
+          "fr": {
+            "hash": "b80fbb9ea489",
+            "file": "/audio/fr/l1-1.3.1-s4.mp3",
+            "size": 2120846
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "3d4d0c6418be",
+            "file": "/audio/en/l1-1.3.1-s5.mp3",
+            "size": 468236
+          },
+          "fr": {
+            "hash": "4ca863279b23",
+            "file": "/audio/fr/l1-1.3.1-s5.mp3",
+            "size": 520585
+          }
+        }
+      }
+    },
+    "l1-1.3.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "f2717343ae5a",
+            "file": "/audio/en/l1-1.3.2-s0.mp3",
+            "size": 620268
+          },
+          "fr": {
+            "hash": "fe12d05ed93b",
+            "file": "/audio/fr/l1-1.3.2-s0.mp3",
+            "size": 743462
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "4131ce055ee4",
+            "file": "/audio/en/l1-1.3.2-s1.mp3",
+            "size": 1258649
+          },
+          "fr": {
+            "hash": "910ef5d5e9e3",
+            "file": "/audio/fr/l1-1.3.2-s1.mp3",
+            "size": 1392187
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "63067c8c4142",
+            "file": "/audio/en/l1-1.3.2-s2.mp3",
+            "size": 369179
+          },
+          "fr": {
+            "hash": "e717ceaa19a2",
+            "file": "/audio/fr/l1-1.3.2-s2.mp3",
+            "size": 436105
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "cb4c21580ecd",
+            "file": "/audio/en/l1-1.3.2-s3.mp3",
+            "size": 883112
+          },
+          "fr": {
+            "hash": "1fd8274f5859",
+            "file": "/audio/fr/l1-1.3.2-s3.mp3",
+            "size": 960539
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "fd24ffea8615",
+            "file": "/audio/en/l1-1.3.2-s4.mp3",
+            "size": 511024
+          },
+          "fr": {
+            "hash": "481db9a131bf",
+            "file": "/audio/fr/l1-1.3.2-s4.mp3",
+            "size": 616193
+          }
+        }
+      }
+    },
+    "l1-1.3.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "c1289bafda47",
+            "file": "/audio/en/l1-1.3.3-s0.mp3",
+            "size": 620895
+          },
+          "fr": {
+            "hash": "e3ab06750c51",
+            "file": "/audio/fr/l1-1.3.3-s0.mp3",
+            "size": 676066
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "67e434825e87",
+            "file": "/audio/en/l1-1.3.3-s1.mp3",
+            "size": 2448108
+          },
+          "fr": {
+            "hash": "6667d0dc4253",
+            "file": "/audio/fr/l1-1.3.3-s1.mp3",
+            "size": 2191534
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "dcb05a21912d",
+            "file": "/audio/en/l1-1.3.3-s2.mp3",
+            "size": 1977591
+          },
+          "fr": {
+            "hash": "11e56c3f9222",
+            "file": "/audio/fr/l1-1.3.3-s2.mp3",
+            "size": 2347328
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "493ddbd8491b",
+            "file": "/audio/en/l1-1.3.3-s3.mp3",
+            "size": 837346
+          },
+          "fr": {
+            "hash": "b9a573429823",
+            "file": "/audio/fr/l1-1.3.3-s3.mp3",
+            "size": 949881
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "90a0acb73231",
+            "file": "/audio/en/l1-1.3.3-s4.mp3",
+            "size": 472311
+          },
+          "fr": {
+            "hash": "f81fd1c2a7e1",
+            "file": "/audio/fr/l1-1.3.3-s4.mp3",
+            "size": 545976
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "d1b6b812573c",
+            "file": "/audio/en/l1-1.3.3-s5.mp3",
+            "size": 553499
+          },
+          "fr": {
+            "hash": "1cc85cede895",
+            "file": "/audio/fr/l1-1.3.3-s5.mp3",
+            "size": 610864
+          }
+        }
+      }
+    },
+    "l1-1.4.1": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "42347df3f5eb",
+            "file": "/audio/en/l1-1.4.1-s0.mp3",
+            "size": 971354
+          },
+          "fr": {
+            "hash": "97b05e47ae6b",
+            "file": "/audio/fr/l1-1.4.1-s0.mp3",
+            "size": 1105676
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "e7d4033520b6",
+            "file": "/audio/en/l1-1.4.1-s1.mp3",
+            "size": 2105486
+          },
+          "fr": {
+            "hash": "e53bedf0a78e",
+            "file": "/audio/fr/l1-1.4.1-s1.mp3",
+            "size": 2008781
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "57b89a2012f8",
+            "file": "/audio/en/l1-1.4.1-s2.mp3",
+            "size": 1611458
+          },
+          "fr": {
+            "hash": "aa26abfc5bf3",
+            "file": "/audio/fr/l1-1.4.1-s2.mp3",
+            "size": 1855494
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "89e7bd68d651",
+            "file": "/audio/en/l1-1.4.1-s3.mp3",
+            "size": 1670704
+          },
+          "fr": {
+            "hash": "b7bebccbc675",
+            "file": "/audio/fr/l1-1.4.1-s3.mp3",
+            "size": 1842172
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "8e599865c06a",
+            "file": "/audio/en/l1-1.4.1-s4.mp3",
+            "size": 1027151
+          },
+          "fr": {
+            "hash": "ed9bd3ce3263",
+            "file": "/audio/fr/l1-1.4.1-s4.mp3",
+            "size": 1090316
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "ed6f7d85bbf4",
+            "file": "/audio/en/l1-1.4.1-s5.mp3",
+            "size": 1833551
+          },
+          "fr": {
+            "hash": "eea275ba2374",
+            "file": "/audio/fr/l1-1.4.1-s5.mp3",
+            "size": 1950476
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "a41a2ccecbe9",
+            "file": "/audio/en/l1-1.4.1-s6.mp3",
+            "size": 348334
+          },
+          "fr": {
+            "hash": "6f15e803bf75",
+            "file": "/audio/fr/l1-1.4.1-s6.mp3",
+            "size": 378113
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "0d728833bb6d",
+            "file": "/audio/en/l1-1.4.1-s7.mp3",
+            "size": 709450
+          },
+          "fr": {
+            "hash": "ba46664afc6d",
+            "file": "/audio/fr/l1-1.4.1-s7.mp3",
+            "size": 755687
+          }
+        }
+      }
+    },
+    "l1-1.4.2": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "c85dd8cda84c",
+        "file": "/audio/en/l1-1.4.2.mp3",
+        "size": 234701
+      },
+      "fr": {
+        "hash": "50b3a622549b",
+        "file": "/audio/fr/l1-1.4.2.mp3",
+        "size": 226237
+      }
+    },
+    "l1-1.5.1": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "a02bf8d324c4",
+            "file": "/audio/en/l1-1.5.1-s0.mp3",
+            "size": 283132
+          },
+          "fr": {
+            "hash": "bb8928e783e7",
+            "file": "/audio/fr/l1-1.5.1-s0.mp3",
+            "size": 327488
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "2528c09362e0",
+            "file": "/audio/en/l1-1.5.1-s1.mp3",
+            "size": 365888
+          },
+          "fr": {
+            "hash": "d18ee025f67f",
+            "file": "/audio/fr/l1-1.5.1-s1.mp3",
+            "size": 430776
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "39175d8bb1e8",
+            "file": "/audio/en/l1-1.5.1-s2.mp3",
+            "size": 334698
+          },
+          "fr": {
+            "hash": "baaf9302b937",
+            "file": "/audio/fr/l1-1.5.1-s2.mp3",
+            "size": 397391
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "9fcfa083495e",
+            "file": "/audio/en/l1-1.5.1-s3.mp3",
+            "size": 37685
+          },
+          "fr": {
+            "hash": "bcfb1e868a41",
+            "file": "/audio/fr/l1-1.5.1-s3.mp3",
+            "size": 37372
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "1eebea95e00c",
+            "file": "/audio/en/l1-1.5.1-s4.mp3",
+            "size": 360089
+          },
+          "fr": {
+            "hash": "460138741613",
+            "file": "/audio/fr/l1-1.5.1-s4.mp3",
+            "size": 418864
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "e1dd657611fd",
+            "file": "/audio/en/l1-1.5.1-s5.mp3",
+            "size": 331406
+          },
+          "fr": {
+            "hash": "d46eb994f42a",
+            "file": "/audio/fr/l1-1.5.1-s5.mp3",
+            "size": 397391
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "4ccc783db4d6",
+            "file": "/audio/en/l1-1.5.1-s6.mp3",
+            "size": 317927
+          },
+          "fr": {
+            "hash": "7200ceba91a2",
+            "file": "/audio/fr/l1-1.5.1-s6.mp3",
+            "size": 345356
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "eff1427f2e3b",
+            "file": "/audio/en/l1-1.5.1-s7.mp3",
+            "size": 339713
+          },
+          "fr": {
+            "hash": "f4fcffd50145",
+            "file": "/audio/fr/l1-1.5.1-s7.mp3",
+            "size": 400526
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "5f78545d0f8d",
+            "file": "/audio/en/l1-1.5.1-s8.mp3",
+            "size": 334384
+          },
+          "fr": {
+            "hash": "7884d1881323",
+            "file": "/audio/fr/l1-1.5.1-s8.mp3",
+            "size": 398018
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "077837b92d9f",
+            "file": "/audio/en/l1-1.5.1-s9.mp3",
+            "size": 342221
+          },
+          "fr": {
+            "hash": "6dab846809cf",
+            "file": "/audio/fr/l1-1.5.1-s9.mp3",
+            "size": 387674
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "851b719f8b51",
+            "file": "/audio/en/l1-1.5.1-s10.mp3",
+            "size": 319338
+          },
+          "fr": {
+            "hash": "1b350fe22ce0",
+            "file": "/audio/fr/l1-1.5.1-s10.mp3",
+            "size": 334698
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "2eeea5be6a20",
+            "file": "/audio/en/l1-1.5.1-s11.mp3",
+            "size": 280311
+          },
+          "fr": {
+            "hash": "872f8c258b55",
+            "file": "/audio/fr/l1-1.5.1-s11.mp3",
+            "size": 294260
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "bd54efc42b49",
+            "file": "/audio/en/l1-1.5.1-s12.mp3",
+            "size": 46306
+          },
+          "fr": {
+            "hash": "85a0c46f6328",
+            "file": "/audio/fr/l1-1.5.1-s12.mp3",
+            "size": 53829
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "9eb88ff1387e",
+            "file": "/audio/en/l1-1.5.1-s13.mp3",
+            "size": 705532
+          },
+          "fr": {
+            "hash": "2338943a86e2",
+            "file": "/audio/fr/l1-1.5.1-s13.mp3",
+            "size": 852079
+          }
+        }
+      }
+    },
+    "l1-1.5.2": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "912ce625d8eb",
+        "file": "/audio/en/l1-1.5.2.mp3",
+        "size": 353036
+      },
+      "fr": {
+        "hash": "4e3b97ba9f5a",
+        "file": "/audio/fr/l1-1.5.2.mp3",
+        "size": 408206
+      }
+    },
+    "l1-1.6.1": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "c43990390121",
+            "file": "/audio/en/l1-1.6.1-s0.mp3",
+            "size": 1030129
+          },
+          "fr": {
+            "hash": "ca7928d40a04",
+            "file": "/audio/fr/l1-1.6.1-s0.mp3",
+            "size": 1108183
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "7300eee828ff",
+            "file": "/audio/en/l1-1.6.1-s1.mp3",
+            "size": 203511
+          },
+          "fr": {
+            "hash": "9ca8a13b28ad",
+            "file": "/audio/fr/l1-1.6.1-s1.mp3",
+            "size": 219341
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "7ee0b1e03e5b",
+            "file": "/audio/en/l1-1.6.1-s2.mp3",
+            "size": 678260
+          },
+          "fr": {
+            "hash": "14d1dda894ff",
+            "file": "/audio/fr/l1-1.6.1-s2.mp3",
+            "size": 758508
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "b85065825871",
+            "file": "/audio/en/l1-1.6.1-s3.mp3",
+            "size": 803334
+          },
+          "fr": {
+            "hash": "67a232dd57f0",
+            "file": "/audio/fr/l1-1.6.1-s3.mp3",
+            "size": 892046
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "507865fc19c7",
+            "file": "/audio/en/l1-1.6.1-s4.mp3",
+            "size": 1118998
+          },
+          "fr": {
+            "hash": "08ab75377e1e",
+            "file": "/audio/fr/l1-1.6.1-s4.mp3",
+            "size": 1262880
+          }
+        }
+      }
+    },
+    "l1-1.6.2": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "00d0258d3eff",
+            "file": "/audio/en/l1-1.6.2-s0.mp3",
+            "size": 658825
+          },
+          "fr": {
+            "hash": "a1de79d5fc39",
+            "file": "/audio/fr/l1-1.6.2-s0.mp3",
+            "size": 871984
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "40054f674209",
+            "file": "/audio/en/l1-1.6.2-s1.mp3",
+            "size": 1238587
+          },
+          "fr": {
+            "hash": "dad3d9e8bed5",
+            "file": "/audio/fr/l1-1.6.2-s1.mp3",
+            "size": 1619295
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "7d7c756f02f2",
+            "file": "/audio/en/l1-1.6.2-s2.mp3",
+            "size": 1224951
+          },
+          "fr": {
+            "hash": "8caa24a82149",
+            "file": "/audio/fr/l1-1.6.2-s2.mp3",
+            "size": 1451746
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "e24905b9b90f",
+            "file": "/audio/en/l1-1.6.2-s3.mp3",
+            "size": 2185421
+          },
+          "fr": {
+            "hash": "829bea65fd6d",
+            "file": "/audio/fr/l1-1.6.2-s3.mp3",
+            "size": 2084484
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "1be9ddd87be5",
+            "file": "/audio/en/l1-1.6.2-s4.mp3",
+            "size": 520898
+          },
+          "fr": {
+            "hash": "e9296754d923",
+            "file": "/audio/fr/l1-1.6.2-s4.mp3",
+            "size": 606162
+          }
+        }
+      }
+    },
+    "l1-1.6.3": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "bf0caf1fcc17",
+            "file": "/audio/en/l1-1.6.3-s0.mp3",
+            "size": 59942
+          },
+          "fr": {
+            "hash": "3ba8c07a0aae",
+            "file": "/audio/fr/l1-1.6.3-s0.mp3",
+            "size": 59158
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "82e5e11ebbb0",
+            "file": "/audio/en/l1-1.6.3-s1.mp3",
+            "size": 501934
+          },
+          "fr": {
+            "hash": "588abced71a1",
+            "file": "/audio/fr/l1-1.6.3-s1.mp3",
+            "size": 550051
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "2a810be9f6f9",
+            "file": "/audio/en/l1-1.6.3-s2.mp3",
+            "size": 281408
+          },
+          "fr": {
+            "hash": "0ffb7a133d51",
+            "file": "/audio/fr/l1-1.6.3-s2.mp3",
+            "size": 336422
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "08ea0663baba",
+            "file": "/audio/en/l1-1.6.3-s3.mp3",
+            "size": 406325
+          },
+          "fr": {
+            "hash": "93929ce2bd6e",
+            "file": "/audio/fr/l1-1.6.3-s3.mp3",
+            "size": 467295
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "7e1e47f35635",
+            "file": "/audio/en/l1-1.6.3-s4.mp3",
+            "size": 408520
+          },
+          "fr": {
+            "hash": "c56221ad9892",
+            "file": "/audio/fr/l1-1.6.3-s4.mp3",
+            "size": 460399
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "154c04a7762a",
+            "file": "/audio/en/l1-1.6.3-s5.mp3",
+            "size": 325294
+          },
+          "fr": {
+            "hash": "263838178489",
+            "file": "/audio/fr/l1-1.6.3-s5.mp3",
+            "size": 388771
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "d0ba10d14cbb",
+            "file": "/audio/en/l1-1.6.3-s6.mp3",
+            "size": 582338
+          },
+          "fr": {
+            "hash": "ff4f90deea83",
+            "file": "/audio/fr/l1-1.6.3-s6.mp3",
+            "size": 693620
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "0876078f0f79",
+            "file": "/audio/en/l1-1.6.3-s7.mp3",
+            "size": 433911
+          },
+          "fr": {
+            "hash": "4678a40c803d",
+            "file": "/audio/fr/l1-1.6.3-s7.mp3",
+            "size": 467609
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "9ef5b9e8c124",
+            "file": "/audio/en/l1-1.6.3-s8.mp3",
+            "size": 414162
+          },
+          "fr": {
+            "hash": "0473e39e9714",
+            "file": "/audio/fr/l1-1.6.3-s8.mp3",
+            "size": 438613
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "83bae37f181a",
+            "file": "/audio/en/l1-1.6.3-s9.mp3",
+            "size": 611961
+          },
+          "fr": {
+            "hash": "e2f482b365a1",
+            "file": "/audio/fr/l1-1.6.3-s9.mp3",
+            "size": 724810
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "27791b573dc0",
+            "file": "/audio/en/l1-1.6.3-s10.mp3",
+            "size": 479050
+          },
+          "fr": {
+            "hash": "a23e91831615",
+            "file": "/audio/fr/l1-1.6.3-s10.mp3",
+            "size": 548484
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "dfdfcaea2253",
+            "file": "/audio/en/l1-1.6.3-s11.mp3",
+            "size": 473408
+          },
+          "fr": {
+            "hash": "9e50bfa6bc22",
+            "file": "/audio/fr/l1-1.6.3-s11.mp3",
+            "size": 493313
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "167a3c5ceee3",
+            "file": "/audio/en/l1-1.6.3-s12.mp3",
+            "size": 385480
+          },
+          "fr": {
+            "hash": "a1b003da153b",
+            "file": "/audio/fr/l1-1.6.3-s12.mp3",
+            "size": 447233
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "0047f3cfa991",
+            "file": "/audio/en/l1-1.6.3-s13.mp3",
+            "size": 337832
+          },
+          "fr": {
+            "hash": "b11aae4ed56a",
+            "file": "/audio/fr/l1-1.6.3-s13.mp3",
+            "size": 355543
+          }
+        },
+        "14": {
+          "en": {
+            "hash": "f4cc17687818",
+            "file": "/audio/en/l1-1.6.3-s14.mp3",
+            "size": 364007
+          },
+          "fr": {
+            "hash": "fa3872e1a945",
+            "file": "/audio/fr/l1-1.6.3-s14.mp3",
+            "size": 431089
+          }
+        },
+        "15": {
+          "en": {
+            "hash": "d31254e3755c",
+            "file": "/audio/en/l1-1.6.3-s15.mp3",
+            "size": 438299
+          },
+          "fr": {
+            "hash": "7dacf2ec6e98",
+            "file": "/audio/fr/l1-1.6.3-s15.mp3",
+            "size": 492686
+          }
+        },
+        "16": {
+          "en": {
+            "hash": "1214ef4aca26",
+            "file": "/audio/en/l1-1.6.3-s16.mp3",
+            "size": 464317
+          },
+          "fr": {
+            "hash": "c4c8fd82a60a",
+            "file": "/audio/fr/l1-1.6.3-s16.mp3",
+            "size": 542528
+          }
+        },
+        "17": {
+          "en": {
+            "hash": "b568d914d521",
+            "file": "/audio/en/l1-1.6.3-s17.mp3",
+            "size": 371687
+          },
+          "fr": {
+            "hash": "71d7f950eb6c",
+            "file": "/audio/fr/l1-1.6.3-s17.mp3",
+            "size": 420275
+          }
+        },
+        "18": {
+          "en": {
+            "hash": "b6bb2602fc54",
+            "file": "/audio/en/l1-1.6.3-s18.mp3",
+            "size": 310247
+          },
+          "fr": {
+            "hash": "57f45030ac26",
+            "file": "/audio/fr/l1-1.6.3-s18.mp3",
+            "size": 351155
+          }
+        },
+        "19": {
+          "en": {
+            "hash": "c93c8d5f5e39",
+            "file": "/audio/en/l1-1.6.3-s19.mp3",
+            "size": 394884
+          },
+          "fr": {
+            "hash": "fcebc578521d",
+            "file": "/audio/fr/l1-1.6.3-s19.mp3",
+            "size": 405542
+          }
+        },
+        "20": {
+          "en": {
+            "hash": "19be3a66203f",
+            "file": "/audio/en/l1-1.6.3-s20.mp3",
+            "size": 474035
+          },
+          "fr": {
+            "hash": "40c446b29216",
+            "file": "/audio/fr/l1-1.6.3-s20.mp3",
+            "size": 540334
+          }
+        },
+        "21": {
+          "en": {
+            "hash": "9f0a7d151a9d",
+            "file": "/audio/en/l1-1.6.3-s21.mp3",
+            "size": 474505
+          },
+          "fr": {
+            "hash": "b6ba44d7602a",
+            "file": "/audio/fr/l1-1.6.3-s21.mp3",
+            "size": 542214
+          }
+        },
+        "22": {
+          "en": {
+            "hash": "490e13fbf801",
+            "file": "/audio/en/l1-1.6.3-s22.mp3",
+            "size": 594720
+          },
+          "fr": {
+            "hash": "46a5c40442d5",
+            "file": "/audio/fr/l1-1.6.3-s22.mp3",
+            "size": 669013
+          }
+        }
+      }
+    },
+    "l1-1.6.4": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "145477258a69",
+        "file": "/audio/en/l1-1.6.4.mp3",
+        "size": 2343723
+      },
+      "fr": {
+        "hash": "ea15f7616e89",
+        "file": "/audio/fr/l1-1.6.4.mp3",
+        "size": 2219432
+      }
+    },
+    "l1-1.6.5": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "ddd0ae174dad",
+        "file": "/audio/en/l1-1.6.5.mp3",
+        "size": 2594185
+      },
+      "fr": {
+        "hash": "2fd59ef3f324",
+        "file": "/audio/fr/l1-1.6.5.mp3",
+        "size": 2453751
+      }
+    },
+    "l1-1.6.6": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "b5f949b7e278",
+        "file": "/audio/en/l1-1.6.6.mp3",
+        "size": 2357672
+      },
+      "fr": {
+        "hash": "5782a47bc46a",
+        "file": "/audio/fr/l1-1.6.6.mp3",
+        "size": 2132445
+      }
+    },
+    "l1-1.7.1": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "b50177a998c6",
+            "file": "/audio/en/l1-1.7.1-s0.mp3",
+            "size": 648167
+          },
+          "fr": {
+            "hash": "7826b22aceb5",
+            "file": "/audio/fr/l1-1.7.1-s0.mp3",
+            "size": 712585
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "51f0f33d78ff",
+            "file": "/audio/en/l1-1.7.1-s1.mp3",
+            "size": 324040
+          },
+          "fr": {
+            "hash": "2648a5eb0d83",
+            "file": "/audio/fr/l1-1.7.1-s1.mp3",
+            "size": 358678
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "b77dc809a95d",
+            "file": "/audio/en/l1-1.7.1-s2.mp3",
+            "size": 818381
+          },
+          "fr": {
+            "hash": "3253fdc5ac50",
+            "file": "/audio/fr/l1-1.7.1-s2.mp3",
+            "size": 856938
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "c3c5ec7e75ab",
+            "file": "/audio/en/l1-1.7.1-s3.mp3",
+            "size": 686880
+          },
+          "fr": {
+            "hash": "d0b01a37ac21",
+            "file": "/audio/fr/l1-1.7.1-s3.mp3",
+            "size": 725280
+          }
+        }
+      }
+    },
+    "l1-1.7.2": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "08ad472dfc88",
+            "file": "/audio/en/l1-1.7.2-s0.mp3",
+            "size": 260876
+          },
+          "fr": {
+            "hash": "07d57210f0f9",
+            "file": "/audio/fr/l1-1.7.2-s0.mp3",
+            "size": 282035
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "ad88b9e5c351",
+            "file": "/audio/en/l1-1.7.2-s1.mp3",
+            "size": 102103
+          },
+          "fr": {
+            "hash": "aac450111bb2",
+            "file": "/audio/fr/l1-1.7.2-s1.mp3",
+            "size": 115112
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "2b2fcd43c1ee",
+            "file": "/audio/en/l1-1.7.2-s2.mp3",
+            "size": 263697
+          },
+          "fr": {
+            "hash": "b1029c59ff34",
+            "file": "/audio/fr/l1-1.7.2-s2.mp3",
+            "size": 317927
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "ffc35c052b33",
+            "file": "/audio/en/l1-1.7.2-s3.mp3",
+            "size": 145519
+          },
+          "fr": {
+            "hash": "b330bd978c2c",
+            "file": "/audio/fr/l1-1.7.2-s3.mp3",
+            "size": 180000
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "4658a3a65052",
+            "file": "/audio/en/l1-1.7.2-s4.mp3",
+            "size": 105865
+          },
+          "fr": {
+            "hash": "b0dde21230a2",
+            "file": "/audio/fr/l1-1.7.2-s4.mp3",
+            "size": 137682
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "0bdec2df904f",
+            "file": "/audio/en/l1-1.7.2-s5.mp3",
+            "size": 226864
+          },
+          "fr": {
+            "hash": "a82276c5d238",
+            "file": "/audio/fr/l1-1.7.2-s5.mp3",
+            "size": 271690
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "b5d37d520b3e",
+            "file": "/audio/en/l1-1.7.2-s6.mp3",
+            "size": 479834
+          },
+          "fr": {
+            "hash": "a2c21dc307da",
+            "file": "/audio/fr/l1-1.7.2-s6.mp3",
+            "size": 551148
+          }
+        }
+      }
+    },
+    "l1-1.7.3": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "cfa642634eee",
+            "file": "/audio/en/l1-1.7.3-s0.mp3",
+            "size": 226237
+          },
+          "fr": {
+            "hash": "950c4e1b0001",
+            "file": "/audio/fr/l1-1.7.3-s0.mp3",
+            "size": 242694
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "b326272561f0",
+            "file": "/audio/en/l1-1.7.3-s1.mp3",
+            "size": 122636
+          },
+          "fr": {
+            "hash": "63ee62902364",
+            "file": "/audio/fr/l1-1.7.3-s1.mp3",
+            "size": 144108
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "a195edfd269f",
+            "file": "/audio/en/l1-1.7.3-s2.mp3",
+            "size": 238306
+          },
+          "fr": {
+            "hash": "51567bf46d25",
+            "file": "/audio/fr/l1-1.7.3-s2.mp3",
+            "size": 292379
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "db73f81d47fc",
+            "file": "/audio/en/l1-1.7.3-s3.mp3",
+            "size": 155863
+          },
+          "fr": {
+            "hash": "a531a385e34e",
+            "file": "/audio/fr/l1-1.7.3-s3.mp3",
+            "size": 190345
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "c5d93c54d19f",
+            "file": "/audio/en/l1-1.7.3-s4.mp3",
+            "size": 139093
+          },
+          "fr": {
+            "hash": "7335a56c87ec",
+            "file": "/audio/fr/l1-1.7.3-s4.mp3",
+            "size": 153826
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "9e3dd2b7a88b",
+            "file": "/audio/en/l1-1.7.3-s5.mp3",
+            "size": 245829
+          },
+          "fr": {
+            "hash": "3e8e4c1b7c17",
+            "file": "/audio/fr/l1-1.7.3-s5.mp3",
+            "size": 285640
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "03c3e671e549",
+            "file": "/audio/en/l1-1.7.3-s6.mp3",
+            "size": 612275
+          },
+          "fr": {
+            "hash": "6411a91c6561",
+            "file": "/audio/fr/l1-1.7.3-s6.mp3",
+            "size": 588608
+          }
+        }
+      }
+    },
+    "l1-1.7.4": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "8e50a336abd5",
+            "file": "/audio/en/l1-1.7.4-s0.mp3",
+            "size": 180314
+          },
+          "fr": {
+            "hash": "d8bec953452e",
+            "file": "/audio/fr/l1-1.7.4-s0.mp3",
+            "size": 212601
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "0615865aaa25",
+            "file": "/audio/en/l1-1.7.4-s1.mp3",
+            "size": 498799
+          },
+          "fr": {
+            "hash": "4060b9aa1707",
+            "file": "/audio/fr/l1-1.7.4-s1.mp3",
+            "size": 540020
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "4350a20ff001",
+            "file": "/audio/en/l1-1.7.4-s2.mp3",
+            "size": 256957
+          },
+          "fr": {
+            "hash": "e020b5efc21f",
+            "file": "/audio/fr/l1-1.7.4-s2.mp3",
+            "size": 275138
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "58c189b89d40",
+            "file": "/audio/en/l1-1.7.4-s3.mp3",
+            "size": 123733
+          },
+          "fr": {
+            "hash": "3809957aa780",
+            "file": "/audio/fr/l1-1.7.4-s3.mp3",
+            "size": 138466
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "9d3408636bfc",
+            "file": "/audio/en/l1-1.7.4-s4.mp3",
+            "size": 431089
+          },
+          "fr": {
+            "hash": "e86723d705c6",
+            "file": "/audio/fr/l1-1.7.4-s4.mp3",
+            "size": 470900
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "16f90f952d26",
+            "file": "/audio/en/l1-1.7.4-s5.mp3",
+            "size": 641741
+          },
+          "fr": {
+            "hash": "81022e9fff2c",
+            "file": "/audio/fr/l1-1.7.4-s5.mp3",
+            "size": 680768
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "a5e1442a60ac",
+            "file": "/audio/en/l1-1.7.4-s6.mp3",
+            "size": 667445
+          },
+          "fr": {
+            "hash": "9683e613557b",
+            "file": "/audio/fr/l1-1.7.4-s6.mp3",
+            "size": 728415
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "576022a718ae",
+            "file": "/audio/en/l1-1.7.4-s7.mp3",
+            "size": 514472
+          },
+          "fr": {
+            "hash": "283af3599fb9",
+            "file": "/audio/fr/l1-1.7.4-s7.mp3",
+            "size": 578734
+          }
+        }
+      }
+    },
+    "l1-1.8.1": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "4a0f12e412b9",
+            "file": "/audio/en/l1-1.8.1-s0.mp3",
+            "size": 290342
+          },
+          "fr": {
+            "hash": "828ca5fa5cb4",
+            "file": "/audio/fr/l1-1.8.1-s0.mp3",
+            "size": 306329
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "a725672a5f9a",
+            "file": "/audio/en/l1-1.8.1-s1.mp3",
+            "size": 208526
+          },
+          "fr": {
+            "hash": "98cc501629d4",
+            "file": "/audio/fr/l1-1.8.1-s1.mp3",
+            "size": 241597
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "f53e4e006959",
+            "file": "/audio/en/l1-1.8.1-s2.mp3",
+            "size": 1098466
+          },
+          "fr": {
+            "hash": "0794faa2bdb8",
+            "file": "/audio/fr/l1-1.8.1-s2.mp3",
+            "size": 1178714
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "125be07240ca",
+            "file": "/audio/en/l1-1.8.1-s3.mp3",
+            "size": 184546
+          },
+          "fr": {
+            "hash": "af712a9db555",
+            "file": "/audio/fr/l1-1.8.1-s3.mp3",
+            "size": 200062
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "c777e0d8c937",
+            "file": "/audio/en/l1-1.8.1-s4.mp3",
+            "size": 183605
+          },
+          "fr": {
+            "hash": "92a39f009b00",
+            "file": "/audio/fr/l1-1.8.1-s4.mp3",
+            "size": 198495
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "12cffaf09662",
+            "file": "/audio/en/l1-1.8.1-s5.mp3",
+            "size": 287834
+          },
+          "fr": {
+            "hash": "1f674219cff1",
+            "file": "/audio/fr/l1-1.8.1-s5.mp3",
+            "size": 356640
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "615150f899c5",
+            "file": "/audio/en/l1-1.8.1-s6.mp3",
+            "size": 206018
+          },
+          "fr": {
+            "hash": "aad630e23791",
+            "file": "/audio/fr/l1-1.8.1-s6.mp3",
+            "size": 230782
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "f473827a0a9c",
+            "file": "/audio/en/l1-1.8.1-s7.mp3",
+            "size": 238619
+          },
+          "fr": {
+            "hash": "f141b3c3c560",
+            "file": "/audio/fr/l1-1.8.1-s7.mp3",
+            "size": 285169
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "2ccafa5d16ce",
+            "file": "/audio/en/l1-1.8.1-s8.mp3",
+            "size": 155550
+          },
+          "fr": {
+            "hash": "968fc330f33c",
+            "file": "/audio/fr/l1-1.8.1-s8.mp3",
+            "size": 172320
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "29fdd4838ba1",
+            "file": "/audio/en/l1-1.8.1-s9.mp3",
+            "size": 167462
+          },
+          "fr": {
+            "hash": "c510fae48cc0",
+            "file": "/audio/fr/l1-1.8.1-s9.mp3",
+            "size": 217617
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "d34c03cd7bb2",
+            "file": "/audio/en/l1-1.8.1-s10.mp3",
+            "size": 169969
+          },
+          "fr": {
+            "hash": "b6f38a6fb5a3",
+            "file": "/audio/fr/l1-1.8.1-s10.mp3",
+            "size": 178433
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "6354533f856c",
+            "file": "/audio/en/l1-1.8.1-s11.mp3",
+            "size": 247553
+          },
+          "fr": {
+            "hash": "75c9d6de8d14",
+            "file": "/audio/fr/l1-1.8.1-s11.mp3",
+            "size": 317927
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "3ee3a4762dae",
+            "file": "/audio/en/l1-1.8.1-s12.mp3",
+            "size": 220438
+          },
+          "fr": {
+            "hash": "c09063ba9d7f",
+            "file": "/audio/fr/l1-1.8.1-s12.mp3",
+            "size": 255547
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "9092c89dc0b7",
+            "file": "/audio/en/l1-1.8.1-s13.mp3",
+            "size": 201160
+          },
+          "fr": {
+            "hash": "453f2e14e9e6",
+            "file": "/audio/fr/l1-1.8.1-s13.mp3",
+            "size": 181725
+          }
+        },
+        "14": {
+          "en": {
+            "hash": "ed8971966d0f",
+            "file": "/audio/en/l1-1.8.1-s14.mp3",
+            "size": 181098
+          },
+          "fr": {
+            "hash": "13ee8a5ac06b",
+            "file": "/audio/fr/l1-1.8.1-s14.mp3",
+            "size": 254449
+          }
+        },
+        "15": {
+          "en": {
+            "hash": "70ae9589dbac",
+            "file": "/audio/en/l1-1.8.1-s15.mp3",
+            "size": 527481
+          },
+          "fr": {
+            "hash": "dd4e7e153341",
+            "file": "/audio/fr/l1-1.8.1-s15.mp3",
+            "size": 508830
+          }
+        }
+      }
+    },
+    "l1-1.8.1a": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "bbda931a22ad",
+        "file": "/audio/en/l1-1.8.1a.mp3",
+        "size": 2400304
+      },
+      "fr": {
+        "hash": "f6887532bca5",
+        "file": "/audio/fr/l1-1.8.1a.mp3",
+        "size": 2314414
+      }
+    },
+    "l1-1.8.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "b6dc52cd6e29",
+            "file": "/audio/en/l1-1.8.2-s0.mp3",
+            "size": 149437
+          },
+          "fr": {
+            "hash": "409810d6b122",
+            "file": "/audio/fr/l1-1.8.2-s0.mp3",
+            "size": 190031
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "7c2af5b45eea",
+            "file": "/audio/en/l1-1.8.2-s1.mp3",
+            "size": 190345
+          },
+          "fr": {
+            "hash": "752f8adaff92",
+            "file": "/audio/fr/l1-1.8.2-s1.mp3",
+            "size": 216049
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "d06cd9f1d4a0",
+            "file": "/audio/en/l1-1.8.2-s2.mp3",
+            "size": 186113
+          },
+          "fr": {
+            "hash": "86ccfb0c06f6",
+            "file": "/audio/fr/l1-1.8.2-s2.mp3",
+            "size": 201473
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "4a9f83c04506",
+            "file": "/audio/en/l1-1.8.2-s3.mp3",
+            "size": 239403
+          },
+          "fr": {
+            "hash": "e9a1fabae0a5",
+            "file": "/audio/fr/l1-1.8.2-s3.mp3",
+            "size": 239089
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "24902617ea9a",
+            "file": "/audio/en/l1-1.8.2-s4.mp3",
+            "size": 129689
+          },
+          "fr": {
+            "hash": "c6f2b03dbdb7",
+            "file": "/audio/fr/l1-1.8.2-s4.mp3",
+            "size": 174515
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "5c93aedb78de",
+            "file": "/audio/en/l1-1.8.2-s5.mp3",
+            "size": 177806
+          },
+          "fr": {
+            "hash": "40341204d3d1",
+            "file": "/audio/fr/l1-1.8.2-s5.mp3",
+            "size": 219968
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "d1b8f0688c01",
+            "file": "/audio/en/l1-1.8.2-s6.mp3",
+            "size": 167775
+          },
+          "fr": {
+            "hash": "b4fd8f668202",
+            "file": "/audio/fr/l1-1.8.2-s6.mp3",
+            "size": 177806
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "3bf9c6bc4ec3",
+            "file": "/audio/en/l1-1.8.2-s7.mp3",
+            "size": 284542
+          },
+          "fr": {
+            "hash": "053c0c25b243",
+            "file": "/audio/fr/l1-1.8.2-s7.mp3",
+            "size": 311031
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "13629146409c",
+            "file": "/audio/en/l1-1.8.2-s8.mp3",
+            "size": 137212
+          },
+          "fr": {
+            "hash": "efb648865134",
+            "file": "/audio/fr/l1-1.8.2-s8.mp3",
+            "size": 152729
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "5198738a9bd7",
+            "file": "/audio/en/l1-1.8.2-s9.mp3",
+            "size": 179530
+          },
+          "fr": {
+            "hash": "c433bc64fc3e",
+            "file": "/audio/fr/l1-1.8.2-s9.mp3",
+            "size": 177022
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "53b4fc5e040b",
+            "file": "/audio/en/l1-1.8.2-s10.mp3",
+            "size": 178120
+          },
+          "fr": {
+            "hash": "383993576b73",
+            "file": "/audio/fr/l1-1.8.2-s10.mp3",
+            "size": 258368
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "59ef59bb6a2b",
+            "file": "/audio/en/l1-1.8.2-s11.mp3",
+            "size": 517450
+          },
+          "fr": {
+            "hash": "04151f94279c",
+            "file": "/audio/fr/l1-1.8.2-s11.mp3",
+            "size": 581868
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "cca214183d42",
+            "file": "/audio/en/l1-1.8.2-s12.mp3",
+            "size": 3971726
+          },
+          "fr": {
+            "hash": "057e9eb68020",
+            "file": "/audio/fr/l1-1.8.2-s12.mp3",
+            "size": 3124418
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "a281182f8dc2",
+            "file": "/audio/en/l1-1.8.2-s13.mp3",
+            "size": 3133352
+          },
+          "fr": {
+            "hash": "820ed6df84d2",
+            "file": "/audio/fr/l1-1.8.2-s13.mp3",
+            "size": 3056709
+          }
+        },
+        "14": {
+          "en": {
+            "hash": "73805d9839bc",
+            "file": "/audio/en/l1-1.8.2-s14.mp3",
+            "size": 2395445
+          },
+          "fr": {
+            "hash": "73805d9839bc",
+            "file": "/audio/fr/l1-1.8.2-s14.mp3",
+            "size": 2455945
+          }
+        }
+      }
+    },
+    "l1-1.8.2a": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "69c8faeab601",
+        "file": "/audio/en/l1-1.8.2a.mp3",
+        "size": 559612
+      },
+      "fr": {
+        "hash": "d1a02d5d62e5",
+        "file": "/audio/fr/l1-1.8.2a.mp3",
+        "size": 621365
+      }
+    },
+    "l1-1.8.2b": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "7a39bdde8ffd",
+        "file": "/audio/en/l1-1.8.2b.mp3",
+        "size": 3624245
+      },
+      "fr": {
+        "hash": "3658e8cc2757",
+        "file": "/audio/fr/l1-1.8.2b.mp3",
+        "size": 3341809
+      }
+    },
+    "l1-1.8.2c": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "546ba5347470",
+        "file": "/audio/en/l1-1.8.2c.mp3",
+        "size": 135488
+      },
+      "fr": {
+        "hash": "b2fe26101f61",
+        "file": "/audio/fr/l1-1.8.2c.mp3",
+        "size": 156334
+      }
+    },
+    "l1-1.8.2d": {
+      "type": "video",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "aa11083769c6",
+        "file": "/audio/en/l1-1.8.2d.mp3",
+        "size": 152729
+      },
+      "fr": {
+        "hash": "186588cdec8c",
+        "file": "/audio/fr/l1-1.8.2d.mp3",
+        "size": 138779
+      }
+    },
+    "l1-1.8.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "312936598775",
+            "file": "/audio/en/l1-1.8.3-s0.mp3",
+            "size": 317457
+          },
+          "fr": {
+            "hash": "8124026a8aed",
+            "file": "/audio/fr/l1-1.8.3-s0.mp3",
+            "size": 356170
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "3cde2c166287",
+            "file": "/audio/en/l1-1.8.3-s1.mp3",
+            "size": 315419
+          },
+          "fr": {
+            "hash": "8352a8ee48ce",
+            "file": "/audio/fr/l1-1.8.3-s1.mp3",
+            "size": 370433
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "dda988bda630",
+            "file": "/audio/en/l1-1.8.3-s2.mp3",
+            "size": 345512
+          },
+          "fr": {
+            "hash": "a774ed395263",
+            "file": "/audio/fr/l1-1.8.3-s2.mp3",
+            "size": 351625
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "a6aeb21fce79",
+            "file": "/audio/en/l1-1.8.3-s3.mp3",
+            "size": 256174
+          },
+          "fr": {
+            "hash": "c4cb01ecc294",
+            "file": "/audio/fr/l1-1.8.3-s3.mp3",
+            "size": 254136
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "dbd54ad22f87",
+            "file": "/audio/en/l1-1.8.3-s4.mp3",
+            "size": 216049
+          },
+          "fr": {
+            "hash": "865b4bc6ef87",
+            "file": "/audio/fr/l1-1.8.3-s4.mp3",
+            "size": 235014
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "5ff7013509cd",
+            "file": "/audio/en/l1-1.8.3-s5.mp3",
+            "size": 316360
+          },
+          "fr": {
+            "hash": "d61cec731b9c",
+            "file": "/audio/fr/l1-1.8.3-s5.mp3",
+            "size": 330466
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "c01491d51651",
+            "file": "/audio/en/l1-1.8.3-s6.mp3",
+            "size": 311814
+          },
+          "fr": {
+            "hash": "53b7292f0b68",
+            "file": "/audio/fr/l1-1.8.3-s6.mp3",
+            "size": 366201
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "8e96118e558e",
+            "file": "/audio/en/l1-1.8.3-s7.mp3",
+            "size": 338616
+          },
+          "fr": {
+            "hash": "9589eee1feb9",
+            "file": "/audio/fr/l1-1.8.3-s7.mp3",
+            "size": 371530
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "972939177853",
+            "file": "/audio/en/l1-1.8.3-s8.mp3",
+            "size": 328271
+          },
+          "fr": {
+            "hash": "1143ecaca1d3",
+            "file": "/audio/fr/l1-1.8.3-s8.mp3",
+            "size": 356954
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "1ef923d49639",
+            "file": "/audio/en/l1-1.8.3-s9.mp3",
+            "size": 1121506
+          },
+          "fr": {
+            "hash": "40dabc15acd6",
+            "file": "/audio/fr/l1-1.8.3-s9.mp3",
+            "size": 1311625
+          }
+        }
+      }
+    },
+    "l1-1.8.3a": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "423a4bbf2eee",
+        "file": "/audio/en/l1-1.8.3a.mp3",
+        "size": 2271782
+      },
+      "fr": {
+        "hash": "f67d0319fdb3",
+        "file": "/audio/fr/l1-1.8.3a.mp3",
+        "size": 2105486
+      }
+    },
+    "l1-1.8.3b": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "ebef6de2416f",
+        "file": "/audio/en/l1-1.8.3b.mp3",
+        "size": 1093137
+      },
+      "fr": {
+        "hash": "26f5e3d0c314",
+        "file": "/audio/fr/l1-1.8.3b.mp3",
+        "size": 1195955
+      }
+    },
+    "l1-1.8.3c": {
+      "type": "video",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "98433bf029c2",
+        "file": "/audio/en/l1-1.8.3c.mp3",
+        "size": 357581
+      },
+      "fr": {
+        "hash": "44df3fbb3d8c",
+        "file": "/audio/fr/l1-1.8.3c.mp3",
+        "size": 351468
+      }
+    },
+    "l1-1.9.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "2a21f611572e",
+            "file": "/audio/en/l1-1.9.1-s0.mp3",
+            "size": 509927
+          },
+          "fr": {
+            "hash": "f7be14bb4986",
+            "file": "/audio/fr/l1-1.9.1-s0.mp3",
+            "size": 521996
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "b8509f505411",
+            "file": "/audio/en/l1-1.9.1-s1.mp3",
+            "size": 436732
+          },
+          "fr": {
+            "hash": "6307e3641f46",
+            "file": "/audio/fr/l1-1.9.1-s1.mp3",
+            "size": 452562
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "2d46ca43c47e",
+            "file": "/audio/en/l1-1.9.1-s2.mp3",
+            "size": 543938
+          },
+          "fr": {
+            "hash": "bc404c94dac7",
+            "file": "/audio/fr/l1-1.9.1-s2.mp3",
+            "size": 621209
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "8b95e521ddcf",
+            "file": "/audio/en/l1-1.9.1-s3.mp3",
+            "size": 483439
+          },
+          "fr": {
+            "hash": "942f1f9c8e8d",
+            "file": "/audio/fr/l1-1.9.1-s3.mp3",
+            "size": 556164
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "26b13c931a1a",
+            "file": "/audio/en/l1-1.9.1-s4.mp3",
+            "size": 821829
+          },
+          "fr": {
+            "hash": "cc17186c419e",
+            "file": "/audio/fr/l1-1.9.1-s4.mp3",
+            "size": 856311
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "8ba231b1b809",
+            "file": "/audio/en/l1-1.9.1-s5.mp3",
+            "size": 379210
+          },
+          "fr": {
+            "hash": "f494ea25c9f0",
+            "file": "/audio/fr/l1-1.9.1-s5.mp3",
+            "size": 411654
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "b1dbd6e7ef17",
+            "file": "/audio/en/l1-1.9.1-s6.mp3",
+            "size": 390965
+          },
+          "fr": {
+            "hash": "10e19a00a4ba",
+            "file": "/audio/fr/l1-1.9.1-s6.mp3",
+            "size": 450368
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "63053b9feb4b",
+            "file": "/audio/en/l1-1.9.1-s7.mp3",
+            "size": 337832
+          },
+          "fr": {
+            "hash": "2d774f502249",
+            "file": "/audio/fr/l1-1.9.1-s7.mp3",
+            "size": 351155
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "1e664593f8dc",
+            "file": "/audio/en/l1-1.9.1-s8.mp3",
+            "size": 478737
+          },
+          "fr": {
+            "hash": "2a99846fc4e9",
+            "file": "/audio/fr/l1-1.9.1-s8.mp3",
+            "size": 524503
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "9d6904bb034c",
+            "file": "/audio/en/l1-1.9.1-s9.mp3",
+            "size": 283759
+          },
+          "fr": {
+            "hash": "0e1ec6bc6434",
+            "file": "/audio/fr/l1-1.9.1-s9.mp3",
+            "size": 329996
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "21227a7733af",
+            "file": "/audio/en/l1-1.9.1-s10.mp3",
+            "size": 1286547
+          },
+          "fr": {
+            "hash": "1ea4b8b33fcf",
+            "file": "/audio/fr/l1-1.9.1-s10.mp3",
+            "size": 1372125
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "0e6f52c67dbf",
+            "file": "/audio/en/l1-1.9.1-s11.mp3",
+            "size": 1101287
+          },
+          "fr": {
+            "hash": "543d0bef9c74",
+            "file": "/audio/fr/l1-1.9.1-s11.mp3",
+            "size": 1289525
+          }
+        }
+      }
+    },
+    "l1-1.9.2": {
+      "type": "video",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "5f696b412179",
+        "file": "/audio/en/l1-1.9.2.mp3",
+        "size": 185016
+      },
+      "fr": {
+        "hash": "ddd4304a51ae",
+        "file": "/audio/fr/l1-1.9.2.mp3",
+        "size": 194577
+      }
+    },
+    "l1-1.9.3": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "7b45a3a0f7e3",
+        "file": "/audio/en/l1-1.9.3.mp3",
+        "size": 1968030
+      },
+      "fr": {
+        "hash": "68f1c23c26a5",
+        "file": "/audio/fr/l1-1.9.3.mp3",
+        "size": 2115204
+      }
+    },
+    "l1-1.10.1": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "a15753f65590",
+            "file": "/audio/en/l1-1.10.1-s0.mp3",
+            "size": 495978
+          },
+          "fr": {
+            "hash": "83d02754d04f",
+            "file": "/audio/fr/l1-1.10.1-s0.mp3",
+            "size": 539236
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "6a4fce4c94a8",
+            "file": "/audio/en/l1-1.10.1-s1.mp3",
+            "size": 1218838
+          },
+          "fr": {
+            "hash": "fd3779dd5989",
+            "file": "/audio/fr/l1-1.10.1-s1.mp3",
+            "size": 1376827
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "fd62fdfeb19c",
+            "file": "/audio/en/l1-1.10.1-s2.mp3",
+            "size": 1669607
+          },
+          "fr": {
+            "hash": "0ac8bad49f29",
+            "file": "/audio/fr/l1-1.10.1-s2.mp3",
+            "size": 1795622
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "089098ab7f5f",
+            "file": "/audio/en/l1-1.10.1-s3.mp3",
+            "size": 594720
+          },
+          "fr": {
+            "hash": "cc2403c83707",
+            "file": "/audio/fr/l1-1.10.1-s3.mp3",
+            "size": 708980
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "4f5d7dafa72c",
+            "file": "/audio/en/l1-1.10.1-s4.mp3",
+            "size": 232193
+          },
+          "fr": {
+            "hash": "9fc007f65baa",
+            "file": "/audio/fr/l1-1.10.1-s4.mp3",
+            "size": 283759
+          }
+        }
+      }
+    },
+    "l1-1.10.2": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l1-1.1.8": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB"
+    },
+    "l3-3.1.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.1.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.1.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.1.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.2.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.2.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.2.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.2.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.3.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.3.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.3.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.3.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.4.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.4.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.4.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.4.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.5.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.5.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.5.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.5.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.6.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.6.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.6.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.6.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.7.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.7.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.7.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.7.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.8.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.8.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.8.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.8.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.9.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.9.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.9.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.9.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.10.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.10.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {}
+    },
+    "l3-3.10.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {}
+    },
+    "l3-3.10.4": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB"
+    },
+    "lm-m.1.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "8d7ff36d8423",
+            "file": "/audio/en/lm-m.1.1-s0.mp3",
+            "size": 723400
+          },
+          "fr": {
+            "hash": "f5e2d961503d",
+            "file": "/audio/fr/lm-m.1.1-s0.mp3",
+            "size": 737036
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "e23b59ba8bbd",
+            "file": "/audio/en/lm-m.1.1-s1.mp3",
+            "size": 641271
+          },
+          "fr": {
+            "hash": "81e723489167",
+            "file": "/audio/fr/lm-m.1.1-s1.mp3",
+            "size": 710547
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "c0bf7632d1ca",
+            "file": "/audio/en/lm-m.1.1-s2.mp3",
+            "size": 497075
+          },
+          "fr": {
+            "hash": "bf66d231803d",
+            "file": "/audio/fr/lm-m.1.1-s2.mp3",
+            "size": 522779
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "6cba0287075d",
+            "file": "/audio/en/lm-m.1.1-s3.mp3",
+            "size": 420588
+          },
+          "fr": {
+            "hash": "99f1e81117c1",
+            "file": "/audio/fr/lm-m.1.1-s3.mp3",
+            "size": 476229
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "42b5098a145e",
+            "file": "/audio/en/lm-m.1.1-s4.mp3",
+            "size": 508516
+          },
+          "fr": {
+            "hash": "8a42eef9ea41",
+            "file": "/audio/fr/lm-m.1.1-s4.mp3",
+            "size": 576853
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "814258c32936",
+            "file": "/audio/en/lm-m.1.1-s5.mp3",
+            "size": 585473
+          },
+          "fr": {
+            "hash": "53323689b2c8",
+            "file": "/audio/fr/lm-m.1.1-s5.mp3",
+            "size": 670423
+          }
+        }
+      }
+    },
+    "lm-m.1.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "55c50ba34424",
+            "file": "/audio/en/lm-m.1.2-s0.mp3",
+            "size": 619798
+          },
+          "fr": {
+            "hash": "36b748e6bffc",
+            "file": "/audio/fr/lm-m.1.2-s0.mp3",
+            "size": 648480
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "3d9a53ee875c",
+            "file": "/audio/en/lm-m.1.2-s1.mp3",
+            "size": 550051
+          },
+          "fr": {
+            "hash": "bfce92827fa9",
+            "file": "/audio/fr/lm-m.1.2-s1.mp3",
+            "size": 607729
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "da81bc90b049",
+            "file": "/audio/en/lm-m.1.2-s2.mp3",
+            "size": 552872
+          },
+          "fr": {
+            "hash": "b62b0d5dd547",
+            "file": "/audio/fr/lm-m.1.2-s2.mp3",
+            "size": 608827
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "c1c8a9ec3fd9",
+            "file": "/audio/en/lm-m.1.2-s3.mp3",
+            "size": 543155
+          },
+          "fr": {
+            "hash": "a007b45ec5d0",
+            "file": "/audio/fr/lm-m.1.2-s3.mp3",
+            "size": 556164
+          }
+        }
+      }
+    },
+    "lm-m.1.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "8c3f6ab54d9e",
+            "file": "/audio/en/lm-m.1.3-s0.mp3",
+            "size": 742678
+          },
+          "fr": {
+            "hash": "8e7a35002c6b",
+            "file": "/audio/fr/lm-m.1.3-s0.mp3",
+            "size": 842048
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "9a99b6bebfca",
+            "file": "/audio/en/lm-m.1.3-s1.mp3",
+            "size": 629986
+          },
+          "fr": {
+            "hash": "0306454502de",
+            "file": "/audio/fr/lm-m.1.3-s1.mp3",
+            "size": 666035
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "9195a11f1936",
+            "file": "/audio/en/lm-m.1.3-s2.mp3",
+            "size": 577950
+          },
+          "fr": {
+            "hash": "9dfd6f570e9e",
+            "file": "/audio/fr/lm-m.1.3-s2.mp3",
+            "size": 640957
+          }
+        }
+      }
+    },
+    "lm-m.1.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "9bcc0761040c",
+            "file": "/audio/en/lm-m.1.4-s0.mp3",
+            "size": 746596
+          },
+          "fr": {
+            "hash": "e388e50aefd0",
+            "file": "/audio/fr/lm-m.1.4-s0.mp3",
+            "size": 837346
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "5e2a27016799",
+            "file": "/audio/en/lm-m.1.4-s1.mp3",
+            "size": 497388
+          },
+          "fr": {
+            "hash": "c3e3edadecb8",
+            "file": "/audio/fr/lm-m.1.4-s1.mp3",
+            "size": 570113
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "ddd273eec686",
+            "file": "/audio/en/lm-m.1.4-s2.mp3",
+            "size": 605535
+          },
+          "fr": {
+            "hash": "c190ebfa539c",
+            "file": "/audio/fr/lm-m.1.4-s2.mp3",
+            "size": 674655
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "91028dee4d9f",
+            "file": "/audio/en/lm-m.1.4-s3.mp3",
+            "size": 602400
+          },
+          "fr": {
+            "hash": "46908ad66f3f",
+            "file": "/audio/fr/lm-m.1.4-s3.mp3",
+            "size": 638449
+          }
+        }
+      }
+    },
+    "lm-m.2.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "3a14a736099c",
+            "file": "/audio/en/lm-m.2.1-s0.mp3",
+            "size": 880605
+          },
+          "fr": {
+            "hash": "10a7e025d3e5",
+            "file": "/audio/fr/lm-m.2.1-s0.mp3",
+            "size": 975899
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "423f771cc95d",
+            "file": "/audio/en/lm-m.2.1-s1.mp3",
+            "size": 740327
+          },
+          "fr": {
+            "hash": "0ca6d6ae7790",
+            "file": "/audio/fr/lm-m.2.1-s1.mp3",
+            "size": 805058
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "28972829ea86",
+            "file": "/audio/en/lm-m.2.1-s2.mp3",
+            "size": 720265
+          },
+          "fr": {
+            "hash": "81c28a3bd0ba",
+            "file": "/audio/fr/lm-m.2.1-s2.mp3",
+            "size": 760232
+          }
+        }
+      }
+    },
+    "lm-m.2.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "20e28bd3a9f1",
+            "file": "/audio/en/lm-m.2.2-s0.mp3",
+            "size": 837346
+          },
+          "fr": {
+            "hash": "8d6fd39c2437",
+            "file": "/audio/fr/lm-m.2.2-s0.mp3",
+            "size": 890636
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "a4b0fe3df041",
+            "file": "/audio/en/lm-m.2.2-s1.mp3",
+            "size": 1001134
+          },
+          "fr": {
+            "hash": "43d9594fa793",
+            "file": "/audio/fr/lm-m.2.2-s1.mp3",
+            "size": 1094234
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "61e940e0e248",
+            "file": "/audio/en/lm-m.2.2-s2.mp3",
+            "size": 745969
+          },
+          "fr": {
+            "hash": "acfb57914c60",
+            "file": "/audio/fr/lm-m.2.2-s2.mp3",
+            "size": 783899
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "4a548c6693d0",
+            "file": "/audio/en/lm-m.2.2-s3.mp3",
+            "size": 590489
+          },
+          "fr": {
+            "hash": "dbca9a339a02",
+            "file": "/audio/fr/lm-m.2.2-s3.mp3",
+            "size": 638136
+          }
+        }
+      }
+    },
+    "lm-m.2.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "b40cadaa6cef",
+            "file": "/audio/en/lm-m.2.3-s0.mp3",
+            "size": 760389
+          },
+          "fr": {
+            "hash": "3cc22396fa8d",
+            "file": "/audio/fr/lm-m.2.3-s0.mp3",
+            "size": 801454
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "4506b9016905",
+            "file": "/audio/en/lm-m.2.3-s1.mp3",
+            "size": 804745
+          },
+          "fr": {
+            "hash": "f6756c7941c3",
+            "file": "/audio/fr/lm-m.2.3-s1.mp3",
+            "size": 906466
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "50f329c611b5",
+            "file": "/audio/en/lm-m.2.3-s2.mp3",
+            "size": 756314
+          },
+          "fr": {
+            "hash": "acee6eaa6b7b",
+            "file": "/audio/fr/lm-m.2.3-s2.mp3",
+            "size": 798632
+          }
+        }
+      }
+    },
+    "lm-m.1.5": {
+      "type": "video",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "2c12eb1e19a8",
+        "file": "/audio/en/lm-m.1.5.mp3",
+        "size": 507733
+      },
+      "fr": {
+        "hash": "2e7cfac65434",
+        "file": "/audio/fr/lm-m.1.5.mp3",
+        "size": 580458
+      }
+    },
+    "lm-m.3.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "26e1713f5a9f",
+            "file": "/audio/en/lm-m.3.1-s0.mp3",
+            "size": 739230
+          },
+          "fr": {
+            "hash": "df68e64fbf66",
+            "file": "/audio/fr/lm-m.3.1-s0.mp3",
+            "size": 816187
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "b6bb124ce882",
+            "file": "/audio/en/lm-m.3.1-s1.mp3",
+            "size": 853176
+          },
+          "fr": {
+            "hash": "a3a44954795d",
+            "file": "/audio/fr/lm-m.3.1-s1.mp3",
+            "size": 889225
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "61e6c5f2c22c",
+            "file": "/audio/en/lm-m.3.1-s2.mp3",
+            "size": 782175
+          },
+          "fr": {
+            "hash": "d3bf36b20823",
+            "file": "/audio/fr/lm-m.3.1-s2.mp3",
+            "size": 838443
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "20c0339965bc",
+            "file": "/audio/en/lm-m.3.1-s3.mp3",
+            "size": 791109
+          },
+          "fr": {
+            "hash": "cc2b8be93077",
+            "file": "/audio/fr/lm-m.3.1-s3.mp3",
+            "size": 778884
+          }
+        }
+      }
+    },
+    "lm-m.3.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "c921c52666c1",
+            "file": "/audio/en/lm-m.3.2-s0.mp3",
+            "size": 1006776
+          },
+          "fr": {
+            "hash": "efd2d274abe6",
+            "file": "/audio/fr/lm-m.3.2-s0.mp3",
+            "size": 1071664
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "35d45a4a6aaa",
+            "file": "/audio/en/lm-m.3.2-s1.mp3",
+            "size": 675752
+          },
+          "fr": {
+            "hash": "f6cbc883183b",
+            "file": "/audio/fr/lm-m.3.2-s1.mp3",
+            "size": 781862
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "870f437e4d56",
+            "file": "/audio/en/lm-m.3.2-s2.mp3",
+            "size": 749104
+          },
+          "fr": {
+            "hash": "d7a893d31ccb",
+            "file": "/audio/fr/lm-m.3.2-s2.mp3",
+            "size": 834838
+          }
+        }
+      }
+    },
+    "lm-m.3.3": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "2c27868a20f4",
+            "file": "/audio/en/lm-m.3.3-s0.mp3",
+            "size": 629829
+          },
+          "fr": {
+            "hash": "5d96e36c1d96",
+            "file": "/audio/fr/lm-m.3.3-s0.mp3",
+            "size": 711645
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "0808c0eeedcb",
+            "file": "/audio/en/lm-m.3.3-s1.mp3",
+            "size": 895024
+          },
+          "fr": {
+            "hash": "75c8e6af52d3",
+            "file": "/audio/fr/lm-m.3.3-s1.mp3",
+            "size": 937186
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "e172680e7eb1",
+            "file": "/audio/en/lm-m.3.3-s2.mp3",
+            "size": 813992
+          },
+          "fr": {
+            "hash": "1dc302342dd5",
+            "file": "/audio/fr/lm-m.3.3-s2.mp3",
+            "size": 931857
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "9a159c7afc48",
+            "file": "/audio/en/lm-m.3.3-s3.mp3",
+            "size": 742051
+          },
+          "fr": {
+            "hash": "34f9f4121c1b",
+            "file": "/audio/fr/lm-m.3.3-s3.mp3",
+            "size": 811798
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "81f9c656d18c",
+            "file": "/audio/en/lm-m.3.3-s4.mp3",
+            "size": 773868
+          },
+          "fr": {
+            "hash": "0f58c2572257",
+            "file": "/audio/fr/lm-m.3.3-s4.mp3",
+            "size": 801140
+          }
+        }
+      }
+    },
+    "lm-m.4.1": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "116a09ec4557",
+            "file": "/audio/en/lm-m.4.1-s0.mp3",
+            "size": 832017
+          },
+          "fr": {
+            "hash": "e8570294637a",
+            "file": "/audio/fr/lm-m.4.1-s0.mp3",
+            "size": 1003641
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "35d53aa3496f",
+            "file": "/audio/en/lm-m.4.1-s1.mp3",
+            "size": 747067
+          },
+          "fr": {
+            "hash": "70782094569a",
+            "file": "/audio/fr/lm-m.4.1-s1.mp3",
+            "size": 845653
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "bd13589e48d7",
+            "file": "/audio/en/lm-m.4.1-s2.mp3",
+            "size": 784996
+          },
+          "fr": {
+            "hash": "c2ffd1b3cf67",
+            "file": "/audio/fr/lm-m.4.1-s2.mp3",
+            "size": 833741
+          }
+        }
+      }
+    },
+    "lm-m.4.2": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "748d8d48f13c",
+            "file": "/audio/en/lm-m.4.2-s0.mp3",
+            "size": 781078
+          },
+          "fr": {
+            "hash": "a86f41edbfd9",
+            "file": "/audio/fr/lm-m.4.2-s0.mp3",
+            "size": 831233
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "cace90ac4b07",
+            "file": "/audio/en/lm-m.4.2-s1.mp3",
+            "size": 756000
+          },
+          "fr": {
+            "hash": "d2e671111774",
+            "file": "/audio/fr/lm-m.4.2-s1.mp3",
+            "size": 824494
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "0b43cc4b28a4",
+            "file": "/audio/en/lm-m.4.2-s2.mp3",
+            "size": 663527
+          },
+          "fr": {
+            "hash": "454a2f833fd4",
+            "file": "/audio/fr/lm-m.4.2-s2.mp3",
+            "size": 799729
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "7d98dfdef7c9",
+            "file": "/audio/en/lm-m.4.2-s3.mp3",
+            "size": 736722
+          },
+          "fr": {
+            "hash": "f28e7340c9b6",
+            "file": "/audio/fr/lm-m.4.2-s3.mp3",
+            "size": 775749
+          }
+        }
+      }
+    },
+    "lm-m.4.3": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "090f047c8e7d",
+            "file": "/audio/en/lm-m.4.3-s0.mp3",
+            "size": 849414
+          },
+          "fr": {
+            "hash": "54ee6498e1d7",
+            "file": "/audio/fr/lm-m.4.3-s0.mp3",
+            "size": 952232
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "4f1d30676ac2",
+            "file": "/audio/en/lm-m.4.3-s1.mp3",
+            "size": 747067
+          },
+          "fr": {
+            "hash": "3850561ac789",
+            "file": "/audio/fr/lm-m.4.3-s1.mp3",
+            "size": 812268
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "9c11c91b2421",
+            "file": "/audio/en/lm-m.4.3-s2.mp3",
+            "size": 815873
+          },
+          "fr": {
+            "hash": "64eb034643ca",
+            "file": "/audio/fr/lm-m.4.3-s2.mp3",
+            "size": 849571
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "c73136f20e18",
+            "file": "/audio/en/lm-m.4.3-s3.mp3",
+            "size": 698636
+          },
+          "fr": {
+            "hash": "fadc8a66fe13",
+            "file": "/audio/fr/lm-m.4.3-s3.mp3",
+            "size": 747380
+          }
+        }
+      }
+    },
+    "lm-m.4.4": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "e2fb19f6ada4",
+            "file": "/audio/en/lm-m.4.4-s0.mp3",
+            "size": 752396
+          },
+          "fr": {
+            "hash": "029a5fc8dd76",
+            "file": "/audio/fr/lm-m.4.4-s0.mp3",
+            "size": 849885
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "c6af92468e3a",
+            "file": "/audio/en/lm-m.4.4-s1.mp3",
+            "size": 1002074
+          },
+          "fr": {
+            "hash": "b5166abc11f2",
+            "file": "/audio/fr/lm-m.4.4-s1.mp3",
+            "size": 1041258
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "9e672aaca41e",
+            "file": "/audio/en/lm-m.4.4-s2.mp3",
+            "size": 719011
+          },
+          "fr": {
+            "hash": "67bfc751d5f8",
+            "file": "/audio/fr/lm-m.4.4-s2.mp3",
+            "size": 748477
+          }
+        }
+      }
+    },
+    "lm-m.5.1": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "7fc718a9820e",
+            "file": "/audio/en/lm-m.5.1-s0.mp3",
+            "size": 778257
+          },
+          "fr": {
+            "hash": "59c90f8bda02",
+            "file": "/audio/fr/lm-m.5.1-s0.mp3",
+            "size": 869633
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "63dfdde7c5a2",
+            "file": "/audio/en/lm-m.5.1-s1.mp3",
+            "size": 751612
+          },
+          "fr": {
+            "hash": "db1ff7a1c76b",
+            "file": "/audio/fr/lm-m.5.1-s1.mp3",
+            "size": 892203
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "28e5b32c62c2",
+            "file": "/audio/en/lm-m.5.1-s2.mp3",
+            "size": 738446
+          },
+          "fr": {
+            "hash": "c4743c577e0c",
+            "file": "/audio/fr/lm-m.5.1-s2.mp3",
+            "size": 874178
+          }
+        }
+      }
+    },
+    "lm-m.5.2": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "9da13dcbcbe7",
+            "file": "/audio/en/lm-m.5.2-s0.mp3",
+            "size": 1619452
+          },
+          "fr": {
+            "hash": "e9ed30e34b84",
+            "file": "/audio/fr/lm-m.5.2-s0.mp3",
+            "size": 1724778
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "84b8fac2ef80",
+            "file": "/audio/en/lm-m.5.2-s1.mp3",
+            "size": 866655
+          },
+          "fr": {
+            "hash": "1e27ac1e0964",
+            "file": "/audio/fr/lm-m.5.2-s1.mp3",
+            "size": 892830
+          }
+        }
+      }
+    },
+    "lm-m.5.3": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "4d14532816fe",
+            "file": "/audio/en/lm-m.5.3-s0.mp3",
+            "size": 865558
+          },
+          "fr": {
+            "hash": "72c9731c0e90",
+            "file": "/audio/fr/lm-m.5.3-s0.mp3",
+            "size": 951292
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "0ec73e57d2d2",
+            "file": "/audio/en/lm-m.5.3-s1.mp3",
+            "size": 1051132
+          },
+          "fr": {
+            "hash": "8ad6c66d9756",
+            "file": "/audio/fr/lm-m.5.3-s1.mp3",
+            "size": 1177303
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "bc3e5d814ca2",
+            "file": "/audio/en/lm-m.5.3-s2.mp3",
+            "size": 746283
+          },
+          "fr": {
+            "hash": "586a2113164a",
+            "file": "/audio/fr/lm-m.5.3-s2.mp3",
+            "size": 804275
+          }
+        }
+      }
+    },
+    "lm-m.1.6": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "9199059d5721",
+        "file": "/audio/en/lm-m.1.6.mp3",
+        "size": 176082
+      },
+      "fr": {
+        "hash": "0af67913b447",
+        "file": "/audio/fr/lm-m.1.6.mp3",
+        "size": 186113
+      }
+    },
+    "lm-m.2.4": {
+      "type": "video",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "5d3be102f88a",
+        "file": "/audio/en/lm-m.2.4.mp3",
+        "size": 54142
+      },
+      "fr": {
+        "hash": "55c4d3496f7e",
+        "file": "/audio/fr/lm-m.2.4.mp3",
+        "size": 42701
+      }
+    },
+    "lm-m.3.4": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "ba113329ebae",
+        "file": "/audio/en/lm-m.3.4.mp3",
+        "size": 54926
+      },
+      "fr": {
+        "hash": "219591bbd91c",
+        "file": "/audio/fr/lm-m.3.4.mp3",
+        "size": 54142
+      }
+    },
+    "lm-m.4.5": {
+      "type": "video",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "35addbdbf514",
+        "file": "/audio/en/lm-m.4.5.mp3",
+        "size": 58061
+      },
+      "fr": {
+        "hash": "dbb34c4b18e9",
+        "file": "/audio/fr/lm-m.4.5.mp3",
+        "size": 52105
+      }
+    },
+    "lm-m.5.4": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "044486c215f7",
+        "file": "/audio/en/lm-m.5.4.mp3",
+        "size": 55240
+      },
+      "fr": {
+        "hash": "8ebf3392480f",
+        "file": "/audio/fr/lm-m.5.4.mp3",
+        "size": 48814
+      }
+    },
+    "l2-2.1.1": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "8c0fbd9c60de",
+        "file": "/audio/en/l2-2.1.1.mp3",
+        "size": 2771138
+      },
+      "fr": {
+        "hash": "1b3379319ff3",
+        "file": "/audio/fr/l2-2.1.1.mp3",
+        "size": 2522244
+      }
+    },
+    "l2-2.1.2": {
+      "type": "article",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "4181a9304ffb",
+        "file": "/audio/en/l2-2.1.2.mp3",
+        "size": 1164138
+      },
+      "fr": {
+        "hash": "ed28cfeae7f1",
+        "file": "/audio/fr/l2-2.1.2.mp3",
+        "size": 1265858
+      }
+    },
+    "l2-2.1.3": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "150b9c10aaed",
+            "file": "/audio/en/l2-2.1.3-s0.mp3",
+            "size": 859132
+          },
+          "fr": {
+            "hash": "64fc1ac45b30",
+            "file": "/audio/fr/l2-2.1.3-s0.mp3",
+            "size": 1066178
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "8225300e3723",
+            "file": "/audio/en/l2-2.1.3-s1.mp3",
+            "size": 2236360
+          },
+          "fr": {
+            "hash": "b041c0c4fbdf",
+            "file": "/audio/fr/l2-2.1.3-s1.mp3",
+            "size": 2373816
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "9588e6f12c61",
+            "file": "/audio/en/l2-2.1.3-s2.mp3",
+            "size": 661333
+          },
+          "fr": {
+            "hash": "f8530fdbba99",
+            "file": "/audio/fr/l2-2.1.3-s2.mp3",
+            "size": 700046
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "b9790c33962b",
+            "file": "/audio/en/l2-2.1.3-s3.mp3",
+            "size": 1112415
+          },
+          "fr": {
+            "hash": "1ac118c58518",
+            "file": "/audio/fr/l2-2.1.3-s3.mp3",
+            "size": 1328552
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "1951c5f09041",
+            "file": "/audio/en/l2-2.1.3-s4.mp3",
+            "size": 1073388
+          },
+          "fr": {
+            "hash": "bea84f1a709e",
+            "file": "/audio/fr/l2-2.1.3-s4.mp3",
+            "size": 1252536
+          }
+        }
+      }
+    },
+    "l2-2.1.4": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "af44080485ef",
+            "file": "/audio/en/l2-2.1.4-s0.mp3",
+            "size": 260092
+          },
+          "fr": {
+            "hash": "150623acb760",
+            "file": "/audio/fr/l2-2.1.4-s0.mp3",
+            "size": 286267
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "83e0ec182614",
+            "file": "/audio/en/l2-2.1.4-s1.mp3",
+            "size": 360089
+          },
+          "fr": {
+            "hash": "3885233441a7",
+            "file": "/audio/fr/l2-2.1.4-s1.mp3",
+            "size": 396608
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "0881b937d320",
+            "file": "/audio/en/l2-2.1.4-s2.mp3",
+            "size": 369806
+          },
+          "fr": {
+            "hash": "947758caa906",
+            "file": "/audio/fr/l2-2.1.4-s2.mp3",
+            "size": 401623
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "60cdb4634f4e",
+            "file": "/audio/en/l2-2.1.4-s3.mp3",
+            "size": 352565
+          },
+          "fr": {
+            "hash": "2f33a4616bbb",
+            "file": "/audio/fr/l2-2.1.4-s3.mp3",
+            "size": 391749
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "20a1bcdeec49",
+            "file": "/audio/en/l2-2.1.4-s4.mp3",
+            "size": 429679
+          },
+          "fr": {
+            "hash": "b868bbf0e6b0",
+            "file": "/audio/fr/l2-2.1.4-s4.mp3",
+            "size": 544252
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "fa6530a51474",
+            "file": "/audio/en/l2-2.1.4-s5.mp3",
+            "size": 439710
+          },
+          "fr": {
+            "hash": "92be5caa8767",
+            "file": "/audio/fr/l2-2.1.4-s5.mp3",
+            "size": 454443
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "38960d515078",
+            "file": "/audio/en/l2-2.1.4-s6.mp3",
+            "size": 247710
+          },
+          "fr": {
+            "hash": "19aa9fba7ca1",
+            "file": "/audio/fr/l2-2.1.4-s6.mp3",
+            "size": 265107
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "1317bc6a3650",
+            "file": "/audio/en/l2-2.1.4-s7.mp3",
+            "size": 390495
+          },
+          "fr": {
+            "hash": "72ecb09b7340",
+            "file": "/audio/fr/l2-2.1.4-s7.mp3",
+            "size": 376232
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "08fcb3802395",
+            "file": "/audio/en/l2-2.1.4-s8.mp3",
+            "size": 398018
+          },
+          "fr": {
+            "hash": "ceacaa79d528",
+            "file": "/audio/fr/l2-2.1.4-s8.mp3",
+            "size": 424977
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "372902698568",
+            "file": "/audio/en/l2-2.1.4-s9.mp3",
+            "size": 322159
+          },
+          "fr": {
+            "hash": "048474290001",
+            "file": "/audio/fr/l2-2.1.4-s9.mp3",
+            "size": 361656
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "ff275732d178",
+            "file": "/audio/en/l2-2.1.4-s10.mp3",
+            "size": 268399
+          },
+          "fr": {
+            "hash": "9efec97318d3",
+            "file": "/audio/fr/l2-2.1.4-s10.mp3",
+            "size": 285953
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "f719919ba53c",
+            "file": "/audio/en/l2-2.1.4-s11.mp3",
+            "size": 340027
+          },
+          "fr": {
+            "hash": "0fa1258df6e9",
+            "file": "/audio/fr/l2-2.1.4-s11.mp3",
+            "size": 386734
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "d078077fa64e",
+            "file": "/audio/en/l2-2.1.4-s12.mp3",
+            "size": 334384
+          },
+          "fr": {
+            "hash": "2f39b10da4ab",
+            "file": "/audio/fr/l2-2.1.4-s12.mp3",
+            "size": 359148
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "2996416dcfb8",
+            "file": "/audio/en/l2-2.1.4-s13.mp3",
+            "size": 304291
+          },
+          "fr": {
+            "hash": "a80acc422c61",
+            "file": "/audio/fr/l2-2.1.4-s13.mp3",
+            "size": 312441
+          }
+        },
+        "14": {
+          "en": {
+            "hash": "16cbcdb651f9",
+            "file": "/audio/en/l2-2.1.4-s14.mp3",
+            "size": 206802
+          },
+          "fr": {
+            "hash": "be39b56a7da5",
+            "file": "/audio/fr/l2-2.1.4-s14.mp3",
+            "size": 249747
+          }
+        },
+        "15": {
+          "en": {
+            "hash": "c49218e138de",
+            "file": "/audio/en/l2-2.1.4-s15.mp3",
+            "size": 772928
+          },
+          "fr": {
+            "hash": "6c3db7df2bf1",
+            "file": "/audio/fr/l2-2.1.4-s15.mp3",
+            "size": 815089
+          }
+        }
+      }
+    },
+    "l2-2.1.5": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "50a8d4899e74",
+            "file": "/audio/en/l2-2.1.5-s0.mp3",
+            "size": 702554
+          },
+          "fr": {
+            "hash": "b2e062536051",
+            "file": "/audio/fr/l2-2.1.5-s0.mp3",
+            "size": 864147
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "b7e6d4289d45",
+            "file": "/audio/en/l2-2.1.5-s1.mp3",
+            "size": 599736
+          },
+          "fr": {
+            "hash": "2c0655e91fc8",
+            "file": "/audio/fr/l2-2.1.5-s1.mp3",
+            "size": 767756
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "41d0c0a5dc3e",
+            "file": "/audio/en/l2-2.1.5-s2.mp3",
+            "size": 579360
+          },
+          "fr": {
+            "hash": "45f9404ad1fb",
+            "file": "/audio/fr/l2-2.1.5-s2.mp3",
+            "size": 651302
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "b12187313718",
+            "file": "/audio/en/l2-2.1.5-s3.mp3",
+            "size": 823396
+          },
+          "fr": {
+            "hash": "c84ca752a8c1",
+            "file": "/audio/fr/l2-2.1.5-s3.mp3",
+            "size": 870574
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "10de10781240",
+            "file": "/audio/en/l2-2.1.5-s4.mp3",
+            "size": 1260843
+          },
+          "fr": {
+            "hash": "908f566e16db",
+            "file": "/audio/fr/l2-2.1.5-s4.mp3",
+            "size": 1444849
+          }
+        }
+      }
+    },
+    "l2-2.1.6": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "95070764e314",
+            "file": "/audio/en/l2-2.1.6-s0.mp3",
+            "size": 519174
+          },
+          "fr": {
+            "hash": "33294c311bed",
+            "file": "/audio/fr/l2-2.1.6-s0.mp3",
+            "size": 578263
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "61105a00e738",
+            "file": "/audio/en/l2-2.1.6-s1.mp3",
+            "size": 1054110
+          },
+          "fr": {
+            "hash": "3593fd0ed582",
+            "file": "/audio/fr/l2-2.1.6-s1.mp3",
+            "size": 1178400
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "ba4bffed4c3f",
+            "file": "/audio/en/l2-2.1.6-s2.mp3",
+            "size": 441434
+          },
+          "fr": {
+            "hash": "4b1699b0b97d",
+            "file": "/audio/fr/l2-2.1.6-s2.mp3",
+            "size": 495978
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "1f97931db9bc",
+            "file": "/audio/en/l2-2.1.6-s3.mp3",
+            "size": 707726
+          },
+          "fr": {
+            "hash": "02c580e8e638",
+            "file": "/audio/fr/l2-2.1.6-s3.mp3",
+            "size": 808977
+          }
+        }
+      }
+    },
+    "l2-2.1.7": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "279737de719a",
+            "file": "/audio/en/l2-2.1.7-s0.mp3",
+            "size": 39566
+          },
+          "fr": {
+            "hash": "aabe26c65d7a",
+            "file": "/audio/fr/l2-2.1.7-s0.mp3",
+            "size": 48500
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "3d5fdbc8dadf",
+            "file": "/audio/en/l2-2.1.7-s1.mp3",
+            "size": 307739
+          },
+          "fr": {
+            "hash": "4a26ddb53bcb",
+            "file": "/audio/fr/l2-2.1.7-s1.mp3",
+            "size": 333600
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "62152ce5f43c",
+            "file": "/audio/en/l2-2.1.7-s2.mp3",
+            "size": 376702
+          },
+          "fr": {
+            "hash": "137f385c5273",
+            "file": "/audio/fr/l2-2.1.7-s2.mp3",
+            "size": 490805
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "b1e50844fac9",
+            "file": "/audio/en/l2-2.1.7-s3.mp3",
+            "size": 378740
+          },
+          "fr": {
+            "hash": "03e86088fbfc",
+            "file": "/audio/fr/l2-2.1.7-s3.mp3",
+            "size": 393160
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "e0d3cf0c7da2",
+            "file": "/audio/en/l2-2.1.7-s4.mp3",
+            "size": 380621
+          },
+          "fr": {
+            "hash": "ec3495b992bc",
+            "file": "/audio/fr/l2-2.1.7-s4.mp3",
+            "size": 443628
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "21a28a0379b6",
+            "file": "/audio/en/l2-2.1.7-s5.mp3",
+            "size": 200689
+          },
+          "fr": {
+            "hash": "b4d52c411664",
+            "file": "/audio/fr/l2-2.1.7-s5.mp3",
+            "size": 232977
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "5d3f675edb3b",
+            "file": "/audio/en/l2-2.1.7-s6.mp3",
+            "size": 1134671
+          },
+          "fr": {
+            "hash": "33b58ea062bb",
+            "file": "/audio/fr/l2-2.1.7-s6.mp3",
+            "size": 1214606
+          }
+        }
+      }
+    },
+    "l2-2.2.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "2f38249fefda",
+            "file": "/audio/en/l2-2.2.1-s0.mp3",
+            "size": 81101
+          },
+          "fr": {
+            "hash": "82032f1d2961",
+            "file": "/audio/fr/l2-2.2.1-s0.mp3",
+            "size": 101163
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "68738ec79aa0",
+            "file": "/audio/en/l2-2.2.1-s1.mp3",
+            "size": 726691
+          },
+          "fr": {
+            "hash": "cb0ad6253e86",
+            "file": "/audio/fr/l2-2.2.1-s1.mp3",
+            "size": 821829
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "80928f60a3ac",
+            "file": "/audio/en/l2-2.2.1-s2.mp3",
+            "size": 591899
+          },
+          "fr": {
+            "hash": "a084bd905599",
+            "file": "/audio/fr/l2-2.2.1-s2.mp3",
+            "size": 653809
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "b39b633913ca",
+            "file": "/audio/en/l2-2.2.1-s3.mp3",
+            "size": 659922
+          },
+          "fr": {
+            "hash": "a75ca151a93b",
+            "file": "/audio/fr/l2-2.2.1-s3.mp3",
+            "size": 734841
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "ab4ad7a1d04f",
+            "file": "/audio/en/l2-2.2.1-s4.mp3",
+            "size": 560082
+          },
+          "fr": {
+            "hash": "b22429de8905",
+            "file": "/audio/fr/l2-2.2.1-s4.mp3",
+            "size": 613842
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "d000f9c9f127",
+            "file": "/audio/en/l2-2.2.1-s5.mp3",
+            "size": 627791
+          },
+          "fr": {
+            "hash": "56ea7bb8ef5e",
+            "file": "/audio/fr/l2-2.2.1-s5.mp3",
+            "size": 738446
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "db164178e35d",
+            "file": "/audio/en/l2-2.2.1-s6.mp3",
+            "size": 395667
+          },
+          "fr": {
+            "hash": "dbf4a8a2babc",
+            "file": "/audio/fr/l2-2.2.1-s6.mp3",
+            "size": 437516
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "29d22de3c73f",
+            "file": "/audio/en/l2-2.2.1-s7.mp3",
+            "size": 629829
+          },
+          "fr": {
+            "hash": "7ea1e642585e",
+            "file": "/audio/fr/l2-2.2.1-s7.mp3",
+            "size": 718071
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "ad91da7cb3d4",
+            "file": "/audio/en/l2-2.2.1-s8.mp3",
+            "size": 519958
+          },
+          "fr": {
+            "hash": "08d84bc2d143",
+            "file": "/audio/fr/l2-2.2.1-s8.mp3",
+            "size": 569016
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "2a045bb5abc2",
+            "file": "/audio/en/l2-2.2.1-s9.mp3",
+            "size": 831547
+          },
+          "fr": {
+            "hash": "bee26d9a9fa9",
+            "file": "/audio/fr/l2-2.2.1-s9.mp3",
+            "size": 1023233
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "dfa8b5c2661f",
+            "file": "/audio/en/l2-2.2.1-s10.mp3",
+            "size": 858818
+          },
+          "fr": {
+            "hash": "e22a5a2c86f4",
+            "file": "/audio/fr/l2-2.2.1-s10.mp3",
+            "size": 859602
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "fcf5b3e9ae24",
+            "file": "/audio/en/l2-2.2.1-s11.mp3",
+            "size": 789228
+          },
+          "fr": {
+            "hash": "ccf883b2640b",
+            "file": "/audio/fr/l2-2.2.1-s11.mp3",
+            "size": 842361
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "3f45d28e7269",
+            "file": "/audio/en/l2-2.2.1-s12.mp3",
+            "size": 633120
+          },
+          "fr": {
+            "hash": "3f8a9907630b",
+            "file": "/audio/fr/l2-2.2.1-s12.mp3",
+            "size": 663997
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "5571c668c86c",
+            "file": "/audio/en/l2-2.2.1-s13.mp3",
+            "size": 792833
+          },
+          "fr": {
+            "hash": "95527fe73f7c",
+            "file": "/audio/fr/l2-2.2.1-s13.mp3",
+            "size": 905839
+          }
+        },
+        "14": {
+          "en": {
+            "hash": "06fc1e923a14",
+            "file": "/audio/en/l2-2.2.1-s14.mp3",
+            "size": 649891
+          },
+          "fr": {
+            "hash": "d41efbe2928e",
+            "file": "/audio/fr/l2-2.2.1-s14.mp3",
+            "size": 733744
+          }
+        },
+        "15": {
+          "en": {
+            "hash": "edec6d0bd0b9",
+            "file": "/audio/en/l2-2.2.1-s15.mp3",
+            "size": 1037182
+          },
+          "fr": {
+            "hash": "e5e2a8c76782",
+            "file": "/audio/fr/l2-2.2.1-s15.mp3",
+            "size": 1075112
+          }
+        },
+        "16": {
+          "en": {
+            "hash": "038271958fec",
+            "file": "/audio/en/l2-2.2.1-s16.mp3",
+            "size": 572621
+          },
+          "fr": {
+            "hash": "bf04c9d6bac0",
+            "file": "/audio/fr/l2-2.2.1-s16.mp3",
+            "size": 665094
+          }
+        },
+        "17": {
+          "en": {
+            "hash": "91fba3886f83",
+            "file": "/audio/en/l2-2.2.1-s17.mp3",
+            "size": 871671
+          },
+          "fr": {
+            "hash": "c33ec302dc33",
+            "file": "/audio/fr/l2-2.2.1-s17.mp3",
+            "size": 976369
+          }
+        },
+        "18": {
+          "en": {
+            "hash": "91ea96da154f",
+            "file": "/audio/en/l2-2.2.1-s18.mp3",
+            "size": 654907
+          },
+          "fr": {
+            "hash": "bf88b057e338",
+            "file": "/audio/fr/l2-2.2.1-s18.mp3",
+            "size": 698009
+          }
+        },
+        "19": {
+          "en": {
+            "hash": "f3f8b9f89665",
+            "file": "/audio/en/l2-2.2.1-s19.mp3",
+            "size": 945963
+          },
+          "fr": {
+            "hash": "f72f93b6e084",
+            "file": "/audio/fr/l2-2.2.1-s19.mp3",
+            "size": 1084203
+          }
+        },
+        "20": {
+          "en": {
+            "hash": "72a46645535a",
+            "file": "/audio/en/l2-2.2.1-s20.mp3",
+            "size": 590802
+          },
+          "fr": {
+            "hash": "ef18c1fc881e",
+            "file": "/audio/fr/l2-2.2.1-s20.mp3",
+            "size": 655063
+          }
+        },
+        "21": {
+          "en": {
+            "hash": "c2a64d9c42a2",
+            "file": "/audio/en/l2-2.2.1-s21.mp3",
+            "size": 597385
+          },
+          "fr": {
+            "hash": "46981862bd2c",
+            "file": "/audio/fr/l2-2.2.1-s21.mp3",
+            "size": 640017
+          }
+        },
+        "22": {
+          "en": {
+            "hash": "7c99928ab6ad",
+            "file": "/audio/en/l2-2.2.1-s22.mp3",
+            "size": 584689
+          },
+          "fr": {
+            "hash": "1f0a5b226a0f",
+            "file": "/audio/fr/l2-2.2.1-s22.mp3",
+            "size": 704121
+          }
+        },
+        "23": {
+          "en": {
+            "hash": "5583e76b82c0",
+            "file": "/audio/en/l2-2.2.1-s23.mp3",
+            "size": 617447
+          },
+          "fr": {
+            "hash": "d1950f6b3222",
+            "file": "/audio/fr/l2-2.2.1-s23.mp3",
+            "size": 736565
+          }
+        },
+        "24": {
+          "en": {
+            "hash": "13da36ebd375",
+            "file": "/audio/en/l2-2.2.1-s24.mp3",
+            "size": 325294
+          },
+          "fr": {
+            "hash": "fcb99d96c5e6",
+            "file": "/audio/fr/l2-2.2.1-s24.mp3",
+            "size": 338302
+          }
+        },
+        "25": {
+          "en": {
+            "hash": "be19c5c2ef05",
+            "file": "/audio/en/l2-2.2.1-s25.mp3",
+            "size": 535631
+          },
+          "fr": {
+            "hash": "e04dd1ce257a",
+            "file": "/audio/fr/l2-2.2.1-s25.mp3",
+            "size": 627008
+          }
+        },
+        "26": {
+          "en": {
+            "hash": "cbe6f2f1fb9d",
+            "file": "/audio/en/l2-2.2.1-s26.mp3",
+            "size": 514942
+          },
+          "fr": {
+            "hash": "04cde1c66940",
+            "file": "/audio/fr/l2-2.2.1-s26.mp3",
+            "size": 606162
+          }
+        },
+        "27": {
+          "en": {
+            "hash": "ef183e04dd1e",
+            "file": "/audio/en/l2-2.2.1-s27.mp3",
+            "size": 579674
+          },
+          "fr": {
+            "hash": "b26574960a62",
+            "file": "/audio/fr/l2-2.2.1-s27.mp3",
+            "size": 672618
+          }
+        },
+        "28": {
+          "en": {
+            "hash": "5c07ac2e604f",
+            "file": "/audio/en/l2-2.2.1-s28.mp3",
+            "size": 696911
+          },
+          "fr": {
+            "hash": "3438f1750e32",
+            "file": "/audio/fr/l2-2.2.1-s28.mp3",
+            "size": 800513
+          }
+        },
+        "29": {
+          "en": {
+            "hash": "1ec123878898",
+            "file": "/audio/en/l2-2.2.1-s29.mp3",
+            "size": 764621
+          },
+          "fr": {
+            "hash": "15aae2593fc9",
+            "file": "/audio/fr/l2-2.2.1-s29.mp3",
+            "size": 895808
+          }
+        },
+        "30": {
+          "en": {
+            "hash": "acfe81f4a6fd",
+            "file": "/audio/en/l2-2.2.1-s30.mp3",
+            "size": 957405
+          },
+          "fr": {
+            "hash": "988f45c7354b",
+            "file": "/audio/fr/l2-2.2.1-s30.mp3",
+            "size": 1026525
+          }
+        },
+        "31": {
+          "en": {
+            "hash": "815808b26fd6",
+            "file": "/audio/en/l2-2.2.1-s31.mp3",
+            "size": 678574
+          },
+          "fr": {
+            "hash": "1b0dfc121fcb",
+            "file": "/audio/fr/l2-2.2.1-s31.mp3",
+            "size": 799259
+          }
+        },
+        "32": {
+          "en": {
+            "hash": "e58476ba3956",
+            "file": "/audio/en/l2-2.2.1-s32.mp3",
+            "size": 801454
+          },
+          "fr": {
+            "hash": "b9aca09e8bab",
+            "file": "/audio/fr/l2-2.2.1-s32.mp3",
+            "size": 847377
+          }
+        },
+        "33": {
+          "en": {
+            "hash": "be363ea3839f",
+            "file": "/audio/en/l2-2.2.1-s33.mp3",
+            "size": 847690
+          },
+          "fr": {
+            "hash": "93f5169b4f94",
+            "file": "/audio/fr/l2-2.2.1-s33.mp3",
+            "size": 905839
+          }
+        },
+        "34": {
+          "en": {
+            "hash": "7dfdded2b45a",
+            "file": "/audio/en/l2-2.2.1-s34.mp3",
+            "size": 569016
+          },
+          "fr": {
+            "hash": "c1ee0ff54d55",
+            "file": "/audio/fr/l2-2.2.1-s34.mp3",
+            "size": 680768
+          }
+        },
+        "35": {
+          "en": {
+            "hash": "0d028aa69670",
+            "file": "/audio/en/l2-2.2.1-s35.mp3",
+            "size": 1015710
+          },
+          "fr": {
+            "hash": "b05c6734dd76",
+            "file": "/audio/fr/l2-2.2.1-s35.mp3",
+            "size": 1093450
+          }
+        },
+        "36": {
+          "en": {
+            "hash": "5dc19b6231e7",
+            "file": "/audio/en/l2-2.2.1-s36.mp3",
+            "size": 748477
+          },
+          "fr": {
+            "hash": "80c4d37c05e6",
+            "file": "/audio/fr/l2-2.2.1-s36.mp3",
+            "size": 788915
+          }
+        },
+        "37": {
+          "en": {
+            "hash": "4abb87ef41fc",
+            "file": "/audio/en/l2-2.2.1-s37.mp3",
+            "size": 942358
+          },
+          "fr": {
+            "hash": "38775912e0c5",
+            "file": "/audio/fr/l2-2.2.1-s37.mp3",
+            "size": 1054423
+          }
+        },
+        "38": {
+          "en": {
+            "hash": "e92db62cd9cb",
+            "file": "/audio/en/l2-2.2.1-s38.mp3",
+            "size": 297081
+          },
+          "fr": {
+            "hash": "66dbabf5ceff",
+            "file": "/audio/fr/l2-2.2.1-s38.mp3",
+            "size": 303507
+          }
+        },
+        "39": {
+          "en": {
+            "hash": "bf8b9446d9f2",
+            "file": "/audio/en/l2-2.2.1-s39.mp3",
+            "size": 459458
+          },
+          "fr": {
+            "hash": "48adff29aaf8",
+            "file": "/audio/fr/l2-2.2.1-s39.mp3",
+            "size": 565098
+          }
+        },
+        "40": {
+          "en": {
+            "hash": "7a393b686cd5",
+            "file": "/audio/en/l2-2.2.1-s40.mp3",
+            "size": 908190
+          },
+          "fr": {
+            "hash": "462351b8e0e4",
+            "file": "/audio/fr/l2-2.2.1-s40.mp3",
+            "size": 972765
+          }
+        },
+        "41": {
+          "en": {
+            "hash": "8657a4624b76",
+            "file": "/audio/en/l2-2.2.1-s41.mp3",
+            "size": 732804
+          },
+          "fr": {
+            "hash": "fc55f975fcf1",
+            "file": "/audio/fr/l2-2.2.1-s41.mp3",
+            "size": 777787
+          }
+        },
+        "42": {
+          "en": {
+            "hash": "66a7c6c43091",
+            "file": "/audio/en/l2-2.2.1-s42.mp3",
+            "size": 1065865
+          },
+          "fr": {
+            "hash": "5c5fc738c8c0",
+            "file": "/audio/fr/l2-2.2.1-s42.mp3",
+            "size": 1141568
+          }
+        },
+        "43": {
+          "en": {
+            "hash": "1e0caa01e69a",
+            "file": "/audio/en/l2-2.2.1-s43.mp3",
+            "size": 130786
+          },
+          "fr": {
+            "hash": "ba454683edbb",
+            "file": "/audio/fr/l2-2.2.1-s43.mp3",
+            "size": 177806
+          }
+        }
+      }
+    },
+    "l2-2.2.2": {
+      "type": "video",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "692d6a6d99f1",
+        "file": "/audio/en/l2-2.2.2.mp3",
+        "size": 87057
+      },
+      "fr": {
+        "hash": "0542593e2d92",
+        "file": "/audio/fr/l2-2.2.2.mp3",
+        "size": 82041
+      }
+    },
+    "l2-2.2.3": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "4ad6bc8cb2cc",
+        "file": "/audio/en/l2-2.2.3.mp3",
+        "size": 1227145
+      },
+      "fr": {
+        "hash": "6f7fa1422f80",
+        "file": "/audio/fr/l2-2.2.3.mp3",
+        "size": 1352219
+      }
+    },
+    "l2-2.2.4": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "a3fd98989c31",
+        "file": "/audio/en/l2-2.2.4.mp3",
+        "size": 2146080
+      },
+      "fr": {
+        "hash": "cb3ca4033fd7",
+        "file": "/audio/fr/l2-2.2.4.mp3",
+        "size": 2009251
+      }
+    },
+    "l2-2.3.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "2a1b9a5f911d",
+            "file": "/audio/en/l2-2.3.1-s0.mp3",
+            "size": 341907
+          },
+          "fr": {
+            "hash": "5c769bb18eb2",
+            "file": "/audio/fr/l2-2.3.1-s0.mp3",
+            "size": 364791
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "14506976c432",
+            "file": "/audio/en/l2-2.3.1-s1.mp3",
+            "size": 460399
+          },
+          "fr": {
+            "hash": "4dddcbf703e5",
+            "file": "/audio/fr/l2-2.3.1-s1.mp3",
+            "size": 541744
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "92f1c52fd347",
+            "file": "/audio/en/l2-2.3.1-s2.mp3",
+            "size": 335325
+          },
+          "fr": {
+            "hash": "53e768ecf712",
+            "file": "/audio/fr/l2-2.3.1-s2.mp3",
+            "size": 351468
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "fd36ec64df1a",
+            "file": "/audio/en/l2-2.3.1-s3.mp3",
+            "size": 375605
+          },
+          "fr": {
+            "hash": "c6166ea03ffc",
+            "file": "/audio/fr/l2-2.3.1-s3.mp3",
+            "size": 379524
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "3158c1d81a0e",
+            "file": "/audio/en/l2-2.3.1-s4.mp3",
+            "size": 382972
+          },
+          "fr": {
+            "hash": "ccb71ac2f899",
+            "file": "/audio/fr/l2-2.3.1-s4.mp3",
+            "size": 389085
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "0bc362d891bc",
+            "file": "/audio/en/l2-2.3.1-s5.mp3",
+            "size": 548484
+          },
+          "fr": {
+            "hash": "517754ba4d34",
+            "file": "/audio/fr/l2-2.3.1-s5.mp3",
+            "size": 603811
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "80a312d9ccac",
+            "file": "/audio/en/l2-2.3.1-s6.mp3",
+            "size": 697538
+          },
+          "fr": {
+            "hash": "9fdd33c9ec6b",
+            "file": "/audio/fr/l2-2.3.1-s6.mp3",
+            "size": 718698
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "e1f69e2dba60",
+            "file": "/audio/en/l2-2.3.1-s7.mp3",
+            "size": 380934
+          },
+          "fr": {
+            "hash": "d74c566a0782",
+            "file": "/audio/fr/l2-2.3.1-s7.mp3",
+            "size": 430619
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "7d0320de4b16",
+            "file": "/audio/en/l2-2.3.1-s8.mp3",
+            "size": 375449
+          },
+          "fr": {
+            "hash": "490e69e9bdd0",
+            "file": "/audio/fr/l2-2.3.1-s8.mp3",
+            "size": 451778
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "353b4c4e6c85",
+            "file": "/audio/en/l2-2.3.1-s9.mp3",
+            "size": 161976
+          },
+          "fr": {
+            "hash": "6ce2d4024f29",
+            "file": "/audio/fr/l2-2.3.1-s9.mp3",
+            "size": 165267
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "a2600f8c7338",
+            "file": "/audio/en/l2-2.3.1-s10.mp3",
+            "size": 893300
+          },
+          "fr": {
+            "hash": "033beef715e3",
+            "file": "/audio/fr/l2-2.3.1-s10.mp3",
+            "size": 1015710
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "4689a4e74e7c",
+            "file": "/audio/en/l2-2.3.1-s11.mp3",
+            "size": 126240
+          },
+          "fr": {
+            "hash": "588d32a33cfa",
+            "file": "/audio/fr/l2-2.3.1-s11.mp3",
+            "size": 139406
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "1e043f4d3ef4",
+            "file": "/audio/en/l2-2.3.1-s12.mp3",
+            "size": 13705
+          },
+          "fr": {
+            "hash": "1bf0558ea987",
+            "file": "/audio/fr/l2-2.3.1-s12.mp3",
+            "size": 15116
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "93d33f95c5d6",
+            "file": "/audio/en/l2-2.3.1-s13.mp3",
+            "size": 83609
+          },
+          "fr": {
+            "hash": "81301d46c5c3",
+            "file": "/audio/fr/l2-2.3.1-s13.mp3",
+            "size": 102260
+          }
+        }
+      }
+    },
+    "l2-2.3.2": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "fb399eb5ce81",
+            "file": "/audio/en/l2-2.3.2-s0.mp3",
+            "size": 187054
+          },
+          "fr": {
+            "hash": "fb399eb5ce81",
+            "file": "/audio/fr/l2-2.3.2-s0.mp3",
+            "size": 188151
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "10877d4022df",
+            "file": "/audio/en/l2-2.3.2-s1.mp3",
+            "size": 163387
+          },
+          "fr": {
+            "hash": "10877d4022df",
+            "file": "/audio/fr/l2-2.3.2-s1.mp3",
+            "size": 155236
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "87a7fdc381e9",
+            "file": "/audio/en/l2-2.3.2-s2.mp3",
+            "size": 239089
+          },
+          "fr": {
+            "hash": "87a7fdc381e9",
+            "file": "/audio/fr/l2-2.3.2-s2.mp3",
+            "size": 210094
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "deb0917447f1",
+            "file": "/audio/en/l2-2.3.2-s3.mp3",
+            "size": 274198
+          },
+          "fr": {
+            "hash": "deb0917447f1",
+            "file": "/audio/fr/l2-2.3.2-s3.mp3",
+            "size": 286267
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "45e8356e8839",
+            "file": "/audio/en/l2-2.3.2-s4.mp3",
+            "size": 295357
+          },
+          "fr": {
+            "hash": "45e8356e8839",
+            "file": "/audio/fr/l2-2.3.2-s4.mp3",
+            "size": 278900
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "bac0df1d44df",
+            "file": "/audio/en/l2-2.3.2-s5.mp3",
+            "size": 224983
+          },
+          "fr": {
+            "hash": "bac0df1d44df",
+            "file": "/audio/fr/l2-2.3.2-s5.mp3",
+            "size": 221222
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "a29f6808f605",
+            "file": "/audio/en/l2-2.3.2-s6.mp3",
+            "size": 283759
+          },
+          "fr": {
+            "hash": "a29f6808f605",
+            "file": "/audio/fr/l2-2.3.2-s6.mp3",
+            "size": 272004
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "275a5f35cc1f",
+            "file": "/audio/en/l2-2.3.2-s7.mp3",
+            "size": 166051
+          },
+          "fr": {
+            "hash": "275a5f35cc1f",
+            "file": "/audio/fr/l2-2.3.2-s7.mp3",
+            "size": 179530
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "d40588a5318a",
+            "file": "/audio/en/l2-2.3.2-s8.mp3",
+            "size": 213542
+          },
+          "fr": {
+            "hash": "d40588a5318a",
+            "file": "/audio/fr/l2-2.3.2-s8.mp3",
+            "size": 195047
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "f7eec359a79b",
+            "file": "/audio/en/l2-2.3.2-s9.mp3",
+            "size": 245829
+          },
+          "fr": {
+            "hash": "f7eec359a79b",
+            "file": "/audio/fr/l2-2.3.2-s9.mp3",
+            "size": 248023
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "f5cca4869ff4",
+            "file": "/audio/en/l2-2.3.2-s10.mp3",
+            "size": 865715
+          },
+          "fr": {
+            "hash": "f5cca4869ff4",
+            "file": "/audio/fr/l2-2.3.2-s10.mp3",
+            "size": 837973
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "c7c10c9a529a",
+            "file": "/audio/en/l2-2.3.2-s11.mp3",
+            "size": 1040004
+          },
+          "fr": {
+            "hash": "c7c10c9a529a",
+            "file": "/audio/fr/l2-2.3.2-s11.mp3",
+            "size": 981385
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "b7d7f8be1086",
+            "file": "/audio/en/l2-2.3.2-s12.mp3",
+            "size": 1264761
+          },
+          "fr": {
+            "hash": "b7d7f8be1086",
+            "file": "/audio/fr/l2-2.3.2-s12.mp3",
+            "size": 1250812
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "535a3e926c08",
+            "file": "/audio/en/l2-2.3.2-s13.mp3",
+            "size": 106178
+          },
+          "fr": {
+            "hash": "535a3e926c08",
+            "file": "/audio/fr/l2-2.3.2-s13.mp3",
+            "size": 109313
+          }
+        },
+        "14": {
+          "en": {
+            "hash": "a06a464e04f1",
+            "file": "/audio/en/l2-2.3.2-s14.mp3",
+            "size": 95364
+          },
+          "fr": {
+            "hash": "a06a464e04f1",
+            "file": "/audio/fr/l2-2.3.2-s14.mp3",
+            "size": 113231
+          }
+        },
+        "15": {
+          "en": {
+            "hash": "4cb0c2ba52b3",
+            "file": "/audio/en/l2-2.3.2-s15.mp3",
+            "size": 225140
+          },
+          "fr": {
+            "hash": "4cb0c2ba52b3",
+            "file": "/audio/fr/l2-2.3.2-s15.mp3",
+            "size": 210094
+          }
+        },
+        "16": {
+          "en": {
+            "hash": "841c0fb44469",
+            "file": "/audio/en/l2-2.3.2-s16.mp3",
+            "size": 579360
+          },
+          "fr": {
+            "hash": "841c0fb44469",
+            "file": "/audio/fr/l2-2.3.2-s16.mp3",
+            "size": 526384
+          }
+        }
+      }
+    },
+    "l2-2.5.1": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "d296f31511e7",
+            "file": "/audio/en/l2-2.5.1-s0.mp3",
+            "size": 712742
+          },
+          "fr": {
+            "hash": "76712e613504",
+            "file": "/audio/fr/l2-2.5.1-s0.mp3",
+            "size": 806469
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "34d8d62d5105",
+            "file": "/audio/en/l2-2.5.1-s1.mp3",
+            "size": 1205986
+          },
+          "fr": {
+            "hash": "585b0d108e4c",
+            "file": "/audio/fr/l2-2.5.1-s1.mp3",
+            "size": 1336389
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "92cb274a3794",
+            "file": "/audio/en/l2-2.5.1-s2.mp3",
+            "size": 1015710
+          },
+          "fr": {
+            "hash": "5baa83c91ac6",
+            "file": "/audio/fr/l2-2.5.1-s2.mp3",
+            "size": 1110221
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "58074561ab96",
+            "file": "/audio/en/l2-2.5.1-s3.mp3",
+            "size": 762897
+          },
+          "fr": {
+            "hash": "b242e87fc894",
+            "file": "/audio/fr/l2-2.5.1-s3.mp3",
+            "size": 815560
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "71b0d919dbf1",
+            "file": "/audio/en/l2-2.5.1-s4.mp3",
+            "size": 809447
+          },
+          "fr": {
+            "hash": "b5cafb4a6b86",
+            "file": "/audio/fr/l2-2.5.1-s4.mp3",
+            "size": 901450
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "5d260671348f",
+            "file": "/audio/en/l2-2.5.1-s5.mp3",
+            "size": 844399
+          },
+          "fr": {
+            "hash": "895d34bed83c",
+            "file": "/audio/fr/l2-2.5.1-s5.mp3",
+            "size": 937969
+          }
+        }
+      }
+    },
+    "l2-2.4.1": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "6456429c12e5",
+            "file": "/audio/en/l2-2.4.1-s0.mp3",
+            "size": 285326
+          },
+          "fr": {
+            "hash": "9389d93901a0",
+            "file": "/audio/fr/l2-2.4.1-s0.mp3",
+            "size": 351155
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "1a1428d8dd0f",
+            "file": "/audio/en/l2-2.4.1-s1.mp3",
+            "size": 184546
+          },
+          "fr": {
+            "hash": "7836d02d5d50",
+            "file": "/audio/fr/l2-2.4.1-s1.mp3",
+            "size": 203667
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "a9d16427bd0a",
+            "file": "/audio/en/l2-2.4.1-s2.mp3",
+            "size": 361969
+          },
+          "fr": {
+            "hash": "e7198b15c982",
+            "file": "/audio/fr/l2-2.4.1-s2.mp3",
+            "size": 449741
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "5692d63be135",
+            "file": "/audio/en/l2-2.4.1-s3.mp3",
+            "size": 203981
+          },
+          "fr": {
+            "hash": "418f5ac7d4b0",
+            "file": "/audio/fr/l2-2.4.1-s3.mp3",
+            "size": 211818
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "9c3b4a21c051",
+            "file": "/audio/en/l2-2.4.1-s4.mp3",
+            "size": 192539
+          },
+          "fr": {
+            "hash": "40e303877265",
+            "file": "/audio/fr/l2-2.4.1-s4.mp3",
+            "size": 180627
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "cec4d3bb6f8a",
+            "file": "/audio/en/l2-2.4.1-s5.mp3",
+            "size": 210407
+          },
+          "fr": {
+            "hash": "5b0ac497bd24",
+            "file": "/audio/fr/l2-2.4.1-s5.mp3",
+            "size": 211818
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "4585666a345f",
+            "file": "/audio/en/l2-2.4.1-s6.mp3",
+            "size": 95677
+          },
+          "fr": {
+            "hash": "e2bd90573130",
+            "file": "/audio/fr/l2-2.4.1-s6.mp3",
+            "size": 132353
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "c3ad83d3b920",
+            "file": "/audio/en/l2-2.4.1-s7.mp3",
+            "size": 61039
+          },
+          "fr": {
+            "hash": "5deb64d5edc4",
+            "file": "/audio/fr/l2-2.4.1-s7.mp3",
+            "size": 73264
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "17e29c1bd5aa",
+            "file": "/audio/en/l2-2.4.1-s8.mp3",
+            "size": 553969
+          },
+          "fr": {
+            "hash": "31f95ca530e7",
+            "file": "/audio/fr/l2-2.4.1-s8.mp3",
+            "size": 447233
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "5211f32f1be1",
+            "file": "/audio/en/l2-2.4.1-s9.mp3",
+            "size": 2360337
+          },
+          "fr": {
+            "hash": "cbb2dbf66857",
+            "file": "/audio/fr/l2-2.4.1-s9.mp3",
+            "size": 2186048
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "c7eaa5c86db2",
+            "file": "/audio/en/l2-2.4.1-s10.mp3",
+            "size": 657885
+          },
+          "fr": {
+            "hash": "29a83c2b816e",
+            "file": "/audio/fr/l2-2.4.1-s10.mp3",
+            "size": 493470
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "311c13469918",
+            "file": "/audio/en/l2-2.4.1-s11.mp3",
+            "size": 345512
+          },
+          "fr": {
+            "hash": "c94c9fbd53ea",
+            "file": "/audio/fr/l2-2.4.1-s11.mp3",
+            "size": 292693
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "bc48e7c5e3d0",
+            "file": "/audio/en/l2-2.4.1-s12.mp3",
+            "size": 222476
+          },
+          "fr": {
+            "hash": "483be870f6e1",
+            "file": "/audio/fr/l2-2.4.1-s12.mp3",
+            "size": 241284
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "5e0f9a5bb82c",
+            "file": "/audio/en/l2-2.4.1-s13.mp3",
+            "size": 487044
+          },
+          "fr": {
+            "hash": "05170228584e",
+            "file": "/audio/fr/l2-2.4.1-s13.mp3",
+            "size": 538453
+          }
+        },
+        "14": {
+          "en": {
+            "hash": "62ba64e4262c",
+            "file": "/audio/en/l2-2.4.1-s14.mp3",
+            "size": 281408
+          },
+          "fr": {
+            "hash": "62c33ab96724",
+            "file": "/audio/fr/l2-2.4.1-s14.mp3",
+            "size": 293790
+          }
+        },
+        "15": {
+          "en": {
+            "hash": "d67d6f3c9ac8",
+            "file": "/audio/en/l2-2.4.1-s15.mp3",
+            "size": 408833
+          },
+          "fr": {
+            "hash": "3c5cfb6aab60",
+            "file": "/audio/fr/l2-2.4.1-s15.mp3",
+            "size": 513375
+          }
+        },
+        "16": {
+          "en": {
+            "hash": "c65cc6643e20",
+            "file": "/audio/en/l2-2.4.1-s16.mp3",
+            "size": 263854
+          },
+          "fr": {
+            "hash": "ee52ab527aff",
+            "file": "/audio/fr/l2-2.4.1-s16.mp3",
+            "size": 326077
+          }
+        },
+        "17": {
+          "en": {
+            "hash": "21f1f5f09f70",
+            "file": "/audio/en/l2-2.4.1-s17.mp3",
+            "size": 772771
+          },
+          "fr": {
+            "hash": "1662c125fa25",
+            "file": "/audio/fr/l2-2.4.1-s17.mp3",
+            "size": 779354
+          }
+        }
+      }
+    },
+    "l2-2.4.2": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "e80df059ecad",
+            "file": "/audio/en/l2-2.4.2-s0.mp3",
+            "size": 287677
+          },
+          "fr": {
+            "hash": "36cd1f04c4f2",
+            "file": "/audio/fr/l2-2.4.2-s0.mp3",
+            "size": 335481
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "53096e4e56f1",
+            "file": "/audio/en/l2-2.4.2-s1.mp3",
+            "size": 1204889
+          },
+          "fr": {
+            "hash": "d662496afcd1",
+            "file": "/audio/fr/l2-2.4.2-s1.mp3",
+            "size": 1216644
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "2bfb8bda31af",
+            "file": "/audio/en/l2-2.4.2-s2.mp3",
+            "size": 815089
+          },
+          "fr": {
+            "hash": "454d10d8c1d5",
+            "file": "/audio/fr/l2-2.4.2-s2.mp3",
+            "size": 848160
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "7cf4f98e622a",
+            "file": "/audio/en/l2-2.4.2-s3.mp3",
+            "size": 1570707
+          },
+          "fr": {
+            "hash": "7f16040540df",
+            "file": "/audio/fr/l2-2.4.2-s3.mp3",
+            "size": 1641238
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "fe9e71169e6d",
+            "file": "/audio/en/l2-2.4.2-s4.mp3",
+            "size": 251942
+          },
+          "fr": {
+            "hash": "84676fc0949a",
+            "file": "/audio/fr/l2-2.4.2-s4.mp3",
+            "size": 274511
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "ba7db46e9f48",
+            "file": "/audio/en/l2-2.4.2-s5.mp3",
+            "size": 340027
+          },
+          "fr": {
+            "hash": "83eab0fc152b",
+            "file": "/audio/fr/l2-2.4.2-s5.mp3",
+            "size": 435791
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "55da7e9f60f0",
+            "file": "/audio/en/l2-2.4.2-s6.mp3",
+            "size": 643778
+          },
+          "fr": {
+            "hash": "35754182f830",
+            "file": "/audio/fr/l2-2.4.2-s6.mp3",
+            "size": 658198
+          }
+        }
+      }
+    },
+    "l2-2.4.3": {
+      "type": "video",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "8d9fe4c6745e",
+        "file": "/audio/en/l2-2.4.3.mp3",
+        "size": 158528
+      },
+      "fr": {
+        "hash": "c06e99319115",
+        "file": "/audio/fr/l2-2.4.3.mp3",
+        "size": 183135
+      }
+    },
+    "l2-2.4.4": {
+      "type": "module",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "00d0258d3eff",
+            "file": "/audio/en/l2-2.4.4-s0.mp3",
+            "size": 674028
+          },
+          "fr": {
+            "hash": "a1de79d5fc39",
+            "file": "/audio/fr/l2-2.4.4-s0.mp3",
+            "size": 899256
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "40054f674209",
+            "file": "/audio/en/l2-2.4.4-s1.mp3",
+            "size": 1345323
+          },
+          "fr": {
+            "hash": "dad3d9e8bed5",
+            "file": "/audio/fr/l2-2.4.4-s1.mp3",
+            "size": 1583873
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "7d7c756f02f2",
+            "file": "/audio/en/l2-2.4.4-s2.mp3",
+            "size": 1307080
+          },
+          "fr": {
+            "hash": "8caa24a82149",
+            "file": "/audio/fr/l2-2.4.4-s2.mp3",
+            "size": 1493907
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "e24905b9b90f",
+            "file": "/audio/en/l2-2.4.4-s3.mp3",
+            "size": 2312219
+          },
+          "fr": {
+            "hash": "829bea65fd6d",
+            "file": "/audio/fr/l2-2.4.4-s3.mp3",
+            "size": 2204856
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "1be9ddd87be5",
+            "file": "/audio/en/l2-2.4.4-s4.mp3",
+            "size": 564314
+          },
+          "fr": {
+            "hash": "e9296754d923",
+            "file": "/audio/fr/l2-2.4.4-s4.mp3",
+            "size": 661333
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "13df0e5078fe",
+            "file": "/audio/en/l2-2.4.4-s5.mp3",
+            "size": 587667
+          },
+          "fr": {
+            "hash": "d14084be1b29",
+            "file": "/audio/fr/l2-2.4.4-s5.mp3",
+            "size": 575442
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "edbdc6bbae8f",
+            "file": "/audio/en/l2-2.4.4-s6.mp3",
+            "size": 439240
+          },
+          "fr": {
+            "hash": "4667fa5a6d0d",
+            "file": "/audio/fr/l2-2.4.4-s6.mp3",
+            "size": 494567
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "be447552ad87",
+            "file": "/audio/en/l2-2.4.4-s7.mp3",
+            "size": 1952983
+          },
+          "fr": {
+            "hash": "2f98f97a3aed",
+            "file": "/audio/fr/l2-2.4.4-s7.mp3",
+            "size": 2005646
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "0c0641611241",
+            "file": "/audio/en/l2-2.4.4-s8.mp3",
+            "size": 531400
+          },
+          "fr": {
+            "hash": "bc5f5ea1e974",
+            "file": "/audio/fr/l2-2.4.4-s8.mp3",
+            "size": 613842
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "7cf6458d3357",
+            "file": "/audio/en/l2-2.4.4-s9.mp3",
+            "size": 1009597
+          },
+          "fr": {
+            "hash": "cda61c449031",
+            "file": "/audio/fr/l2-2.4.4-s9.mp3",
+            "size": 1218838
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "64adb9918d9e",
+            "file": "/audio/en/l2-2.4.4-s10.mp3",
+            "size": 722616
+          },
+          "fr": {
+            "hash": "99356c5dfb76",
+            "file": "/audio/fr/l2-2.4.4-s10.mp3",
+            "size": 854587
+          }
+        }
+      }
+    },
+    "l2-2.3.3": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "9796897df084",
+        "file": "/audio/en/l2-2.3.3.mp3",
+        "size": 336108
+      },
+      "fr": {
+        "hash": "581bfda203ac",
+        "file": "/audio/fr/l2-2.3.3.mp3",
+        "size": 369806
+      }
+    },
+    "l2-2.5.2": {
+      "type": "video",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "509e27394052",
+        "file": "/audio/en/l2-2.5.2.mp3",
+        "size": 314949
+      },
+      "fr": {
+        "hash": "f19435609db2",
+        "file": "/audio/fr/l2-2.5.2.mp3",
+        "size": 350058
+      }
+    },
+    "l2-2.3.4": {
+      "type": "video",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "en": {
+        "hash": "85a9a16b4322",
+        "file": "/audio/en/l2-2.3.4.mp3",
+        "size": 144422
+      },
+      "fr": {
+        "hash": "b027adbe388b",
+        "file": "/audio/fr/l2-2.3.4.mp3",
+        "size": 154766
+      }
+    },
+    "l2-2.4.5": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "bf0caf1fcc17",
+            "file": "/audio/en/l2-2.4.5-s0.mp3",
+            "size": 51321
+          },
+          "fr": {
+            "hash": "3ba8c07a0aae",
+            "file": "/audio/fr/l2-2.4.5-s0.mp3",
+            "size": 58845
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "82e5e11ebbb0",
+            "file": "/audio/en/l2-2.4.5-s1.mp3",
+            "size": 490492
+          },
+          "fr": {
+            "hash": "588abced71a1",
+            "file": "/audio/fr/l2-2.4.5-s1.mp3",
+            "size": 521682
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "2a810be9f6f9",
+            "file": "/audio/en/l2-2.4.5-s2.mp3",
+            "size": 274198
+          },
+          "fr": {
+            "hash": "0ffb7a133d51",
+            "file": "/audio/fr/l2-2.4.5-s2.mp3",
+            "size": 325764
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "08ea0663baba",
+            "file": "/audio/en/l2-2.4.5-s3.mp3",
+            "size": 395667
+          },
+          "fr": {
+            "hash": "93929ce2bd6e",
+            "file": "/audio/fr/l2-2.4.5-s3.mp3",
+            "size": 455383
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "7e1e47f35635",
+            "file": "/audio/en/l2-2.4.5-s4.mp3",
+            "size": 390652
+          },
+          "fr": {
+            "hash": "c56221ad9892",
+            "file": "/audio/fr/l2-2.4.5-s4.mp3",
+            "size": 459302
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "154c04a7762a",
+            "file": "/audio/en/l2-2.4.5-s5.mp3",
+            "size": 336578
+          },
+          "fr": {
+            "hash": "263838178489",
+            "file": "/audio/fr/l2-2.4.5-s5.mp3",
+            "size": 390965
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "d0ba10d14cbb",
+            "file": "/audio/en/l2-2.4.5-s6.mp3",
+            "size": 558671
+          },
+          "fr": {
+            "hash": "ff4f90deea83",
+            "file": "/audio/fr/l2-2.4.5-s6.mp3",
+            "size": 648480
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "0876078f0f79",
+            "file": "/audio/en/l2-2.4.5-s7.mp3",
+            "size": 423096
+          },
+          "fr": {
+            "hash": "4678a40c803d",
+            "file": "/audio/fr/l2-2.4.5-s7.mp3",
+            "size": 444725
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "9ef5b9e8c124",
+            "file": "/audio/en/l2-2.4.5-s8.mp3",
+            "size": 377956
+          },
+          "fr": {
+            "hash": "0473e39e9714",
+            "file": "/audio/fr/l2-2.4.5-s8.mp3",
+            "size": 469803
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "83bae37f181a",
+            "file": "/audio/en/l2-2.4.5-s9.mp3",
+            "size": 600520
+          },
+          "fr": {
+            "hash": "e2f482b365a1",
+            "file": "/audio/fr/l2-2.4.5-s9.mp3",
+            "size": 666035
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "27791b573dc0",
+            "file": "/audio/en/l2-2.4.5-s10.mp3",
+            "size": 456951
+          },
+          "fr": {
+            "hash": "a23e91831615",
+            "file": "/audio/fr/l2-2.4.5-s10.mp3",
+            "size": 540647
+          }
+        },
+        "11": {
+          "en": {
+            "hash": "dfdfcaea2253",
+            "file": "/audio/en/l2-2.4.5-s11.mp3",
+            "size": 466511
+          },
+          "fr": {
+            "hash": "9e50bfa6bc22",
+            "file": "/audio/fr/l2-2.4.5-s11.mp3",
+            "size": 494410
+          }
+        },
+        "12": {
+          "en": {
+            "hash": "167a3c5ceee3",
+            "file": "/audio/en/l2-2.4.5-s12.mp3",
+            "size": 383129
+          },
+          "fr": {
+            "hash": "a1b003da153b",
+            "file": "/audio/fr/l2-2.4.5-s12.mp3",
+            "size": 422782
+          }
+        },
+        "13": {
+          "en": {
+            "hash": "0047f3cfa991",
+            "file": "/audio/en/l2-2.4.5-s13.mp3",
+            "size": 322472
+          },
+          "fr": {
+            "hash": "b11aae4ed56a",
+            "file": "/audio/fr/l2-2.4.5-s13.mp3",
+            "size": 349431
+          }
+        },
+        "14": {
+          "en": {
+            "hash": "f4cc17687818",
+            "file": "/audio/en/l2-2.4.5-s14.mp3",
+            "size": 369806
+          },
+          "fr": {
+            "hash": "fa3872e1a945",
+            "file": "/audio/fr/l2-2.4.5-s14.mp3",
+            "size": 409303
+          }
+        },
+        "15": {
+          "en": {
+            "hash": "d31254e3755c",
+            "file": "/audio/en/l2-2.4.5-s15.mp3",
+            "size": 410244
+          },
+          "fr": {
+            "hash": "7dacf2ec6e98",
+            "file": "/audio/fr/l2-2.4.5-s15.mp3",
+            "size": 492686
+          }
+        },
+        "16": {
+          "en": {
+            "hash": "1214ef4aca26",
+            "file": "/audio/en/l2-2.4.5-s16.mp3",
+            "size": 427485
+          },
+          "fr": {
+            "hash": "c4c8fd82a60a",
+            "file": "/audio/fr/l2-2.4.5-s16.mp3",
+            "size": 515256
+          }
+        },
+        "17": {
+          "en": {
+            "hash": "b568d914d521",
+            "file": "/audio/en/l2-2.4.5-s17.mp3",
+            "size": 362283
+          },
+          "fr": {
+            "hash": "71d7f950eb6c",
+            "file": "/audio/fr/l2-2.4.5-s17.mp3",
+            "size": 411811
+          }
+        },
+        "18": {
+          "en": {
+            "hash": "b6bb2602fc54",
+            "file": "/audio/en/l2-2.4.5-s18.mp3",
+            "size": 311501
+          },
+          "fr": {
+            "hash": "57f45030ac26",
+            "file": "/audio/fr/l2-2.4.5-s18.mp3",
+            "size": 340027
+          }
+        },
+        "19": {
+          "en": {
+            "hash": "c93c8d5f5e39",
+            "file": "/audio/en/l2-2.4.5-s19.mp3",
+            "size": 351155
+          },
+          "fr": {
+            "hash": "fcebc578521d",
+            "file": "/audio/fr/l2-2.4.5-s19.mp3",
+            "size": 400526
+          }
+        },
+        "20": {
+          "en": {
+            "hash": "19be3a66203f",
+            "file": "/audio/en/l2-2.4.5-s20.mp3",
+            "size": 433597
+          },
+          "fr": {
+            "hash": "40c446b29216",
+            "file": "/audio/fr/l2-2.4.5-s20.mp3",
+            "size": 511024
+          }
+        },
+        "21": {
+          "en": {
+            "hash": "9f0a7d151a9d",
+            "file": "/audio/en/l2-2.4.5-s21.mp3",
+            "size": 454286
+          },
+          "fr": {
+            "hash": "b6ba44d7602a",
+            "file": "/audio/fr/l2-2.4.5-s21.mp3",
+            "size": 491902
+          }
+        },
+        "22": {
+          "en": {
+            "hash": "490e13fbf801",
+            "file": "/audio/en/l2-2.4.5-s22.mp3",
+            "size": 577636
+          },
+          "fr": {
+            "hash": "46a5c40442d5",
+            "file": "/audio/fr/l2-2.4.5-s22.mp3",
+            "size": 647070
+          }
+        }
+      }
+    },
+    "l2-2.4.6": {
+      "type": "article",
+      "voiceId": "pNInz6obpgDQGcFmaJgB",
+      "en": {
+        "hash": "2060d6e98c0e",
+        "file": "/audio/en/l2-2.4.6.mp3",
+        "size": 2475694
+      },
+      "fr": {
+        "hash": "999ab5a87587",
+        "file": "/audio/fr/l2-2.4.6.mp3",
+        "size": 2237457
+      }
+    },
+    "l2-2.3.5": {
+      "type": "module",
+      "voiceId": "EXAVITQu4vr4xnSDxMaL",
+      "sections": {
+        "0": {
+          "en": {
+            "hash": "55725a13bf64",
+            "file": "/audio/en/l2-2.3.5-s0.mp3",
+            "size": 177336
+          },
+          "fr": {
+            "hash": "55725a13bf64",
+            "file": "/audio/fr/l2-2.3.5-s0.mp3",
+            "size": 178590
+          }
+        },
+        "1": {
+          "en": {
+            "hash": "d74bdaec5467",
+            "file": "/audio/en/l2-2.3.5-s1.mp3",
+            "size": 245829
+          },
+          "fr": {
+            "hash": "d74bdaec5467",
+            "file": "/audio/fr/l2-2.3.5-s1.mp3",
+            "size": 262286
+          }
+        },
+        "2": {
+          "en": {
+            "hash": "f5c315a53a0c",
+            "file": "/audio/en/l2-2.3.5-s2.mp3",
+            "size": 243791
+          },
+          "fr": {
+            "hash": "f5c315a53a0c",
+            "file": "/audio/fr/l2-2.3.5-s2.mp3",
+            "size": 236895
+          }
+        },
+        "3": {
+          "en": {
+            "hash": "d5fba9dd71d9",
+            "file": "/audio/en/l2-2.3.5-s3.mp3",
+            "size": 185956
+          },
+          "fr": {
+            "hash": "d5fba9dd71d9",
+            "file": "/audio/fr/l2-2.3.5-s3.mp3",
+            "size": 179844
+          }
+        },
+        "4": {
+          "en": {
+            "hash": "736c50c43aac",
+            "file": "/audio/en/l2-2.3.5-s4.mp3",
+            "size": 290655
+          },
+          "fr": {
+            "hash": "736c50c43aac",
+            "file": "/audio/fr/l2-2.3.5-s4.mp3",
+            "size": 288931
+          }
+        },
+        "5": {
+          "en": {
+            "hash": "6266679ef7e4",
+            "file": "/audio/en/l2-2.3.5-s5.mp3",
+            "size": 372627
+          },
+          "fr": {
+            "hash": "6266679ef7e4",
+            "file": "/audio/fr/l2-2.3.5-s5.mp3",
+            "size": 365574
+          }
+        },
+        "6": {
+          "en": {
+            "hash": "52277b98b797",
+            "file": "/audio/en/l2-2.3.5-s6.mp3",
+            "size": 904585
+          },
+          "fr": {
+            "hash": "52277b98b797",
+            "file": "/audio/fr/l2-2.3.5-s6.mp3",
+            "size": 905839
+          }
+        },
+        "7": {
+          "en": {
+            "hash": "2d3a0272d5d0",
+            "file": "/audio/en/l2-2.3.5-s7.mp3",
+            "size": 264480
+          },
+          "fr": {
+            "hash": "2d3a0272d5d0",
+            "file": "/audio/fr/l2-2.3.5-s7.mp3",
+            "size": 259151
+          }
+        },
+        "8": {
+          "en": {
+            "hash": "1f345665aa34",
+            "file": "/audio/en/l2-2.3.5-s8.mp3",
+            "size": 422156
+          },
+          "fr": {
+            "hash": "1f345665aa34",
+            "file": "/audio/fr/l2-2.3.5-s8.mp3",
+            "size": 404915
+          }
+        },
+        "9": {
+          "en": {
+            "hash": "23b8e7b4f60c",
+            "file": "/audio/en/l2-2.3.5-s9.mp3",
+            "size": 163387
+          },
+          "fr": {
+            "hash": "23b8e7b4f60c",
+            "file": "/audio/fr/l2-2.3.5-s9.mp3",
+            "size": 156334
+          }
+        },
+        "10": {
+          "en": {
+            "hash": "8c8c1167e77c",
+            "file": "/audio/en/l2-2.3.5-s10.mp3",
+            "size": 724810
+          },
+          "fr": {
+            "hash": "8c8c1167e77c",
+            "file": "/audio/fr/l2-2.3.5-s10.mp3",
+            "size": 753493
+          }
+        }
+      }
+    }
+  }
+}

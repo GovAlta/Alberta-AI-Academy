@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5JCDNFEYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E5JCDNFEYT');
+  </script>
+
+  <title>Alberta AI Academy — Overview for Deputy Ministers</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            alberta: { blue: '#004a8f', gold: '#f2a900', sky: '#0070c0', dark: '#00243d' },
+            mc: '#7c3aed', l1: '#2563eb', l2: '#005072', l3: '#004a8f'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    [v-cloak] { display: none; }
+    html { scroll-behavior: smooth; }
+    .fade-enter-active, .fade-leave-active { transition: opacity .3s ease; }
+    .fade-enter-from, .fade-leave-to { opacity: 0; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+    .float { animation: float 4s ease-in-out infinite; }
+    @keyframes pulse-ring { 0%{transform:scale(.9);opacity:1} 100%{transform:scale(1.3);opacity:0} }
+    .pulse-ring { animation: pulse-ring 2s ease-out infinite; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    .draw-line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: draw 2s ease forwards; }
+    .gradient-text { background: linear-gradient(135deg, #004a8f 0%, #0070c0 50%, #7c3aed 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .dark .gradient-text { background: linear-gradient(135deg, #60a5fa 0%, #818cf8 50%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .glass { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+<div id="app" v-cloak>
+
+  <!-- FIXED NAV -->
+  <nav class="fixed top-0 inset-x-0 z-50 glass bg-white/80 dark:bg-gray-950/80 border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
+      <div class="flex items-center gap-3">
+        <svg width="28" height="28" viewBox="0 0 40 40" class="shrink-0">
+          <rect width="40" height="40" rx="8" fill="#004a8f"/>
+          <text x="20" y="27" text-anchor="middle" fill="white" font-size="18" font-weight="700" font-family="Inter">AI</text>
+        </svg>
+        <span class="font-bold text-sm sm:text-base">Alberta AI Academy</span>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a v-for="s in navSections" :key="s.id" :href="'#'+s.id" class="hover:text-alberta-blue dark:hover:text-blue-400 transition-colors">{{s.label}}</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <button @click="lang = lang === 'en' ? 'fr' : 'en'" class="text-xs font-semibold px-2.5 py-1 rounded-full border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          {{ lang === 'en' ? 'FR' : 'EN' }}
+        </button>
+        <button @click="toggleDark" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle dark mode">
+          <svg v-if="!dark" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <svg v-else xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path stroke-linecap="round" d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-14">
+    <div class="absolute inset-0 bg-gradient-to-br from-alberta-blue/5 via-transparent to-purple-500/5 dark:from-alberta-blue/10 dark:to-purple-500/10"></div>
+    <!-- Animated background circles -->
+    <div class="absolute top-20 left-10 w-72 h-72 bg-blue-400/10 dark:bg-blue-400/5 rounded-full blur-3xl float"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/10 dark:bg-purple-400/5 rounded-full blur-3xl float" style="animation-delay:-2s"></div>
+
+    <div class="relative max-w-5xl mx-auto px-6 text-center py-20">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-alberta-blue/10 dark:bg-blue-900/30 text-alberta-blue dark:text-blue-300 text-sm font-medium mb-8">
+        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+        {{ lang === 'en' ? 'Government of Alberta — Technology & Innovation' : 'Gouvernement de l\'Alberta — Technologie et innovation' }}
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-[1.1] mb-6">
+        <span class="gradient-text">{{ lang === 'en' ? 'Alberta AI Academy' : 'Académie IA de l\'Alberta' }}</span>
+      </h1>
+      <p class="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed mb-4">
+        {{ lang === 'en'
+          ? 'Transforming public servants into AI Maximalists through a structured, bilingual learning journey spanning 35+ days and 149 learning items.'
+          : 'Transformer les fonctionnaires en maximalistes IA grâce à un parcours d\'apprentissage structuré et bilingue de plus de 35 jours et 149 éléments d\'apprentissage.' }}
+      </p>
+      <p class="text-base text-gray-500 dark:text-gray-500 max-w-2xl mx-auto mb-10">
+        {{ lang === 'en'
+          ? 'Led by Deputy Minister Janak Alford — a presentation for Deputy Ministers enabling AI adoption across Canadian public service.'
+          : 'Dirigé par le sous-ministre Janak Alford — une présentation pour les sous-ministres permettant l\'adoption de l\'IA dans la fonction publique canadienne.' }}
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 mb-16">
+        <a href="#journey" class="inline-flex items-center gap-2 px-6 py-3 bg-alberta-blue text-white rounded-xl font-semibold hover:bg-alberta-dark transition-colors shadow-lg shadow-alberta-blue/25">
+          {{ lang === 'en' ? 'Explore the Journey' : 'Explorer le parcours' }}
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <a href="#frameworks" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-xl font-semibold hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors">
+          {{ lang === 'en' ? 'Key Frameworks' : 'Cadres clés' }}
+        </a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl mx-auto">
+        <div v-for="stat in heroStats" :key="stat.label" class="text-center">
+          <div class="text-3xl sm:text-4xl font-black gradient-text">{{ stat.value }}</div>
+          <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{ stat.label[lang] }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS THE ACADEMY -->
+  <section id="about" class="py-24 bg-gray-50 dark:bg-gray-900/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">{{ lang === 'en' ? 'What is the AI Academy?' : 'Qu\'est-ce que l\'Académie IA ?' }}</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400">
+          {{ lang === 'en'
+            ? 'A comprehensive, hands-on AI enablement program built by Alberta\'s Technology & Innovation team. It transforms public servants from curious beginners into confident AI practitioners who apply AI as the first step in every task — not an afterthought.'
+            : 'Un programme complet et pratique d\'habilitation en IA conçu par l\'équipe Technologie et Innovation de l\'Alberta. Il transforme les fonctionnaires de débutants curieux en praticiens IA confiants qui utilisent l\'IA comme première étape dans chaque tâche — pas après coup.' }}
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div v-for="(p, i) in pillars" :key="i" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center text-white text-xl font-bold mb-5" :style="{background: p.color}">{{ p.icon }}</div>
+          <h3 class="text-lg font-bold mb-2">{{ p.title[lang] }}</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{{ p.desc[lang] }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE LEARNING JOURNEY — SVG Progression -->
+  <section id="journey" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">{{ lang === 'en' ? 'The Learning Journey' : 'Le parcours d\'apprentissage' }}</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          {{ lang === 'en'
+            ? 'Four integrated levels that build progressively — from foundational principles to production-grade AI architecture.'
+            : 'Quatre niveaux intégrés qui se construisent progressivement — des principes fondamentaux à l\'architecture IA de qualité production.' }}
+        </p>
+      </div>
+
+      <!-- Journey SVG Diagram -->
+      <div class="mb-16">
+        <svg viewBox="0 0 1000 320" class="w-full max-w-4xl mx-auto" xmlns="http://www.w3.org/2000/svg">
+          <!-- Connection lines -->
+          <path d="M 175 160 Q 300 100 375 160" stroke="currentColor" stroke-opacity="0.15" stroke-width="2" fill="none" stroke-dasharray="6 4"/>
+          <path d="M 425 160 Q 550 100 625 160" stroke="currentColor" stroke-opacity="0.15" stroke-width="2" fill="none" stroke-dasharray="6 4"/>
+          <path d="M 675 160 Q 800 100 875 160" stroke="currentColor" stroke-opacity="0.15" stroke-width="2" fill="none" stroke-dasharray="6 4"/>
+
+          <!-- Masterclass -->
+          <g transform="translate(100, 80)">
+            <rect x="0" y="0" width="150" height="160" rx="16" fill="#7c3aed" fill-opacity="0.1" class="dark:fill-opacity-20" stroke="#7c3aed" stroke-width="2"/>
+            <rect x="0" y="0" width="150" height="44" rx="16" fill="#7c3aed"/>
+            <rect x="0" y="28" width="150" height="16" fill="#7c3aed"/>
+            <text x="75" y="28" text-anchor="middle" fill="white" font-size="13" font-weight="700">MASTERCLASS</text>
+            <text x="75" y="70" text-anchor="middle" fill="currentColor" font-size="11" font-weight="600">{{ lang === 'en' ? 'Foundations' : 'Fondements' }}</text>
+            <text x="75" y="90" text-anchor="middle" fill="currentColor" font-size="10" opacity="0.6">5 {{ lang === 'en' ? 'Days' : 'Jours' }} · 23 {{ lang === 'en' ? 'Items' : 'Éléments' }}</text>
+            <text x="75" y="112" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">RICECO · T.R.U.S.T.</text>
+            <text x="75" y="126" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Mental Models' : 'Modèles mentaux' }}</text>
+            <text x="75" y="148" text-anchor="middle" fill="#7c3aed" font-size="18">🎓</text>
+          </g>
+
+          <!-- Level 1 -->
+          <g transform="translate(350, 60)">
+            <rect x="0" y="0" width="150" height="200" rx="16" fill="#2563eb" fill-opacity="0.1" class="dark:fill-opacity-20" stroke="#2563eb" stroke-width="2"/>
+            <rect x="0" y="0" width="150" height="44" rx="16" fill="#2563eb"/>
+            <rect x="0" y="28" width="150" height="16" fill="#2563eb"/>
+            <text x="75" y="28" text-anchor="middle" fill="white" font-size="13" font-weight="700">LEVEL 1</text>
+            <text x="75" y="70" text-anchor="middle" fill="currentColor" font-size="11" font-weight="600">{{ lang === 'en' ? 'The Conversationalist' : 'Le conversationaliste' }}</text>
+            <text x="75" y="90" text-anchor="middle" fill="currentColor" font-size="10" opacity="0.6">10 {{ lang === 'en' ? 'Days' : 'Jours' }} · 45 {{ lang === 'en' ? 'Items' : 'Éléments' }}</text>
+            <text x="75" y="112" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Prompting · Tools' : 'Prompting · Outils' }}</text>
+            <text x="75" y="126" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Research · Voice' : 'Recherche · Voix' }}</text>
+            <text x="75" y="140" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Agents · JSON' : 'Agents · JSON' }}</text>
+            <text x="75" y="180" text-anchor="middle" fill="#2563eb" font-size="18">🌱</text>
+          </g>
+
+          <!-- Level 2 -->
+          <g transform="translate(600, 40)">
+            <rect x="0" y="0" width="150" height="240" rx="16" fill="#005072" fill-opacity="0.1" class="dark:fill-opacity-20" stroke="#005072" stroke-width="2"/>
+            <rect x="0" y="0" width="150" height="44" rx="16" fill="#005072"/>
+            <rect x="0" y="28" width="150" height="16" fill="#005072"/>
+            <text x="75" y="28" text-anchor="middle" fill="white" font-size="13" font-weight="700">LEVEL 2</text>
+            <text x="75" y="70" text-anchor="middle" fill="currentColor" font-size="11" font-weight="600">{{ lang === 'en' ? 'The Orchestrator' : 'L\'orchestrateur' }}</text>
+            <text x="75" y="90" text-anchor="middle" fill="currentColor" font-size="10" opacity="0.6">10 {{ lang === 'en' ? 'Days' : 'Jours' }} · 41 {{ lang === 'en' ? 'Items' : 'Éléments' }}</text>
+            <text x="75" y="112" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Agentic Workflows' : 'Flux agentiques' }}</text>
+            <text x="75" y="126" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'ABC · n8n' : 'ABC · n8n' }}</text>
+            <text x="75" y="140" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Use Cases · Testing' : 'Cas d\'usage · Tests' }}</text>
+            <text x="75" y="154" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Governance' : 'Gouvernance' }}</text>
+            <text x="75" y="218" text-anchor="middle" fill="#005072" font-size="18">⚡</text>
+          </g>
+
+          <!-- Level 3 -->
+          <g transform="translate(850, 20)">
+            <rect x="0" y="0" width="150" height="280" rx="16" fill="#004a8f" fill-opacity="0.1" class="dark:fill-opacity-20" stroke="#004a8f" stroke-width="2"/>
+            <rect x="0" y="0" width="150" height="44" rx="16" fill="#004a8f"/>
+            <rect x="0" y="28" width="150" height="16" fill="#004a8f"/>
+            <text x="75" y="28" text-anchor="middle" fill="white" font-size="13" font-weight="700">LEVEL 3</text>
+            <text x="75" y="70" text-anchor="middle" fill="currentColor" font-size="11" font-weight="600">{{ lang === 'en' ? 'The Architect' : 'L\'architecte' }}</text>
+            <text x="75" y="90" text-anchor="middle" fill="currentColor" font-size="10" opacity="0.6">10 {{ lang === 'en' ? 'Days' : 'Jours' }} · 40 {{ lang === 'en' ? 'Items' : 'Éléments' }}</text>
+            <text x="75" y="112" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Claude Code' : 'Claude Code' }}</text>
+            <text x="75" y="126" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Pronghorn Platform' : 'Plateforme Pronghorn' }}</text>
+            <text x="75" y="140" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Full-Stack Deploy' : 'Déploiement Full-Stack' }}</text>
+            <text x="75" y="154" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Factory Model' : 'Modèle d\'usine' }}</text>
+            <text x="75" y="168" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Client Delivery' : 'Livraison client' }}</text>
+            <text x="75" y="258" text-anchor="middle" fill="#004a8f" font-size="18">🚀</text>
+          </g>
+
+          <!-- Arrow labels -->
+          <text x="288" y="138" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.4" transform="rotate(-15 288 138)">{{ lang === 'en' ? 'build on' : 'bâtir sur' }}</text>
+          <text x="538" y="118" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.4" transform="rotate(-15 538 118)">{{ lang === 'en' ? 'advance to' : 'avancer vers' }}</text>
+          <text x="788" y="98" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.4" transform="rotate(-15 788 98)">{{ lang === 'en' ? 'master with' : 'maîtriser avec' }}</text>
+        </svg>
+      </div>
+
+      <!-- Level Detail Cards -->
+      <div class="space-y-8">
+        <div v-for="(level, idx) in levels" :key="level.id"
+             class="bg-white dark:bg-gray-800/50 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden hover:shadow-xl transition-shadow">
+          <div class="flex flex-col lg:flex-row">
+            <!-- Color sidebar -->
+            <div class="lg:w-80 p-8 flex flex-col justify-center text-white relative overflow-hidden" :style="{background: level.color}">
+              <div class="absolute inset-0 opacity-10">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="white" stroke-width="0.5"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
+              </div>
+              <div class="relative">
+                <div class="text-4xl mb-3">{{ level.icon }}</div>
+                <h3 class="text-2xl font-bold mb-1">{{ level.name[lang] }}</h3>
+                <p class="text-white/80 text-sm mb-4">{{ level.subtitle[lang] }}</p>
+                <div class="flex gap-4 text-sm">
+                  <div><span class="font-bold text-lg">{{ level.days }}</span><br/>{{ lang === 'en' ? 'Days' : 'Jours' }}</div>
+                  <div><span class="font-bold text-lg">{{ level.items }}</span><br/>{{ lang === 'en' ? 'Items' : 'Éléments' }}</div>
+                  <div><span class="font-bold text-lg">{{ level.modules }}</span><br/>Modules</div>
+                </div>
+              </div>
+            </div>
+            <!-- Content -->
+            <div class="flex-1 p-8">
+              <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">{{ level.description[lang] }}</p>
+              <div class="mb-4">
+                <h4 class="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3">{{ lang === 'en' ? 'Daily Curriculum' : 'Programme quotidien' }}</h4>
+                <div class="grid sm:grid-cols-2 gap-2">
+                  <div v-for="d in level.dayList" :key="d.day" class="flex items-center gap-2 text-sm">
+                    <span class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0" :style="{background: level.color}">{{ d.day }}</span>
+                    <span class="text-gray-700 dark:text-gray-300 truncate">{{ d.title[lang] }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT TYPES & STRUCTURE -->
+  <section id="structure" class="py-24 bg-gray-50 dark:bg-gray-900/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">{{ lang === 'en' ? 'How We Structure Materials' : 'Comment nous structurons les matériaux' }}</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          {{ lang === 'en'
+            ? 'Every learning item is purpose-built for maximum engagement. Content spans interactive modules, curated articles, video walkthroughs, downloadable tools, and embedded quizzes — all fully bilingual.'
+            : 'Chaque élément d\'apprentissage est conçu pour un engagement maximal. Le contenu comprend des modules interactifs, des articles sélectionnés, des vidéos explicatives, des outils téléchargeables et des quiz intégrés — le tout entièrement bilingue.' }}
+        </p>
+      </div>
+
+      <!-- Content type cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div v-for="ct in contentTypes" :key="ct.type" class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-100 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 transition-colors">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-lg" :class="ct.bgClass">{{ ct.icon }}</div>
+            <div>
+              <h3 class="font-bold">{{ ct.label[lang] }}</h3>
+              <span class="text-xs text-gray-500 dark:text-gray-400">{{ ct.count }} {{ lang === 'en' ? 'items' : 'éléments' }}</span>
+            </div>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ ct.desc[lang] }}</p>
+        </div>
+      </div>
+
+      <!-- Module structure SVG -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700">
+        <h3 class="text-xl font-bold mb-6 text-center">{{ lang === 'en' ? 'Inside a Learning Module' : 'À l\'intérieur d\'un module d\'apprentissage' }}</h3>
+        <svg viewBox="0 0 800 300" class="w-full max-w-3xl mx-auto" xmlns="http://www.w3.org/2000/svg">
+          <!-- Module container -->
+          <rect x="20" y="20" width="760" height="260" rx="12" fill="none" stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="40" y="48" fill="currentColor" font-size="14" font-weight="700" opacity="0.8">MODULE</text>
+
+          <!-- Hero -->
+          <rect x="50" y="65" width="120" height="70" rx="8" fill="#7c3aed" fill-opacity="0.15" stroke="#7c3aed" stroke-width="1.5"/>
+          <text x="110" y="95" text-anchor="middle" fill="#7c3aed" font-size="10" font-weight="600">HERO</text>
+          <text x="110" y="110" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? 'Badge + Title' : 'Badge + Titre' }}</text>
+          <text x="110" y="122" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? '+ Subtitle' : '+ Sous-titre' }}</text>
+
+          <!-- Text -->
+          <rect x="190" y="65" width="100" height="70" rx="8" fill="#2563eb" fill-opacity="0.1" stroke="#2563eb" stroke-width="1.5"/>
+          <text x="240" y="95" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="600">TEXT</text>
+          <text x="240" y="110" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">Markdown</text>
+          <text x="240" y="122" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? 'Paragraphs' : 'Paragraphes' }}</text>
+
+          <!-- Cards -->
+          <rect x="310" y="65" width="100" height="70" rx="8" fill="#059669" fill-opacity="0.1" stroke="#059669" stroke-width="1.5"/>
+          <text x="360" y="95" text-anchor="middle" fill="#059669" font-size="10" font-weight="600">CARDS</text>
+          <text x="360" y="110" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? '2-6 Grid Items' : '2-6 éléments' }}</text>
+          <text x="360" y="122" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? 'Icon + Body' : 'Icône + Corps' }}</text>
+
+          <!-- Highlight -->
+          <rect x="430" y="65" width="100" height="70" rx="8" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-width="1.5"/>
+          <text x="480" y="95" text-anchor="middle" fill="#f59e0b" font-size="10" font-weight="600">HIGHLIGHT</text>
+          <text x="480" y="110" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? 'Callout Cards' : 'Cartes d\'appel' }}</text>
+          <text x="480" y="122" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? 'Key Principles' : 'Principes clés' }}</text>
+
+          <!-- Media -->
+          <rect x="550" y="65" width="100" height="70" rx="8" fill="#ec4899" fill-opacity="0.1" stroke="#ec4899" stroke-width="1.5"/>
+          <text x="600" y="95" text-anchor="middle" fill="#ec4899" font-size="10" font-weight="600">MEDIA</text>
+          <text x="600" y="110" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? 'Images · Video' : 'Images · Vidéo' }}</text>
+          <text x="600" y="122" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? 'Click-to-Zoom' : 'Cliquer pour agrandir' }}</text>
+
+          <!-- Quiz -->
+          <rect x="670" y="65" width="90" height="70" rx="8" fill="#ef4444" fill-opacity="0.1" stroke="#ef4444" stroke-width="1.5"/>
+          <text x="715" y="95" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="600">QUIZ</text>
+          <text x="715" y="110" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? 'Multi-Choice' : 'Choix multiple' }}</text>
+          <text x="715" y="122" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.5">{{ lang === 'en' ? 'Scoring 70%' : 'Score 70%' }}</text>
+
+          <!-- Arrows -->
+          <line x1="170" y1="100" x2="190" y2="100" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5" marker-end="url(#arrow)"/>
+          <line x1="290" y1="100" x2="310" y2="100" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5"/>
+          <line x1="410" y1="100" x2="430" y2="100" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5"/>
+          <line x1="530" y1="100" x2="550" y2="100" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5"/>
+          <line x1="650" y1="100" x2="670" y2="100" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5"/>
+
+          <!-- Bottom row: features -->
+          <rect x="50" y="170" width="220" height="90" rx="10" fill="currentColor" fill-opacity="0.03" stroke="currentColor" stroke-opacity="0.1"/>
+          <text x="160" y="196" text-anchor="middle" fill="currentColor" font-size="11" font-weight="600">🔊 {{ lang === 'en' ? 'Bilingual Audio Narration' : 'Narration audio bilingue' }}</text>
+          <text x="160" y="215" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'English & French audio for every module' : 'Audio anglais et français pour chaque module' }}</text>
+          <text x="160" y="230" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'AI-generated natural voice' : 'Voix naturelle générée par IA' }}</text>
+          <text x="160" y="245" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Play/pause per section' : 'Lecture/pause par section' }}</text>
+
+          <rect x="290" y="170" width="220" height="90" rx="10" fill="currentColor" fill-opacity="0.03" stroke="currentColor" stroke-opacity="0.1"/>
+          <text x="400" y="196" text-anchor="middle" fill="currentColor" font-size="11" font-weight="600">🌐 {{ lang === 'en' ? 'Full Bilingual Content' : 'Contenu entièrement bilingue' }}</text>
+          <text x="400" y="215" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Toggle EN/FR on every screen' : 'Basculer EN/FR sur chaque écran' }}</text>
+          <text x="400" y="230" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Titles, descriptions, modules' : 'Titres, descriptions, modules' }}</text>
+          <text x="400" y="245" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Quiz questions & explanations' : 'Questions de quiz et explications' }}</text>
+
+          <rect x="530" y="170" width="220" height="90" rx="10" fill="currentColor" fill-opacity="0.03" stroke="currentColor" stroke-opacity="0.1"/>
+          <text x="640" y="196" text-anchor="middle" fill="currentColor" font-size="11" font-weight="600">🤖 {{ lang === 'en' ? 'Albert — AI Curriculum Guide' : 'Albert — Guide IA du programme' }}</text>
+          <text x="640" y="215" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Personalized learning recommendations' : 'Recommandations d\'apprentissage personnalisées' }}</text>
+          <text x="640" y="230" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Context-aware AI assistant' : 'Assistant IA contextuel' }}</text>
+          <text x="640" y="245" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Built into the platform' : 'Intégré à la plateforme' }}</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY FRAMEWORKS -->
+  <section id="frameworks" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">{{ lang === 'en' ? 'Key Frameworks' : 'Cadres clés' }}</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          {{ lang === 'en'
+            ? 'Two proprietary frameworks form the backbone of our approach: RICECO for crafting effective prompts, and T.R.U.S.T. for verifying AI outputs.'
+            : 'Deux cadres propriétaires forment l\'épine dorsale de notre approche : RICECO pour créer des prompts efficaces, et T.R.U.S.T. pour vérifier les résultats de l\'IA.' }}
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- RICECO -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold text-sm">R·I·C</div>
+            <div>
+              <h3 class="text-xl font-bold">RICECO</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">{{ lang === 'en' ? 'Prompting Framework' : 'Cadre de prompting' }}</p>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div v-for="r in riceco" :key="r.letter" class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 flex items-center justify-center font-bold text-sm shrink-0">{{ r.letter }}</span>
+              <div>
+                <span class="font-semibold text-sm">{{ r.word[lang] }}</span>
+                <p class="text-xs text-gray-500 dark:text-gray-400">{{ r.desc[lang] }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRUST -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 rounded-xl bg-green-600 text-white flex items-center justify-center font-bold text-sm">T·R·U</div>
+            <div>
+              <h3 class="text-xl font-bold">T.R.U.S.T.</h3>
+              <p class="text-sm text-gray-500 dark:text-gray-400">{{ lang === 'en' ? 'Verification Protocol' : 'Protocole de vérification' }}</p>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div v-for="t in trust" :key="t.letter" class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-lg bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 flex items-center justify-center font-bold text-sm shrink-0">{{ t.letter }}</span>
+              <div>
+                <span class="font-semibold text-sm">{{ t.word[lang] }}</span>
+                <p class="text-xs text-gray-500 dark:text-gray-400">{{ t.desc[lang] }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BILINGUAL & ACCESSIBILITY -->
+  <section id="bilingual" class="py-24 bg-gray-50 dark:bg-gray-900/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">{{ lang === 'en' ? 'Bilingual & Accessible by Design' : 'Bilingue et accessible dès la conception' }}</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          {{ lang === 'en'
+            ? 'Every piece of content is delivered in both English and French — text, audio narration, quiz questions, learning outcomes, and descriptions. Accessibility is not an add-on; it is built into every layer.'
+            : 'Chaque contenu est livré en anglais et en français — texte, narration audio, questions de quiz, résultats d\'apprentissage et descriptions. L\'accessibilité n\'est pas un ajout ; elle est intégrée à chaque couche.' }}
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div v-for="f in bilingualFeatures" :key="f.title" class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-100 dark:border-gray-700 text-center">
+          <div class="text-3xl mb-3">{{ f.icon }}</div>
+          <h3 class="font-bold mb-2">{{ f.title[lang] }}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ f.desc[lang] }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOADABLE & MASTERCLASS SITE -->
+  <section id="downloads" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-gradient-to-br from-purple-600 to-blue-700 rounded-3xl p-10 sm:p-16 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+        <div class="relative max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 text-sm font-medium mb-6">
+            🎓 masterclass.albertaaiacademy.com
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+            {{ lang === 'en' ? 'Downloadable Modules & Learning Guides' : 'Modules et guides d\'apprentissage téléchargeables' }}
+          </h2>
+          <p class="text-white/80 text-lg mb-8 leading-relaxed">
+            {{ lang === 'en'
+              ? 'The Masterclass site provides self-paced access to all foundational modules, complete with downloadable content, video walkthroughs with Deputy Minister Janak Alford, and comprehensive learning guides. It serves as the entry point for any public servant beginning their AI enablement journey.'
+              : 'Le site Masterclass offre un accès autonome à tous les modules fondamentaux, avec du contenu téléchargeable, des vidéos explicatives avec le sous-ministre Janak Alford, et des guides d\'apprentissage complets. Il sert de point d\'entrée pour tout fonctionnaire commençant son parcours d\'habilitation en IA.' }}
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <div class="bg-white/15 rounded-xl px-5 py-3 text-sm">
+              <div class="font-bold text-lg">5</div>
+              {{ lang === 'en' ? 'Day Masterclass' : 'Jours de Masterclass' }}
+            </div>
+            <div class="bg-white/15 rounded-xl px-5 py-3 text-sm">
+              <div class="font-bold text-lg">17</div>
+              {{ lang === 'en' ? 'Interactive Modules' : 'Modules interactifs' }}
+            </div>
+            <div class="bg-white/15 rounded-xl px-5 py-3 text-sm">
+              <div class="font-bold text-lg">5</div>
+              {{ lang === 'en' ? 'Video Sessions' : 'Sessions vidéo' }}
+            </div>
+            <div class="bg-white/15 rounded-xl px-5 py-3 text-sm">
+              <div class="font-bold text-lg">2</div>
+              {{ lang === 'en' ? 'Languages' : 'Langues' }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROWTH OVER 35+ DAYS -->
+  <section id="growth" class="py-24 bg-gray-50 dark:bg-gray-900/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">{{ lang === 'en' ? 'Growth Over 35+ Days' : 'Croissance sur plus de 35 jours' }}</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          {{ lang === 'en'
+            ? 'The learning journey is carefully sequenced so that each day builds on the previous, creating compounding capability that transforms how public servants approach their work.'
+            : 'Le parcours d\'apprentissage est soigneusement séquencé pour que chaque jour s\'appuie sur le précédent, créant une capacité cumulée qui transforme la façon dont les fonctionnaires abordent leur travail.' }}
+        </p>
+      </div>
+
+      <!-- Growth visualization -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700 mb-12">
+        <svg viewBox="0 0 900 350" class="w-full" xmlns="http://www.w3.org/2000/svg">
+          <!-- Grid lines -->
+          <line v-for="i in 5" :key="'g'+i" x1="80" :y1="50 + (i-1)*60" x2="870" :y2="50 + (i-1)*60" stroke="currentColor" stroke-opacity="0.06" stroke-width="1"/>
+
+          <!-- Y-axis labels -->
+          <text x="70" y="55" text-anchor="end" fill="currentColor" font-size="9" opacity="0.4">{{ lang === 'en' ? 'Architect' : 'Architecte' }}</text>
+          <text x="70" y="115" text-anchor="end" fill="currentColor" font-size="9" opacity="0.4">{{ lang === 'en' ? 'Orchestrator' : 'Orchestrateur' }}</text>
+          <text x="70" y="175" text-anchor="end" fill="currentColor" font-size="9" opacity="0.4">{{ lang === 'en' ? 'Conversationalist' : 'Conversationaliste' }}</text>
+          <text x="70" y="235" text-anchor="end" fill="currentColor" font-size="9" opacity="0.4">{{ lang === 'en' ? 'Foundations' : 'Fondements' }}</text>
+          <text x="70" y="295" text-anchor="end" fill="currentColor" font-size="9" opacity="0.4">{{ lang === 'en' ? 'Start' : 'Début' }}</text>
+
+          <!-- Growth curve -->
+          <path d="M 100 290 C 140 280 160 260 200 240 C 240 220 260 210 300 195 C 360 175 420 165 480 140 C 540 115 600 100 660 80 C 720 60 780 50 850 45" fill="none" stroke="url(#growthGrad)" stroke-width="3" stroke-linecap="round"/>
+
+          <!-- Gradient def -->
+          <defs>
+            <linearGradient id="growthGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#7c3aed"/>
+              <stop offset="30%" stop-color="#2563eb"/>
+              <stop offset="60%" stop-color="#005072"/>
+              <stop offset="100%" stop-color="#004a8f"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Phase markers -->
+          <rect x="100" y="305" width="100" height="24" rx="4" fill="#7c3aed" fill-opacity="0.15"/>
+          <text x="150" y="321" text-anchor="middle" fill="#7c3aed" font-size="9" font-weight="600">MC: 5 {{ lang === 'en' ? 'days' : 'jours' }}</text>
+
+          <rect x="220" y="305" width="180" height="24" rx="4" fill="#2563eb" fill-opacity="0.15"/>
+          <text x="310" y="321" text-anchor="middle" fill="#2563eb" font-size="9" font-weight="600">L1: 10 {{ lang === 'en' ? 'days' : 'jours' }}</text>
+
+          <rect x="420" y="305" width="180" height="24" rx="4" fill="#005072" fill-opacity="0.15"/>
+          <text x="510" y="321" text-anchor="middle" fill="#005072" font-size="9" font-weight="600">L2: 10 {{ lang === 'en' ? 'days' : 'jours' }}</text>
+
+          <rect x="620" y="305" width="180" height="24" rx="4" fill="#004a8f" fill-opacity="0.15"/>
+          <text x="710" y="321" text-anchor="middle" fill="#004a8f" font-size="9" font-weight="600">L3: 10 {{ lang === 'en' ? 'days' : 'jours' }}</text>
+
+          <!-- Milestone dots -->
+          <circle cx="150" cy="265" r="5" fill="#7c3aed"/>
+          <circle cx="310" cy="185" r="5" fill="#2563eb"/>
+          <circle cx="510" cy="118" r="5" fill="#005072"/>
+          <circle cx="710" cy="60" r="5" fill="#004a8f"/>
+
+          <!-- Milestone labels -->
+          <text x="150" y="255" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.6">{{ lang === 'en' ? 'AI-First Mindset' : 'Mentalité IA-first' }}</text>
+          <text x="310" y="175" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.6">{{ lang === 'en' ? 'Confident Practitioner' : 'Praticien confiant' }}</text>
+          <text x="510" y="108" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.6">{{ lang === 'en' ? 'Workflow Builder' : 'Constructeur de flux' }}</text>
+          <text x="710" y="50" text-anchor="middle" fill="currentColor" font-size="8" opacity="0.6">{{ lang === 'en' ? 'AI Architect' : 'Architecte IA' }}</text>
+        </svg>
+      </div>
+
+      <!-- Key milestones -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div v-for="m in milestones" :key="m.title" class="text-center">
+          <div class="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold" :style="{background: m.color}">{{ m.icon }}</div>
+          <h3 class="font-bold mb-1">{{ m.title[lang] }}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ m.desc[lang] }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY INSIGHTS -->
+  <section id="insights" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">{{ lang === 'en' ? 'Key Insights for Leaders' : 'Aperçus clés pour les dirigeants' }}</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div v-for="(insight, i) in insights" :key="i" class="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-100 dark:border-gray-700">
+          <div class="text-2xl mb-3">{{ insight.icon }}</div>
+          <h3 class="font-bold mb-2">{{ insight.title[lang] }}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{{ insight.desc[lang] }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORM & DELIVERY -->
+  <section id="platform" class="py-24 bg-gray-50 dark:bg-gray-900/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4">{{ lang === 'en' ? 'Platform & Delivery Model' : 'Plateforme et modèle de livraison' }}</h2>
+      </div>
+
+      <!-- Platform architecture SVG -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-100 dark:border-gray-700">
+        <svg viewBox="0 0 800 400" class="w-full max-w-3xl mx-auto" xmlns="http://www.w3.org/2000/svg">
+          <!-- Central hub -->
+          <circle cx="400" cy="200" r="60" fill="#004a8f" fill-opacity="0.1" stroke="#004a8f" stroke-width="2"/>
+          <text x="400" y="193" text-anchor="middle" fill="#004a8f" font-size="12" font-weight="700">albertaai</text>
+          <text x="400" y="209" text-anchor="middle" fill="#004a8f" font-size="12" font-weight="700">academy.com</text>
+
+          <!-- Spokes -->
+          <line x1="340" y1="200" x2="170" y2="100" stroke="currentColor" stroke-opacity="0.15" stroke-width="1.5"/>
+          <line x1="340" y1="200" x2="170" y2="300" stroke="currentColor" stroke-opacity="0.15" stroke-width="1.5"/>
+          <line x1="460" y1="200" x2="630" y2="100" stroke="currentColor" stroke-opacity="0.15" stroke-width="1.5"/>
+          <line x1="460" y1="200" x2="630" y2="300" stroke="currentColor" stroke-opacity="0.15" stroke-width="1.5"/>
+          <line x1="400" y1="140" x2="400" y2="50" stroke="currentColor" stroke-opacity="0.15" stroke-width="1.5"/>
+          <line x1="400" y1="260" x2="400" y2="350" stroke="currentColor" stroke-opacity="0.15" stroke-width="1.5"/>
+
+          <!-- Nodes -->
+          <g transform="translate(100, 70)">
+            <rect x="0" y="0" width="140" height="60" rx="10" fill="#7c3aed" fill-opacity="0.1" stroke="#7c3aed" stroke-width="1.5"/>
+            <text x="70" y="28" text-anchor="middle" fill="#7c3aed" font-size="10" font-weight="600">{{ lang === 'en' ? 'Interactive Modules' : 'Modules interactifs' }}</text>
+            <text x="70" y="44" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">103 {{ lang === 'en' ? 'modules + quizzes' : 'modules + quiz' }}</text>
+          </g>
+
+          <g transform="translate(100, 270)">
+            <rect x="0" y="0" width="140" height="60" rx="10" fill="#2563eb" fill-opacity="0.1" stroke="#2563eb" stroke-width="1.5"/>
+            <text x="70" y="28" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="600">{{ lang === 'en' ? 'Curated Articles' : 'Articles sélectionnés' }}</text>
+            <text x="70" y="44" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">26 {{ lang === 'en' ? 'articles & guides' : 'articles et guides' }}</text>
+          </g>
+
+          <g transform="translate(560, 70)">
+            <rect x="0" y="0" width="140" height="60" rx="10" fill="#ec4899" fill-opacity="0.1" stroke="#ec4899" stroke-width="1.5"/>
+            <text x="70" y="28" text-anchor="middle" fill="#ec4899" font-size="10" font-weight="600">{{ lang === 'en' ? 'Video Content' : 'Contenu vidéo' }}</text>
+            <text x="70" y="44" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">20 {{ lang === 'en' ? 'videos + tutorials' : 'vidéos + tutoriels' }}</text>
+          </g>
+
+          <g transform="translate(560, 270)">
+            <rect x="0" y="0" width="140" height="60" rx="10" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="70" y="28" text-anchor="middle" fill="#f59e0b" font-size="10" font-weight="600">{{ lang === 'en' ? 'AI Assistant (Albert)' : 'Assistant IA (Albert)' }}</text>
+            <text x="70" y="44" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Personalized guidance' : 'Accompagnement personnalisé' }}</text>
+          </g>
+
+          <g transform="translate(330, 20)">
+            <rect x="0" y="0" width="140" height="60" rx="10" fill="#059669" fill-opacity="0.1" stroke="#059669" stroke-width="1.5"/>
+            <text x="70" y="28" text-anchor="middle" fill="#059669" font-size="10" font-weight="600">{{ lang === 'en' ? 'Audio Narration' : 'Narration audio' }}</text>
+            <text x="70" y="44" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'EN/FR per section' : 'EN/FR par section' }}</text>
+          </g>
+
+          <g transform="translate(330, 320)">
+            <rect x="0" y="0" width="140" height="60" rx="10" fill="#6366f1" fill-opacity="0.1" stroke="#6366f1" stroke-width="1.5"/>
+            <text x="70" y="28" text-anchor="middle" fill="#6366f1" font-size="10" font-weight="600">masterclass.</text>
+            <text x="70" y="44" text-anchor="middle" fill="currentColor" font-size="9" opacity="0.5">{{ lang === 'en' ? 'Downloads & Guides' : 'Téléchargements et guides' }}</text>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Delivery details -->
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <div class="text-center">
+          <div class="text-3xl mb-3">🏛️</div>
+          <h3 class="font-bold mb-2">{{ lang === 'en' ? 'Instructor-Led + Self-Paced' : 'Avec instructeur + autonome' }}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ lang === 'en' ? 'Morning instructor sessions (9-12), afternoon hands-on practice (1-3:30). All materials available online for self-paced revisiting.' : 'Sessions avec instructeur le matin (9-12), pratique l\'après-midi (13-15h30). Tous les matériaux disponibles en ligne pour révision autonome.' }}</p>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl mb-3">🔧</div>
+          <h3 class="font-bold mb-2">{{ lang === 'en' ? 'Real Tools, Real Cases' : 'Vrais outils, vrais cas' }}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ lang === 'en' ? 'Participants use Agent Builder Console (ABC), n8n, Claude Code, NotebookLM, and M365 Copilot on actual government use cases.' : 'Les participants utilisent ABC, n8n, Claude Code, NotebookLM et M365 Copilot sur de vrais cas gouvernementaux.' }}</p>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl mb-3">📊</div>
+          <h3 class="font-bold mb-2">{{ lang === 'en' ? 'Assessment & Certification' : 'Évaluation et certification' }}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ lang === 'en' ? 'Embedded quizzes (70% pass threshold), capstone assignments automating a real task, and module completion tracking.' : 'Quiz intégrés (seuil de 70%), devoirs finaux automatisant une vraie tâche, et suivi de complétion des modules.' }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAN-CANADIAN VISION -->
+  <section id="vision" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-gradient-to-br from-gray-900 to-gray-800 dark:from-gray-800 dark:to-gray-700 rounded-3xl p-10 sm:p-16 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="white"/></pattern></defs><rect width="100%" height="100%" fill="url(#dots)"/></svg>
+        </div>
+        <div class="relative max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-6">{{ lang === 'en' ? 'A Pan-Canadian Opportunity' : 'Une opportunité pancanadienne' }}</h2>
+          <p class="text-white/80 text-lg leading-relaxed mb-8">
+            {{ lang === 'en'
+              ? 'The Alberta AI Academy is not just a provincial initiative — it is a model for how governments across Canada can systematically build AI capability in their workforce. The structured progression from foundational literacy through to production-grade AI architecture creates a replicable framework that can be adapted to any jurisdiction. Level 3 already includes a Pan-Canadian Digital Marketplace collaboration module, demonstrating how shared platforms and collaborative procurement can accelerate AI adoption across all provinces.'
+              : 'L\'Académie IA de l\'Alberta n\'est pas seulement une initiative provinciale — c\'est un modèle pour comment les gouvernements à travers le Canada peuvent systématiquement développer la capacité IA de leur effectif. La progression structurée de la littératie fondamentale à l\'architecture IA de qualité production crée un cadre reproductible adaptable à toute juridiction. Le niveau 3 inclut déjà un module de collaboration pour un Marché numérique pancanadien, démontrant comment les plateformes partagées peuvent accélérer l\'adoption de l\'IA dans toutes les provinces.' }}
+          </p>
+          <div class="flex flex-wrap justify-center gap-3 text-sm">
+            <span class="px-4 py-2 rounded-full bg-white/10">{{ lang === 'en' ? '149 Learning Items' : '149 éléments d\'apprentissage' }}</span>
+            <span class="px-4 py-2 rounded-full bg-white/10">{{ lang === 'en' ? '35+ Days of Growth' : '35+ jours de croissance' }}</span>
+            <span class="px-4 py-2 rounded-full bg-white/10">{{ lang === 'en' ? 'Fully Bilingual' : 'Entièrement bilingue' }}</span>
+            <span class="px-4 py-2 rounded-full bg-white/10">{{ lang === 'en' ? 'Open Framework' : 'Cadre ouvert' }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <svg width="24" height="24" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#004a8f"/><text x="20" y="27" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="Inter">AI</text></svg>
+        <span class="font-bold">Alberta AI Academy</span>
+      </div>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{{ lang === 'en' ? 'Government of Alberta — Technology & Innovation' : 'Gouvernement de l\'Alberta — Technologie et innovation' }}</p>
+      <p class="text-xs text-gray-400 dark:text-gray-500">{{ lang === 'en' ? 'Led by Deputy Minister Janak Alford' : 'Dirigé par le sous-ministre Janak Alford' }} · albertaaiacademy.com · masterclass.albertaaiacademy.com</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+const { createApp, ref } = Vue
+
+createApp({
+  setup() {
+    const dark = ref(window.matchMedia('(prefers-color-scheme: dark)').matches)
+    const lang = ref('en')
+
+    if (dark.value) document.documentElement.classList.add('dark')
+
+    function toggleDark() {
+      dark.value = !dark.value
+      document.documentElement.classList.toggle('dark', dark.value)
+    }
+
+    const navSections = [
+      { id: 'about', label: 'About' },
+      { id: 'journey', label: 'Journey' },
+      { id: 'structure', label: 'Structure' },
+      { id: 'frameworks', label: 'Frameworks' },
+      { id: 'growth', label: 'Growth' },
+      { id: 'insights', label: 'Insights' },
+      { id: 'platform', label: 'Platform' }
+    ]
+
+    const heroStats = [
+      { value: '149', label: { en: 'Learning Items', fr: 'Éléments d\'apprentissage' } },
+      { value: '35+', label: { en: 'Days of Content', fr: 'Jours de contenu' } },
+      { value: '103', label: { en: 'Interactive Modules', fr: 'Modules interactifs' } },
+      { value: '4', label: { en: 'Progressive Levels', fr: 'Niveaux progressifs' } }
+    ]
+
+    const pillars = [
+      {
+        icon: '🎯', color: '#004a8f',
+        title: { en: 'AI Maximalist Mindset', fr: 'Mentalité AI Maximalist' },
+        desc: { en: 'We train public servants to reach for AI as the first step in every task — not an afterthought. Most users plateau at 5-10% productivity gain; our frameworks break through that ceiling to unlock 10x potential.', fr: 'Nous formons les fonctionnaires à utiliser l\'IA comme première étape de chaque tâche — pas après coup. La plupart des utilisateurs plafonnent à 5-10% de gain; nos cadres brisent ce plafond pour libérer un potentiel 10x.' }
+      },
+      {
+        icon: '🏗️', color: '#005072',
+        title: { en: 'Structured Progressive Learning', fr: 'Apprentissage progressif structuré' },
+        desc: { en: 'Four levels that build deliberately: Masterclass foundations, Level 1 literacy, Level 2 orchestration, Level 3 architecture. Each module builds on the last with practical tools you apply immediately.', fr: 'Quatre niveaux qui se construisent délibérément : fondements Masterclass, littératie Niveau 1, orchestration Niveau 2, architecture Niveau 3. Chaque module s\'appuie sur le précédent avec des outils pratiques appliqués immédiatement.' }
+      },
+      {
+        icon: '🇨🇦', color: '#7c3aed',
+        title: { en: 'Built for Canadian Public Service', fr: 'Conçu pour la fonction publique canadienne' },
+        desc: { en: 'Fully bilingual (EN/FR) with audio narration, grounded in real government use cases — translation services, procurement, corporate research, legal review — with responsible AI and governance woven throughout.', fr: 'Entièrement bilingue (EN/FR) avec narration audio, ancré dans de vrais cas gouvernementaux — services de traduction, approvisionnement, recherche corporative, examen juridique — avec l\'IA responsable et la gouvernance intégrées partout.' }
+      }
+    ]
+
+    const levels = [
+      {
+        id: 'masterclass', color: '#7c3aed', icon: '🎓',
+        name: { en: 'Masterclass', fr: 'Classe de maître' },
+        subtitle: { en: 'AI Adoption Framework', fr: 'Cadre d\'adoption de l\'IA' },
+        description: { en: 'The foundational 5-day program led by Deputy Minister Janak Alford. Covers the AI Maximalist mindset, mental models (Box 1/Box 2 thinking), the RICECO prompting framework, the T.R.U.S.T. verification protocol, tools landscape, agents, agentic workflows, and AI leadership strategies. Available as downloadable modules at masterclass.albertaaiacademy.com.', fr: 'Le programme fondamental de 5 jours dirigé par le sous-ministre Janak Alford. Couvre la mentalité AI Maximalist, les modèles mentaux (pensée Box 1/Box 2), le cadre de prompting RICECO, le protocole de vérification T.R.U.S.T., le paysage des outils, les agents, les flux agentiques et les stratégies de leadership IA. Disponible en modules téléchargeables à masterclass.albertaaiacademy.com.' },
+        days: 5, items: 23, modules: 17,
+        dayList: [
+          { day: 1, title: { en: 'Foundations & Mindset', fr: 'Fondements et état d\'esprit' } },
+          { day: 2, title: { en: 'Tools & Models', fr: 'Outils et modèles' } },
+          { day: 3, title: { en: 'Prompting Frameworks', fr: 'Cadres de prompting' } },
+          { day: 4, title: { en: 'Agents & Agentic Workflows', fr: 'Agents et flux agentiques' } },
+          { day: 5, title: { en: 'AI for Leaders', fr: 'IA pour les dirigeants' } }
+        ]
+      },
+      {
+        id: 'level1', color: '#2563eb', icon: '🌱',
+        name: { en: 'Level 1: The Conversationalist', fr: 'Niveau 1 : Le conversationaliste' },
+        subtitle: { en: 'From Zero to AI-Literate in 10 Days', fr: 'De zéro à compétent en IA en 10 jours' },
+        description: { en: 'The foundational AI literacy program. Master prompting with RICECO, verification with T.R.U.S.T., research tools (NotebookLM, Copilot), custom agents and GEMs, structured output with JSON, image and voice AI, and agentic workflows. Includes a hands-on use case relevant to each participant\'s work. Zero prerequisites.', fr: 'Le programme fondamental de littératie IA. Maîtrisez le prompting avec RICECO, la vérification avec T.R.U.S.T., les outils de recherche (NotebookLM, Copilot), les agents personnalisés et GEM, les sorties structurées avec JSON, l\'IA d\'image et de voix, et les flux agentiques. Inclut un cas d\'usage pratique pertinent au travail de chaque participant. Aucun prérequis.' },
+        days: 10, items: 45, modules: 22,
+        dayList: [
+          { day: 1, title: { en: 'Welcome, Orientation & Foundations', fr: 'Accueil, orientation et fondements' } },
+          { day: 2, title: { en: 'How AI Works & Prompting Fundamentals', fr: 'Fonctionnement de l\'IA et fondements du prompting' } },
+          { day: 3, title: { en: 'T.R.U.S.T. / RICECO & Responsible Use', fr: 'T.R.U.S.T. / RICECO et utilisation responsable' } },
+          { day: 4, title: { en: 'NotebookLM Deep Dive', fr: 'Exploration de NotebookLM' } },
+          { day: 5, title: { en: 'Microsoft 365 Copilot', fr: 'Microsoft 365 Copilot' } },
+          { day: 6, title: { en: 'Agents & Custom AI', fr: 'Agents et IA personnalisée' } },
+          { day: 7, title: { en: 'AI Research (Deep & Wide)', fr: 'Recherche IA (profonde et large)' } },
+          { day: 8, title: { en: 'JSON, Images, Voice & Multimodal', fr: 'JSON, images, voix et multimodal' } },
+          { day: 9, title: { en: 'Agentic Workflows & Automation', fr: 'Flux agentiques et automatisation' } },
+          { day: 10, title: { en: 'Your Maximalist Journey Continues', fr: 'Votre parcours maximaliste continue' } }
+        ]
+      },
+      {
+        id: 'level2', color: '#005072', icon: '⚡',
+        name: { en: 'Level 2: The Orchestrator', fr: 'Niveau 2 : L\'orchestrateur' },
+        subtitle: { en: 'Design, Build & Deploy AI Agents', fr: 'Concevoir, construire et déployer des agents IA' },
+        description: { en: 'Focuses on practical skills for designing, building, and deploying AI agents and agentic workflows. Real-world use cases include translation services, corporate research, business case creation, and procurement automation. Participants learn Agent Builder Console (ABC), n8n automation platform, systems thinking, parallel processing, testing, and governance. Culminates in a capstone assignment automating a real work task.', fr: 'Se concentre sur les compétences pratiques pour concevoir, construire et déployer des agents IA et des flux agentiques. Les cas d\'usage incluent services de traduction, recherche corporative, création de cas d\'affaires et automatisation d\'approvisionnement. Les participants apprennent ABC, la plateforme n8n, la pensée systémique, le traitement parallèle, les tests et la gouvernance. Culmine avec un devoir final automatisant une vraie tâche.' },
+        days: 10, items: 41, modules: 25,
+        dayList: [
+          { day: 1, title: { en: 'Welcome & Prompting Refresher', fr: 'Bienvenue et rappel de prompting' } },
+          { day: 2, title: { en: 'Agentic Workflows: Concepts & Design', fr: 'Flux agentiques : concepts et conception' } },
+          { day: 3, title: { en: 'Problem Analysis & Decision Frameworks', fr: 'Analyse de problèmes et cadres décisionnels' } },
+          { day: 4, title: { en: 'Translation & Document Processing', fr: 'Traduction et traitement de documents' } },
+          { day: 5, title: { en: 'Research & Corporate Intelligence', fr: 'Recherche et intelligence corporative' } },
+          { day: 6, title: { en: 'Business Case & Dual-Track', fr: 'Cas d\'affaires et double voie' } },
+          { day: 7, title: { en: 'Introduction to n8n', fr: 'Introduction à n8n' } },
+          { day: 8, title: { en: 'Building AI Agents in n8n', fr: 'Construction d\'agents IA dans n8n' } },
+          { day: 9, title: { en: 'Testing, Deployment & Governance', fr: 'Tests, déploiement et gouvernance' } },
+          { day: 10, title: { en: 'Your Maximalist Journey Continues', fr: 'Votre parcours maximaliste continue' } }
+        ]
+      },
+      {
+        id: 'level3', color: '#004a8f', icon: '🚀',
+        name: { en: 'Level 3: The Architect', fr: 'Niveau 3 : L\'architecte' },
+        subtitle: { en: 'Build, Deploy & Scale Production AI', fr: 'Construire, déployer et mettre à l\'échelle l\'IA de production' },
+        description: { en: 'Transforms practitioners into AI architects building production-grade systems. Covers Claude Code as development environment, the Pronghorn platform, execution templates, multi-skill orchestration, full-stack deployment, the Factory Model for application building, enterprise tools integration, security verification (ASVS), and real client delivery — including a Women\'s Shelter Funding Portal and Pan-Canadian Digital Marketplace collaboration.', fr: 'Transforme les praticiens en architectes IA construisant des systèmes de qualité production. Couvre Claude Code, la plateforme Pronghorn, les modèles d\'exécution, l\'orchestration multi-compétences, le déploiement full-stack, le modèle d\'usine, l\'intégration d\'outils d\'entreprise, la vérification de sécurité (ASVS) et la livraison client réelle — incluant un portail de financement pour refuges pour femmes et la collaboration du Marché numérique pancanadien.' },
+        days: 10, items: 40, modules: 39,
+        dayList: [
+          { day: 1, title: { en: 'Foundations of Agentic AI & Claude Code', fr: 'Fondements de l\'IA agentique et Claude Code' } },
+          { day: 2, title: { en: 'Agent Builder Console & Free Agents', fr: 'Console Agent Builder et agents gratuits' } },
+          { day: 3, title: { en: 'Execution Templates & Skill Orchestration', fr: 'Modèles d\'exécution et orchestration' } },
+          { day: 4, title: { en: 'Pronghorn Platform & Quality Assurance', fr: 'Plateforme Pronghorn et assurance qualité' } },
+          { day: 5, title: { en: 'Applied Prototyping & Security', fr: 'Prototypage appliqué et sécurité' } },
+          { day: 6, title: { en: 'Platform Deployment & Data-Driven Dev', fr: 'Déploiement et développement data-driven' } },
+          { day: 7, title: { en: 'Requirements Engineering & Factory Model', fr: 'Ingénierie des exigences et modèle d\'usine' } },
+          { day: 8, title: { en: 'Pan-Canadian Collaboration & Prototyping', fr: 'Collaboration pancanadienne et prototypage' } },
+          { day: 9, title: { en: 'Chrome Extensions & Client Delivery', fr: 'Extensions Chrome et livraison client' } },
+          { day: 10, title: { en: 'Participant Showcases & Synthesis', fr: 'Présentations et synthèse du cours' } }
+        ]
+      }
+    ]
+
+    const contentTypes = [
+      { type: 'module', icon: '📘', label: { en: 'Interactive Modules', fr: 'Modules interactifs' }, count: 103, bgClass: 'bg-blue-100 dark:bg-blue-900/30', desc: { en: 'Multi-section structured learning with hero blocks, cards, highlights, embedded quizzes, and completion tracking. The core learning format.', fr: 'Apprentissage structuré multi-sections avec blocs héros, cartes, faits saillants, quiz intégrés et suivi de complétion. Le format d\'apprentissage principal.' } },
+      { type: 'article', icon: '📄', label: { en: 'Curated Articles', fr: 'Articles sélectionnés' }, count: 26, bgClass: 'bg-green-100 dark:bg-green-900/30', desc: { en: 'Written resources with markdown content, linking to external sources and reference materials. Supports reading and self-study.', fr: 'Ressources écrites avec contenu markdown, liens vers des sources externes et matériaux de référence. Supporte la lecture et l\'auto-apprentissage.' } },
+      { type: 'video', icon: '🎬', label: { en: 'Video Walkthroughs', fr: 'Vidéos explicatives' }, count: 20, bgClass: 'bg-pink-100 dark:bg-pink-900/30', desc: { en: 'Embedded YouTube videos including masterclass sessions with DM Alford, tool tutorials, and use case demonstrations.', fr: 'Vidéos YouTube intégrées incluant les sessions masterclass avec le SM Alford, tutoriels d\'outils et démonstrations de cas d\'usage.' } },
+      { type: 'quiz', icon: '✅', label: { en: 'Embedded Quizzes', fr: 'Quiz intégrés' }, count: '100+', bgClass: 'bg-red-100 dark:bg-red-900/30', desc: { en: 'Multiple-choice assessments within modules. 70% pass threshold, scoring panel, retake capability. Bilingual questions and explanations.', fr: 'Évaluations à choix multiples dans les modules. Seuil de 70%, panneau de notation, possibilité de reprise. Questions et explications bilingues.' } },
+      { type: 'audio', icon: '🔊', label: { en: 'Audio Narration', fr: 'Narration audio' }, count: '200+', bgClass: 'bg-yellow-100 dark:bg-yellow-900/30', desc: { en: 'AI-generated natural voice narration for every module section in both English and French. Play/pause per section for self-paced listening.', fr: 'Narration vocale naturelle générée par IA pour chaque section de module en anglais et français. Lecture/pause par section pour écoute autonome.' } },
+      { type: 'tools', icon: '🔧', label: { en: 'Tools & Downloads', fr: 'Outils et téléchargements' }, count: '10+', bgClass: 'bg-purple-100 dark:bg-purple-900/30', desc: { en: 'Direct links to AI tools (ABC, n8n, NotebookLM, Copilot) and downloadable resources (PDFs, workflow JSON files).', fr: 'Liens directs vers les outils IA (ABC, n8n, NotebookLM, Copilot) et ressources téléchargeables (PDF, fichiers JSON de flux).' } }
+    ]
+
+    const riceco = [
+      { letter: 'R', word: { en: 'Role', fr: 'Rôle' }, desc: { en: 'Define who the AI should act as — the persona and expertise it should embody.', fr: 'Définir qui l\'IA devrait être — le persona et l\'expertise qu\'elle devrait incarner.' } },
+      { letter: 'I', word: { en: 'Instruction', fr: 'Instruction' }, desc: { en: 'State exactly what you want the AI to do — the specific task or action.', fr: 'Énoncer exactement ce que vous voulez que l\'IA fasse — la tâche ou action spécifique.' } },
+      { letter: 'C', word: { en: 'Context', fr: 'Contexte' }, desc: { en: 'Provide background information the AI needs to understand the situation.', fr: 'Fournir les informations de fond dont l\'IA a besoin pour comprendre la situation.' } },
+      { letter: 'E', word: { en: 'Examples', fr: 'Exemples' }, desc: { en: 'Show what good output looks like — reference examples to guide the response.', fr: 'Montrer à quoi ressemble un bon résultat — exemples de référence pour guider la réponse.' } },
+      { letter: 'C', word: { en: 'Constraints', fr: 'Contraintes' }, desc: { en: 'Set boundaries — what to include, exclude, tone, length, format restrictions.', fr: 'Fixer les limites — quoi inclure, exclure, ton, longueur, restrictions de format.' } },
+      { letter: 'O', word: { en: 'Output', fr: 'Sortie' }, desc: { en: 'Specify the desired format — bullet points, table, JSON, email, report, etc.', fr: 'Spécifier le format désiré — puces, tableau, JSON, courriel, rapport, etc.' } }
+    ]
+
+    const trust = [
+      { letter: 'T', word: { en: 'Test the output', fr: 'Tester le résultat' }, desc: { en: 'Run the output against known facts, logic, and your domain expertise.', fr: 'Vérifier le résultat contre des faits connus, la logique et votre expertise du domaine.' } },
+      { letter: 'R', word: { en: 'Review for bias', fr: 'Réviser les biais' }, desc: { en: 'Check for hidden assumptions, cultural bias, and skewed perspectives.', fr: 'Vérifier les hypothèses cachées, les biais culturels et les perspectives biaisées.' } },
+      { letter: 'U', word: { en: 'Understand limitations', fr: 'Comprendre les limites' }, desc: { en: 'Know what AI can and cannot do — hallucinations, knowledge cutoffs, reasoning gaps.', fr: 'Savoir ce que l\'IA peut et ne peut pas faire — hallucinations, coupures de connaissances, lacunes de raisonnement.' } },
+      { letter: 'S', word: { en: 'Source verification', fr: 'Vérification des sources' }, desc: { en: 'Verify claims, citations, and data points against authoritative sources.', fr: 'Vérifier les affirmations, citations et données contre des sources autorisées.' } },
+      { letter: 'T', word: { en: 'Track changes', fr: 'Suivre les changements' }, desc: { en: 'Document AI contributions and maintain an audit trail for accountability.', fr: 'Documenter les contributions de l\'IA et maintenir une piste d\'audit pour la responsabilité.' } }
+    ]
+
+    const bilingualFeatures = [
+      { icon: '🌐', title: { en: 'Full Text Translation', fr: 'Traduction complète du texte' }, desc: { en: 'Every title, description, module section, card, and highlight available in both English and French with one-click toggle.', fr: 'Chaque titre, description, section de module, carte et fait saillant disponible en anglais et en français avec un clic.' } },
+      { icon: '🔊', title: { en: 'Audio Narration', fr: 'Narration audio' }, desc: { en: 'AI-generated natural voice narrates every module section. Switch between English and French audio independently.', fr: 'Une voix naturelle générée par IA narre chaque section de module. Basculer entre l\'audio anglais et français indépendamment.' } },
+      { icon: '✅', title: { en: 'Bilingual Quizzes', fr: 'Quiz bilingues' }, desc: { en: 'All quiz questions, answer options, and explanations are fully translated and switch dynamically with the language toggle.', fr: 'Toutes les questions, options de réponse et explications des quiz sont entièrement traduites et changent dynamiquement.' } },
+      { icon: '🤖', title: { en: 'Albert Speaks Both', fr: 'Albert parle les deux' }, desc: { en: 'The AI curriculum assistant Albert provides personalized recommendations and guidance in the user\'s chosen language.', fr: 'L\'assistant IA du programme Albert fournit des recommandations et conseils personnalisés dans la langue choisie.' } }
+    ]
+
+    const milestones = [
+      { icon: '🎓', color: '#7c3aed', title: { en: 'Week 1: Foundations', fr: 'Semaine 1 : Fondements' }, desc: { en: 'Masterclass establishes the AI-first mindset, mental models, and core frameworks (RICECO, T.R.U.S.T.)', fr: 'La Masterclass établit la mentalité IA-first, les modèles mentaux et les cadres fondamentaux (RICECO, T.R.U.S.T.)' } },
+      { icon: '🌱', color: '#2563eb', title: { en: 'Weeks 2-3: Literacy', fr: 'Semaines 2-3 : Littératie' }, desc: { en: 'Level 1 builds confident practitioners who can prompt, verify, research, and create with AI tools daily', fr: 'Le Niveau 1 forme des praticiens confiants qui peuvent prompter, vérifier, rechercher et créer avec l\'IA quotidiennement' } },
+      { icon: '⚡', color: '#005072', title: { en: 'Weeks 4-5: Orchestration', fr: 'Semaines 4-5 : Orchestration' }, desc: { en: 'Level 2 develops workflow builders who design, test, and deploy AI agents solving real government problems', fr: 'Le Niveau 2 développe des constructeurs de flux qui conçoivent, testent et déploient des agents IA résolvant de vrais problèmes' } },
+      { icon: '🚀', color: '#004a8f', title: { en: 'Weeks 6-7: Architecture', fr: 'Semaines 6-7 : Architecture' }, desc: { en: 'Level 3 creates AI architects who build production-grade platforms, manage deployments, and deliver to real clients', fr: 'Le Niveau 3 crée des architectes IA qui construisent des plateformes de production, gèrent les déploiements et livrent à de vrais clients' } }
+    ]
+
+    const insights = [
+      { icon: '📈', title: { en: 'Breaking the 5-10% Ceiling', fr: 'Briser le plafond de 5-10%' }, desc: { en: 'Most AI users plateau at modest productivity gains. Our structured framework methodology — not just tool training — unlocks the 10x multiplier through mindset shifts and systematic application.', fr: 'La plupart des utilisateurs d\'IA plafonnent à des gains modestes. Notre méthodologie de cadre structuré — pas juste la formation aux outils — débloque le multiplicateur 10x grâce aux changements de mentalité et à l\'application systématique.' } },
+      { icon: '🏭', title: { en: 'The Factory Model', fr: 'Le modèle d\'usine' }, desc: { en: 'Level 3 introduces the AI Factory concept — a systematic approach to building applications using skill-based pipelines, execution templates, and reusable blueprints that dramatically accelerate delivery.', fr: 'Le Niveau 3 introduit le concept d\'usine IA — une approche systématique pour construire des applications avec des pipelines basés sur les compétences et des modèles réutilisables qui accélèrent dramatiquement la livraison.' } },
+      { icon: '🔒', title: { en: 'Governance Built In', fr: 'Gouvernance intégrée' }, desc: { en: 'Responsible AI is not a separate module — it is woven throughout every level. The T.R.U.S.T. protocol ensures verification at every step, and Level 2 includes dedicated AI governance and compliance content.', fr: 'L\'IA responsable n\'est pas un module séparé — elle est tissée à travers chaque niveau. Le protocole T.R.U.S.T. assure la vérification à chaque étape, et le Niveau 2 inclut du contenu dédié à la gouvernance et conformité IA.' } },
+      { icon: '🤝', title: { en: 'Real-World Use Cases', fr: 'Cas d\'usage réels' }, desc: { en: 'Every level uses actual government scenarios: translation services, procurement automation, corporate research, legal review, business case creation — not theoretical exercises.', fr: 'Chaque niveau utilise de vrais scénarios gouvernementaux : services de traduction, automatisation d\'approvisionnement, recherche corporative, examen juridique, création de cas d\'affaires — pas des exercices théoriques.' } },
+      { icon: '🎯', title: { en: 'Capstone Assignments', fr: 'Devoirs de synthèse' }, desc: { en: 'Participants don\'t just learn theory — they automate a real task from their own day-to-day work as a final assignment, ensuring immediate organizational value from Day 1 post-graduation.', fr: 'Les participants ne se contentent pas d\'apprendre la théorie — ils automatisent une vraie tâche de leur travail quotidien comme devoir final, assurant une valeur organisationnelle immédiate dès le jour 1 après la diplomation.' } },
+      { icon: '🌐', title: { en: 'Pan-Canadian Scalability', fr: 'Évolutivité pancanadienne' }, desc: { en: 'The structured curriculum, bilingual delivery, and replicable framework make this directly adaptable to any Canadian jurisdiction. Level 3 already includes Pan-Canadian collaboration modules.', fr: 'Le programme structuré, la livraison bilingue et le cadre reproductible rendent ceci directement adaptable à toute juridiction canadienne. Le Niveau 3 inclut déjà des modules de collaboration pancanadienne.' } }
+    ]
+
+    return {
+      dark, lang, toggleDark, navSections, heroStats, pillars, levels,
+      contentTypes, riceco, trust, bilingualFeatures, milestones, insights
+    }
+  }
+}).mount('#app')
+</script>
+</body>
+</html>

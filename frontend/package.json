@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "translate": "node ../scripts/translator.mjs",
+    "generate-audio": "node ../scripts/generate-audio.mjs",
+    "compress-audio": "node ../scripts/compress-audio.mjs"
+  },
+  "dependencies": {
+    "@vue-flow/core": "^1.48.2",
+    "docx": "^9.6.0",
+    "marked": "^17.0.3",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.25",
+    "vue-i18n": "^10.0.8",
+    "vue-router": "^5.0.3"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "@intlify/unplugin-vue-i18n": "^11.0.7",
+    "@vitejs/plugin-vue": "^6.0.2",
+    "vite": "^8.1.3"
+  }
+}

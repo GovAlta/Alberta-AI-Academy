@@ -1,0 +1,192 @@
+{
+  "workflow": {
+    "stages": [
+      {
+        "id": "stage-1760017365354",
+        "name": "Research",
+        "nodes": [
+          {
+            "id": "agent-1760017375493",
+            "nodeType": "agent",
+            "name": "Search Criteria",
+            "type": "researcher",
+            "systemPrompt": "You provide a single google search criteria with no other text.",
+            "userPrompt": "Prepare a clear Google Search term, and nothing else, no more than 10 words, based on this event. Don't make reference to the Minister: {prompt}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760017453882",
+        "name": "Google Search",
+        "nodes": [
+          {
+            "id": "function-1760017467695",
+            "nodeType": "function",
+            "name": "Google Search",
+            "functionType": "google_search",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1760017481800",
+        "name": "Gather Web Content",
+        "nodes": [
+          {
+            "id": "function-1760017484511",
+            "nodeType": "function",
+            "name": "Web Scrape",
+            "functionType": "web_scrape",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1760017491059",
+        "name": "Build the Agenda",
+        "nodes": [
+          {
+            "id": "agent-1760017497957",
+            "nodeType": "agent",
+            "name": "Agenda Builder",
+            "type": "analyst",
+            "systemPrompt": "You prepare a clear agenda breakdown for the event based on the interests of the Minister of Technology and Innovation, specifically around AI and data centres, digital sovereignty, privacy, deepfake protection, cyber security.",
+            "userPrompt": "Prepare a clear table of key interests and events for the Minister.: {input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760017563641",
+        "name": "Plan the Travel",
+        "nodes": [
+          {
+            "id": "agent-1760017565777",
+            "nodeType": "agent",
+            "name": "Travel Planner",
+            "type": "analyst",
+            "systemPrompt": "Based on travel from Edmonton Alberta, and the dates of the events, create a realistic timeline for this mission, including flight, time change, and rest for the Minister and any accompanying staff.",
+            "userPrompt": "Prepare a clear agenda table for this event. Consider all factors, and put in contingency for rest. Note specifically the Minister's preference to travel in the morning and noon from Edmonton, to stay in a Bonvoy hotel chain: {input}",
+            "tools": [],
+            "minimized": false
+          },
+          {
+            "id": "agent-1760017647127",
+            "nodeType": "agent",
+            "name": "Speaking Notes",
+            "type": "summarizer",
+            "systemPrompt": "You create proposed speaking notes for this event if Minister is requested to speak, aligning to Minister's priorities in data centres, AI, government transformation.",
+            "userPrompt": "Prepare proposed speaking notes for this event: {prompt} \n\nConsider the agenda: {input}",
+            "tools": [],
+            "minimized": false
+          }
+        ]
+      },
+      {
+        "id": "stage-1760017764297",
+        "name": "Stage 6",
+        "nodes": [
+          {
+            "id": "function-1760017776298",
+            "nodeType": "function",
+            "name": "Export to Word",
+            "functionType": "export_word",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          },
+          {
+            "id": "agent-1760017956997",
+            "nodeType": "agent",
+            "name": "Travel Approval",
+            "type": "researcher",
+            "systemPrompt": "You are the Minister's Chief of Staff, requesting travel approval from the Premier's Office. Summarize the event, the purpose, the outcomes, and the travel information to seek approval to travel. Identify how this will advance Alberta's priorities in 1-3 bullets.",
+            "userPrompt": "Here is the mission information. Prepare an email to request travel approval: {input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760018022912",
+        "name": "Stage 7",
+        "nodes": [
+          {
+            "id": "function-1760018028525",
+            "nodeType": "function",
+            "name": "Travel Email",
+            "functionType": "export_text",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn-1760017476425",
+        "fromNodeId": "agent-1760017375493",
+        "toNodeId": "function-1760017467695"
+      },
+      {
+        "id": "conn-1760017488073",
+        "fromNodeId": "function-1760017467695",
+        "toNodeId": "function-1760017484511",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1760017554069",
+        "fromNodeId": "function-1760017484511",
+        "toNodeId": "agent-1760017497957",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1760017620026",
+        "fromNodeId": "agent-1760017497957",
+        "toNodeId": "agent-1760017565777"
+      },
+      {
+        "id": "conn-1760017675729",
+        "fromNodeId": "agent-1760017497957",
+        "toNodeId": "agent-1760017647127"
+      },
+      {
+        "id": "conn-1760017779190",
+        "fromNodeId": "agent-1760017565777",
+        "toNodeId": "function-1760017776298"
+      },
+      {
+        "id": "conn-1760017782279",
+        "fromNodeId": "agent-1760017647127",
+        "toNodeId": "function-1760017776298"
+      },
+      {
+        "id": "conn-1760018016575",
+        "fromNodeId": "agent-1760017647127",
+        "toNodeId": "agent-1760017956997"
+      },
+      {
+        "id": "conn-1760018019070",
+        "fromNodeId": "agent-1760017565777",
+        "toNodeId": "agent-1760017956997"
+      },
+      {
+        "id": "conn-1760018032337",
+        "fromNodeId": "agent-1760017956997",
+        "toNodeId": "function-1760018028525"
+      }
+    ]
+  },
+  "userInput": "The Minister of Technology and Innovation wishes to attend this summit\n\n9. World Summit AI\nDate: October 8-9, 2025.\nLocation: Amsterdam, Netherlands.\nCost: From €349.\nThe World Summit AI conference is a large event hosted in Amsterdam. It will include keynote speakers and an expo. The conference will offer tracks on relevant topics like Generative AI, scaling startups with AI, and AI in finance and other industries. Save money with the Early Bird discount.",
+  "workflowName": "Minister Mission Builder",
+  "customAgents": []
+}

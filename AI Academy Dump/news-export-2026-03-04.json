@@ -1,0 +1,209 @@
+{
+  "_export_metadata": {
+    "export_type": "news",
+    "exported_at": "2026-03-04T19:15:26.941Z",
+    "total_items": 8
+  },
+  "data": [
+    {
+      "id": "3e65dcc5-f07b-494f-8fc6-34f29ec033b0",
+      "title": "How to build a coding agent",
+      "description": "Learn to build AI Coding Agents from scratch. \n\nSimilar to Claude code, Cursor, Windsurf, Amp, Cline and OpenCode.\n\n100% free workshop.",
+      "metadata": {
+        "social_links": {
+          "twitter": "https://x.com/Saboo_Shubham_/status/1959846664329449487",
+          "facebook": "",
+          "linkedin": "",
+          "instagram": ""
+        }
+      },
+      "level": "2",
+      "status": "draft",
+      "created_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "updated_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "created_at": "2025-08-25T11:50:00.743885+00:00",
+      "updated_at": "2025-08-26T17:23:57.169805+00:00",
+      "is_active": true,
+      "language": "English",
+      "stars_rating": 0,
+      "deleted_at": null,
+      "image_url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/media-assets/images/1756122594246-rd6kxikfctr.jpg",
+      "video_url": ""
+    },
+    {
+      "id": "85bf5a7f-5fdb-4ae0-9e25-e5fd6ce17ff6",
+      "title": "NVIDIA's Spectrum-XGS Ethernet Solves AI Data Center Space Crisis",
+      "description": "NVIDIA announced its Spectrum-XGS Ethernet technology to address the growing challenge of AI data centers running out of space. The technology enables \"giga-scale AI super-factories\" by connecting multiple AI data centers across vast distances into unified computing systems.\n\nKey Points:\n\n• Introduces \"scale-across\" capability as a third approach to AI computing\n\n• Features distance-adaptive algorithms and advanced congestion control\n\n• Can nearly double the performance of NVIDIA's Collective Communications Library\n\n• CoreWeave will be among the first adopters\n\n• Addresses the costly dilemma of building bigger facilities vs. distributed computing\n\nSignificance: This could fundamentally change how AI infrastructure is planned and deployed, allowing companies to distribute computational power across multiple smaller locations while maintaining performance.\n\nhttps://nvidianews.nvidia.com/news/nvidia-introduces-spectrum-xgs-ethernet-to-connect-distributed-data-centers-into-giga-scale-ai-super-factories\n",
+      "metadata": {
+        "social_links": {
+          "twitter": "",
+          "facebook": "",
+          "linkedin": "",
+          "instagram": ""
+        }
+      },
+      "level": "1",
+      "status": "draft",
+      "created_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "updated_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "created_at": "2025-08-25T20:18:36.850986+00:00",
+      "updated_at": "2025-08-26T17:23:42.899255+00:00",
+      "is_active": true,
+      "language": "English",
+      "stars_rating": 0,
+      "deleted_at": null,
+      "image_url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/media-assets/images/1756153087781-a6knad4i1g4.png",
+      "video_url": ""
+    },
+    {
+      "id": "57809831-a91b-493f-b6b1-64966fb3222b",
+      "title": "Elon Musk's xAI Open Sources Grok 2.5",
+      "description": "Date: August 24, 2025\nSource: TechCrunch\n\nElon Musk announced that xAI has made the model weights for Grok 2.5 available on the open source platform Hugging Face, with plans to open source Grok 3 in about 6 months.\n\nKey Points:\n\n•\nGrok 2.5 model weights now available on Hugging Face\n\n•\nLicense described as \"custom with some anti-competitive terms\"\n\n•\nGrok 3 planned for open source release in ~6 months\n\n•\nGrok has been controversial this year with various problematic outputs\n\n•\nLatest Grok 4 described as \"maximally truth-seeking AI\"\n\nSignificance: Continues the trend of major AI companies releasing open source models, though with custom licensing terms that may limit commercial use.",
+      "metadata": {
+        "social_links": {
+          "twitter": "https://x.com/elonmusk/status/1959379349322313920",
+          "facebook": "",
+          "linkedin": "",
+          "instagram": ""
+        }
+      },
+      "level": "1",
+      "status": "draft",
+      "created_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "updated_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "created_at": "2025-08-25T20:19:32.771223+00:00",
+      "updated_at": "2025-08-26T17:23:48.064511+00:00",
+      "is_active": true,
+      "language": "English",
+      "stars_rating": 0,
+      "deleted_at": null,
+      "image_url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/media-assets/images/1756153168027-dawmjqgzam6.png",
+      "video_url": ""
+    },
+    {
+      "id": "518dabe8-73c2-441c-9d34-b45421364d55",
+      "title": "Google NotebookLM Adds New Audio Overview Formats",
+      "description": "NotebookLM now offers three fresh ways to experience your sources: Brief (a 1–2 minute summary), Critique (an expert-style review), and Debate (a dialogue between two hosts). These join the classic Deep Dive, giving users more flexibility in how they learn and explore content.",
+      "metadata": {
+        "social_links": {
+          "twitter": "https://x.com/NotebookLM/status/1962949985546187120",
+          "facebook": "",
+          "linkedin": "",
+          "instagram": ""
+        }
+      },
+      "level": "1",
+      "status": "published",
+      "created_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "updated_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "created_at": "2025-09-04T18:32:28.906411+00:00",
+      "updated_at": "2025-09-04T18:32:34.635397+00:00",
+      "is_active": true,
+      "language": "English",
+      "stars_rating": 0,
+      "deleted_at": null,
+      "image_url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/media-assets/images/1757010740448-oxsloirb03j.png",
+      "video_url": ""
+    },
+    {
+      "id": "280ddb79-beb1-4809-92e9-d5f849959649",
+      "title": "OpenAI Makes Projects in ChatGPT Available to All Users with New Memory Controls",
+      "description": "OpenAI is expanding its Projects feature to every ChatGPT user—including those on the free tier—bringing powerful organizational tools to all. Projects let users gather chats, reference files, and custom instructions in one smart workspace. New controls now let creators choose between default or project-only memory, keeping context tightly focused when needed. File upload limits vary by plan: Free users get 5 files per project, Plus users 25, and Pro/Business/Enterprise users 40. The feature supports web and Android, with iOS support coming soon.",
+      "metadata": {
+        "social_links": {
+          "twitter": "https://x.com/openai/status/1963329936368046111",
+          "facebook": "",
+          "linkedin": "",
+          "instagram": ""
+        }
+      },
+      "level": "1",
+      "status": "published",
+      "created_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "updated_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "created_at": "2025-09-04T18:36:07.535067+00:00",
+      "updated_at": "2025-09-04T18:36:07.535067+00:00",
+      "is_active": true,
+      "language": "English",
+      "stars_rating": 0,
+      "deleted_at": null,
+      "image_url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/media-assets/images/1757010962904-iz375eng4q.png",
+      "video_url": ""
+    },
+    {
+      "id": "ec639bba-b66c-4b5b-b70a-52e013b65df0",
+      "title": "Microsoft Research Announces VibeVoice, an Open-Source Model for Long-Form, Multi-Speaker Speech",
+      "description": "Microsoft Research has introduced VibeVoice, a new open-source system for generating speech from text. VibeVoice can produce long, conversational audio (up to an hour and a half) with multiple speakers that sound consistent and natural.\n\nThe technology is designed for research and experimentation and is currently available in English and Mandarin. Developers and researchers can try it out through Hugging Face, with both the source code and a technical report made public.",
+      "metadata": {
+        "social_links": {
+          "twitter": "https://huggingface.co/microsoft/VibeVoice-1.5B",
+          "facebook": "",
+          "linkedin": "",
+          "instagram": ""
+        }
+      },
+      "level": "1",
+      "status": "published",
+      "created_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "updated_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "created_at": "2025-09-04T19:29:46.359192+00:00",
+      "updated_at": "2025-09-04T19:29:46.359192+00:00",
+      "is_active": true,
+      "language": "English",
+      "stars_rating": 0,
+      "deleted_at": null,
+      "image_url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/media-assets/images/1757014149755-o16zwrbg5j.png",
+      "video_url": ""
+    },
+    {
+      "id": "27fb1006-302f-4d64-a084-01261d5b1185",
+      "title": "Google Breaks Image Editing (Nano Banana)",
+      "description": "Google release their new 'Nano Banana' image editing model, and it is extremely powerful.",
+      "metadata": {
+        "social_links": {
+          "twitter": "",
+          "facebook": "",
+          "linkedin": "",
+          "instagram": ""
+        }
+      },
+      "level": "2",
+      "status": "published",
+      "created_by": "d73e89ee-86c4-47d3-9023-ca35fe3707c5",
+      "updated_by": "d73e89ee-86c4-47d3-9023-ca35fe3707c5",
+      "created_at": "2025-09-07T23:55:58.034176+00:00",
+      "updated_at": "2025-09-07T23:55:58.034176+00:00",
+      "is_active": true,
+      "language": "English",
+      "stars_rating": 0,
+      "deleted_at": null,
+      "image_url": "",
+      "video_url": "https://www.youtube.com/watch?si=NCDCX4-IjyyusL9m&v=tzzF9cC4qBM&feature=youtu.be"
+    },
+    {
+      "id": "2ff261f7-be66-48e9-b04c-52b384889dee",
+      "title": "Jan Google Breaks Image Editing (Nano Banana)",
+      "description": "Google release their new 'Nano Banana' image editing model, and it is extremely powerful.",
+      "metadata": {
+        "social_links": {
+          "twitter": "",
+          "facebook": "",
+          "linkedin": "",
+          "instagram": ""
+        }
+      },
+      "level": "1",
+      "status": "published",
+      "created_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "updated_by": "2ece85a1-6875-45cb-84e4-cee8a269f4d8",
+      "created_at": "2026-01-11T22:24:01.838227+00:00",
+      "updated_at": "2026-01-11T22:24:01.838227+00:00",
+      "is_active": true,
+      "language": "English",
+      "stars_rating": 0,
+      "deleted_at": null,
+      "image_url": "",
+      "video_url": "https://www.youtube.com/watch?v=tzzF9cC4qBM"
+    }
+  ]
+}

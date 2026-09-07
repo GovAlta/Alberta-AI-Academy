@@ -1,0 +1,121 @@
+{
+  "workflow": {
+    "stages": [
+      {
+        "id": "stage-1760012697608",
+        "name": "Stage 1",
+        "nodes": [
+          {
+            "id": "agent-1760013489085",
+            "nodeType": "agent",
+            "name": "Ministerial Correspondence Critic",
+            "type": "custom-1760013038684",
+            "systemPrompt": "You analyze proposed briefings from the standpoint of a professional writer and editor within the Ministry of Technology and Innovation's Ministerial Correspondence Unit (MCU) which is responsible for ensuring clear, accurate, timely, and well structured briefings to the Minister of Technology and Innovation.",
+            "userPrompt": "Evaluate this briefing on the following criteria:\n- If it is for decision, does it provide clear, unopinionated options which have pros and cons? Options must avoid catastrophizing certain decisions but make risk clear when there is risk and ensure pros and cons are balanced in their language and note impact. \n- It is free of typos and grammatical errors. If those exist, we must flag those clearly in a table and return them for correction\n- It must define all acronyms before use.\n- It must note in the attachment sections any research referenced in the document\n- For stakeholder reaction, it must identify clearly and very briefly steps taken to engage with stakeholders. \n\nIt is also important to note what is done well in considering providing feedback, so where there are things well done, provide no more than 5 bullets of things which are particularly well done. Don't invent them if they don't exist, it is also OK to not return positive feedback if the briefing is really very poor.\n\nConsider a score out of 10 for this briefing so we can see at a glance its quality to help executive office staff quickly screen.\n\nHere is the briefing: {input}",
+            "tools": []
+          },
+          {
+            "id": "agent-1760013490531",
+            "nodeType": "agent",
+            "name": "Deputy Minister Office Critic",
+            "type": "custom-1760013481595",
+            "systemPrompt": "You are the Director of Executive Operations (DEO) within the office of the Deputy Minister with the Government of Alberta. You evaluate proposed briefings to the Deputy, Minister, and Premier and provide a score and specific feedback on any briefings moving ahead based on specific requirements of the Deputy and standards.",
+            "userPrompt": "Evaluate this briefing based on the Deputy's top criteria\n- Financial decisions are accompanied by a clear source of funds, a multi-year forecast (not just one year) if there are ongoing costs, and presented in a table\n- Option 1 must always be the recommended option. Status quo must always be the final option\n- Recommendations must always consider the financial, reputational, and stakeholder impacts.\n- Options analysis with just 1 option, or 1 and status quo, are generally unacceptable. In most circumstances in technology, there are multiple ways to get to an intended outcome. For the Deputy, this will often be: custom build (do it ourselves), RFP (we procure it), sole source (we buy directly), open source (we leverage public or other government body innovation), status quo (live with legacy or manual process), as a set of examples. \n- Speed is always a concern. When there is something time sensitive, make sure you clearly define the timeline. \n- Any initiative greater than 1 year should be broken into separate phases typically.\n- Any requests for sole source spending where there is not a valid trade exemption (and in many cases, even if there is) must be accompanied by clear evidence and legal opinion in the appendix. \n- If this briefing includes an ask for resources, it must also identify clearly how AI has been considered and why it could not meet the needs. There is a mandatory requirement to consider and evaluate AI in most procurements and most projects.\n\n\nIt is also important to note what is done well in considering providing feedback, so where there are things well done, provide no more than 5 bullets of things which are particularly well done. Don't invent them if they don't exist, it is also OK to not return positive feedback if the briefing is really very poor.\n\nConsider a score out of 10 for this briefing so we can see at a glance its quality to help executive office staff quickly screen.\n\nEvaluate this briefing:\n{input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760013709990",
+        "name": "Stage 2",
+        "nodes": [
+          {
+            "id": "agent-1760013713524",
+            "nodeType": "agent",
+            "name": "Feedback ",
+            "type": "custom-1760013702317",
+            "systemPrompt": "You are an editor working within the Deputy Minister of Technology and Innovation's office for the Government of Alberta. You evaluate briefing notes and the input from critics working within the department and prepare a complete response on necessary edits in the briefing note.",
+            "userPrompt": "You are providing feedback on a briefing note and proposing changes for editing.\nHere is the original briefing: \n{prompt}\n\nHere is the critic feedback for consideration: {input}\n\nProvide a clearly written letter back to the originator with necessary steps to rewrite these elements. Use examples from the original briefing in your response to show where there are deficiencies.",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760013736273",
+        "name": "Stage 3",
+        "nodes": [
+          {
+            "id": "function-1760013749532",
+            "nodeType": "function",
+            "name": "Export to Word",
+            "functionType": "export_word",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          },
+          {
+            "id": "function-1760013750865",
+            "nodeType": "function",
+            "name": "Export to Text",
+            "functionType": "export_text",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn-1760013716659",
+        "fromNodeId": "agent-1760013489085",
+        "toNodeId": "agent-1760013713524"
+      },
+      {
+        "id": "conn-1760013719228",
+        "fromNodeId": "agent-1760013490531",
+        "toNodeId": "agent-1760013713524"
+      },
+      {
+        "id": "conn-1760013760993",
+        "fromNodeId": "agent-1760013713524",
+        "toNodeId": "function-1760013749532"
+      },
+      {
+        "id": "conn-1760013763817",
+        "fromNodeId": "agent-1760013713524",
+        "toNodeId": "function-1760013750865"
+      }
+    ]
+  },
+  "userInput": "\n\nADVICE TO HONOURABLE [Minister's Name]\n\nMINISTER OF TECHNOLOGY AND INNOVATION\n\nFOR DECISION\n\n\n\nPURPOSE\n\nTo provide the Minister information regarding Alberta's efforts to prevent the introduction and spread of aquatic invasive species (AIS), specifically quagga and zebra mussels, and to seek a decision on further exploring the feasibility and implications of implementing a watercraft tax to support these efforts.\n\n\n\nBACKGROUND\n\nAlberta is currently free of quagga and zebra mussels. These species pose a significant environmental and economic threat to the province. The government has focused on prevention, primarily through watercraft inspections and public education initiatives like \"Clean, Drain, Dry.\" Key actions include collaboration between Alberta Parks, Alberta Environment and Protected Areas, and other agencies.\n\n• Mandatory watercraft inspections are in place, particularly for vessels entering Alberta from higher-risk areas (e.g., Manitoba, Ontario, southwestern United States). Failure to stop at an open inspection station could result in a fine of $690.\n\n• It is illegal to transport watercraft with the drain plug still in place.\n\n• Economic assessments have estimated the potential costs of a quagga/zebra mussel infestation at over $75 million annually.\n\n• The County of Newell’s Boating Safety and Aquatic Invasive Species Bylaw (2001-21) supports the EID program.\n\nThe government is now considering a watercraft tax for every watercraft in Alberta to further fund AIS prevention efforts.\n\n• This consideration is new, and there is no established public record on this specific proposal.\n\n\n\nANALYSIS\n\nAlberta's primary strategy is to prevent the introduction of quagga and zebra mussels. Prevention is more cost-effective than managing an infestation. The government has conducted economic assessments to justify the investment in prevention programs. The addition of a watercraft tax will require careful consideration. This work aligns with the Minister's Mandate Letter items of supporting environmental sustainability and responsible resource management and key government priorities including protecting Alberta's natural resources and promoting economic diversification.\n\n\n\nKey Considerations\n\n• Efficacy of Inspection Stations: Evaluate the effectiveness of current inspection station locations and hours of operation. Data on inspection numbers, intercepted contaminated boats, and origin of boats is needed.\n\n• Compliance Rates: Assess compliance rates with mandatory inspection requirements and \"Clean, Drain, Dry\" practices. Targeted education campaigns for specific user groups (e.g., anglers, recreational boaters, commercial operators) may be needed.\n\n• Stakeholder Impact of Watercraft Tax: A watercraft tax could generate revenue for AIS prevention but may face opposition from boaters and the tourism industry. A thorough cost-benefit analysis and stakeholder consultation are essential. A legal opinion is needed to assess the province's authority to implement such a tax.\n\n\n\nJurisdictional Comparisons\n\nOther jurisdictions, such as British Columbia, also have robust AIS prevention programs. Alberta and British Columbia have a joint watercraft passport program for boaters who frequently travel between the two provinces. Research into how other provinces and states fund their AIS programs (e.g., through general revenue, user fees, or dedicated taxes) is needed.\n\n\n\nOptions Under Consideration\n\n\n\n• Option 1 (Recommended): Conduct a comprehensive feasibility study and stakeholder consultation on the implementation of a watercraft tax, including a cost-benefit analysis and legal review.\n\n• Pros: Potential for dedicated funding stream for AIS prevention; may enhance program effectiveness.\n\n• Cons: Potential opposition from boaters and tourism industry; administrative costs of implementation; legal challenges.\n\n• Risks/Mitigation: Negative public perception (mitigation: transparent communication); legal challenges (mitigation: thorough legal review); low compliance (mitigation: incentives/enforcement).\n\n• Option 2: Enhance existing AIS prevention programs through increased funding from general revenue, without implementing a watercraft tax.\n\n• Pros: Avoids potential opposition to a new tax; simpler implementation.\n\n• Cons: Funding may be less stable and subject to budget fluctuations; may not be sufficient to address the growing threat of AIS.\n\n• Risks/Mitigation: Insufficient funding (mitigation: prioritize high-impact activities); lack of public awareness (mitigation: enhance existing education programs).\n\n• Option 3 (Status Quo): Maintain current AIS prevention programs at existing funding levels.\n\n• Pros: No immediate costs or disruptions.\n\n• Cons: May be inadequate to prevent the introduction and spread of AIS, given the increasing risk; could result in significant economic and environmental damage in the long term.\n\n• Risks/Mitigation: Increased risk of AIS introduction (mitigation: enhance monitoring efforts); potential for costly infestation (mitigation: develop a robust rapid response plan).\n\n\n\nThe attached Aquatic Invasive Species Prevention Program Details demonstrates the current scope of Alberta's AIS prevention efforts. Benefits of the recommended direction include a more informed decision-making process regarding the watercraft tax and a better understanding of its potential impacts.\n\n\n\nFINANCIAL IMPLICATIONS\n\nThe recommended Option 1 (feasibility study and stakeholder consultation) will require funding for research, analysis, and consultation activities. The exact cost will depend on the scope of the study, but it is estimated to be in the range of $50,000 - $100,000. No financial implications if the government continues with the status quo.\n\n\n\nSTAKEHOLDER REACTION\n\nKey stakeholders include recreational boaters, anglers, tourism operators, environmental groups, irrigation districts, power companies, and municipalities. Anticipate mixed reactions to the watercraft tax proposal. Boaters and tourism operators may oppose the tax, while environmental groups and infrastructure operators may support it. Consultations should involve these groups to gather feedback and address concerns.\n\n\n\nNEXT STEPS\n\nIf the Minister approves Option 1, the following steps will be taken:\n\n• Initiate a comprehensive feasibility study on the implementation of a watercraft tax (timeline: 2 months).\n\n• Conduct stakeholder consultations with key groups to gather feedback and address concerns (timeline: 1 month).\n\n• Analyze the results of the feasibility study and stakeholder consultations (timeline: 1 month).\n\n• Present findings and recommendations to the Minister for a final decision (timeline: 1 month).\n\n\n\nATTACHMENT\n\n• Aquatic Invasive Species Prevention Program Details\n\n\n\nCONTACT\n\n[Your Name]\n\nSenior Policy Advisor\n\n[Your Contact Information]",
+  "workflowName": "Deputy Minister Briefing Review",
+  "customAgents": [
+    {
+      "id": "custom-1760013038684",
+      "name": "Ministerial Correspondence Critic",
+      "iconName": "Bot",
+      "description": "Custom agent",
+      "defaultSystemPrompt": "You analyze proposed briefings from the standpoint of a professional writer and editor within the Ministry of Technology and Innovation's Ministerial Correspondence Unit (MCU) which is responsible for ensuring clear, accurate, timely, and well structured briefings to the Minister of Technology and Innovation.",
+      "defaultUserPrompt": "Evaluate this briefing on the following criteria:\n- If it is for decision, does it provide clear, unopinionated options which have pros and cons? Options must avoid catastrophizing certain decisions but make risk clear when there is risk and ensure pros and cons are balanced in their language and note impact. \n- It is free of typos and grammatical errors. If those exist, we must flag those clearly in a table and return them for correction\n- It must define all acronyms before use.\n- It must note in the attachment sections any research referenced in the document\n- For stakeholder reaction, it must identify clearly and very briefly steps taken to engage with stakeholders. "
+    },
+    {
+      "id": "custom-1760013481595",
+      "name": "Deputy Minister Office Critic",
+      "iconName": "Bot",
+      "description": "Custom agent",
+      "defaultSystemPrompt": "You are the Director of Executive Operations (DEO) within the office of the Deputy Minister with the Government of Alberta. You evaluate proposed briefings to the Deputy, Minister, and Premier and provide a score and specific feedback on any briefings moving ahead based on specific requirements of the Deputy and standards.",
+      "defaultUserPrompt": "Evaluate this briefing based on the Deputy's top criteria\n- Financial decisions are accompanied by a clear source of funds, a multi-year forecast (not just one year) if there are ongoing costs, and presented in a table\n- Option 1 must always be the recommended option. Status quo must always be the final option\n- Recommendations must always consider the financial, reputational, and stakeholder impacts.\n- Options analysis with just 1 option, or 1 and status quo, are generally unacceptable. In most circumstances in technology, there are multiple ways to get to an intended outcome. For the Deputy, this will often be: custom build (do it ourselves), RFP (we procure it), sole source (we buy directly), open source (we leverage public or other government body innovation), status quo (live with legacy or manual process), as a set of examples. \n- Speed is always a concern. When there is something time sensitive, make sure you clearly define the timeline. \n- Any initiative greater than 1 year should be broken into separate phases typically.\n- Any requests for sole source spending where there is not a valid trade exemption (and in many cases, even if there is) must be accompanied by clear evidence and legal opinion in the appendix. \n- If this briefing includes an ask for resources, it must also identify clearly how AI has been considered and why it could not meet the needs. There is a mandatory requirement to consider and evaluate AI in most procurements and most projects.\nEvaluate this briefing:\n{input}"
+    },
+    {
+      "id": "custom-1760013702317",
+      "name": "Feedback ",
+      "iconName": "Bot",
+      "description": "Custom agent",
+      "defaultSystemPrompt": "You are an editor working within the Deputy Minister of Technology and Innovation's office for the Government of Alberta. You evaluate briefing notes and the input from critics working within the department and prepare a complete response on necessary edits in the briefing note.",
+      "defaultUserPrompt": "You are providing feedback on a briefing note and proposing changes for editing.\nHere is the original briefing: \n{prompt}\n\nHere is the critic feedback for consideration: {input}\n\nProvide a clearly written letter back to the originator with necessary steps to rewrite these elements. Use examples from the original briefing in your response to show where there are deficiencies."
+    }
+  ]
+}

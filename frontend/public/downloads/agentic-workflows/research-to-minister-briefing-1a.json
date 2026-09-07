@@ -1,0 +1,170 @@
+{
+  "workflow": {
+    "stages": [
+      {
+        "id": "stage-1760011140884",
+        "name": "Stage 1",
+        "nodes": [
+          {
+            "id": "function-1760011151827",
+            "nodeType": "function",
+            "name": "Google Search",
+            "functionType": "google_search",
+            "config": {
+              "numResults": 10
+            },
+            "outputPorts": [
+              "output"
+            ]
+          },
+          {
+            "id": "agent-1760011181252",
+            "nodeType": "agent",
+            "name": "AI Topic Resources",
+            "type": "researcher",
+            "systemPrompt": "You are a research assistant specializing in gathering and analyzing information from various sources. You evaluate each request carefully and consider what websites or pages which may exist which would inform this topic. You provide a list of URLs, always starting with the full URL including https:// for consideration. Do not add any quotes, brackets, or other things around the URL, as this will break further analysis. Put all URLs on their own line with no other text touching them",
+            "userPrompt": "Based on this research topic, provide a clear list of resources which may inform our research. These must be legitimate known resources. If you do not know definitively, don't guess.: {input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760011308700",
+        "name": "Stage 2",
+        "nodes": [
+          {
+            "id": "function-1760011310045",
+            "nodeType": "function",
+            "name": "Web Scrape",
+            "functionType": "web_scrape",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          },
+          {
+            "id": "function-1760012018048",
+            "nodeType": "function",
+            "name": "Web Scrape",
+            "functionType": "web_scrape",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1760011320135",
+        "name": "Stage 3",
+        "nodes": [
+          {
+            "id": "agent-1760011324321",
+            "nodeType": "agent",
+            "name": "Integrator / Summarizer",
+            "type": "summarizer",
+            "systemPrompt": "Based on this contextual information, provide a comprehensive summary of the research based on the topic.",
+            "userPrompt": "I am trying to understand \"{prompt}\". Based on the following content, provide a comprehensive analysis and summary of what I need to know to prepare a briefing for my Minister within the Government of Alberta.  Here is my rough research so far.: {input}",
+            "tools": []
+          },
+          {
+            "id": "function-1760011561898",
+            "nodeType": "function",
+            "name": "Briefing Template",
+            "functionType": "content",
+            "config": {
+              "content": "You are a senior government policy advisor within the office of the Deputy Minister of Technology and Innovation. You are responsible for preparing clear, concise briefing notes for the Minister that require a specific policy decision. Your briefings must strictly follow the attached template guidelines: use plain language, active voice, and limit to 1-2 pages equivalent in length. Provide one core issue only, with clear options analysis, pros/cons, evidence-backed rationale, and impacts (financial, stakeholder, risks). Do not use bullets in the PURPOSE section. Use past tense in BACKGROUND, present tense in ANALYSIS. Avoid colons after section headings (e.g., \"BACKGROUND\" not \"BACKGROUND:\"). Use Arial 12pt equivalent formatting in mind (single spacing, no extra paragraph spacing). For bullets: main level for key points, sub-levels (up to 3) for details; use tables for comparisons or data. Attachments/appendices are for \"nice to know\" details—summarize key info in the note to make it stand-alone.\n\n## Briefing Details\nYour department has been tasked with analyzing {{core_issue}}. This briefing addresses {{specific_trigger}}, with a critical requirement to deliver within {{timeline_constraint}}.\n\nKey elements to incorporate:\n- **Background on the problem**: Current state challenges with {{existing_challenges}}.\n- **Options analysis**: Evaluate {{number_of_options}} options with clear recommendations, including pros/cons, potential {{key_benefits}}, risks/mitigation, and issues management strategies.\n- **Stakeholder impact**: Identify key stakeholders, their positions, consultations conducted, and potential reactions/responses.\n- **Risk mitigation and issues management**: Address legal, operational, or reputational risks, with evidence-based strategies.\n- **Cross-jurisdictional analysis**: Compare Alberta with {{comparison_jurisdictions}} on {{relevant_aspects}}, referencing data showing {{key_insight}}.\n- **Alignment**: This work aligns with the Minister's Mandate Letter items of {{mandate_items}} and key government priorities including {{priorities}}.\n- **Appendices/attachments**: Use as required for detailed data (e.g., full jurisdictional scan); reference in the note but summarize essentials here.\n\n## Options and Recommendations\nThe following options are under consideration (base your analysis on these, expanding with pros/cons, evidence, and a clear recommendation):\n- **Option 1 (Recommended)**: {{description}} Pros: {{pros}} Cons: {{cons}} Risks/Mitigation: {{risks}}\n- **Option 2**: {{description}} Pros: {{pros}} Cons: {{cons}} Risks/Mitigation: {{risks}}\n- **Option 3 (Status Quo)**: {{description}} Pros: {{pros}} Cons: {{cons}} Risks/Mitigation: {{risks}}\n\nSupport your analysis with information from the attached {{attachment_name}}, which demonstrates {{key_evidence}}. Clearly articulate benefits of the recommended direction, such as {{benefits}}.\n\n## Pre-Generation Step: Deep Analysis\nBefore generating the briefing note, perform a deep analysis on {{analysis_topic}}. Draw from:\n- Provided attachments (e.g., {{file_name}} for current state data).\n- Provide  evidence-based insights.  Identify 3-5 key considerations. If legal opinions are needed, include a summary in ANALYSIS. \nBack all claims with evidence (e.g., \"Data from [source] shows...\").\n\n## Output Instructions\nGenerate the full briefing note strictly following the template structure below. Ensure it is decision-ready, with the recommendation in ANALYSIS. Identify if the government has a public record on the issue (e.g., in BACKGROUND or ANALYSIS). If no financial implications, state so explicitly. For financials, assume SFO clearance if applicable. Use subheadings in ANALYSIS (e.g., \"Key Considerations,\" \"Jurisdictional Comparisons\") where relevant. End with CONTACT section.\n\n**Template Structure to Follow Exactly:**\n\n**ADVICE TO HONOURABLE {{minister_name}}**  \n**MINISTER OF {{ministry_name}}**  \n**FOR {{type}}**\n\n**PURPOSE (REQUIRED)**  \nBegin with: “To provide the Minister information regarding {{core_purpose}}.” Explain why now (e.g., impending deadline, mandate alignment). Limit to one core issue; no bullets.\n\n**BACKGROUND (REQUIRED)**  \nProvide current state first, then historical/contextual info in chronological order. Include: why this note now (e.g., significance to mandate, deadline); actions/steps leading here; previous initiatives/decisions; historical funding/public record. Use past tense, active voice, bullets for clarity. Connect to purpose/recommendation. Use tables if helpful for timelines/funding.\n\n**ANALYSIS (REQUIRED)**  \nRationale for recommendation, pros/cons of options, evidence-backed context. Longest section; connect to purpose/background. REQUIRED: Identify alignment with Minister’s mandate.  \n**Key Considerations** (if applicable): Top 3-5 items for informed decision; elaborate.  \n**Jurisdictional Comparisons** (if applicable): What others do (e.g., {{jurisdictions}}); summarize scan—attach full if detailed.  \nUse present tense. Include legal opinion if required. Reference attachments for details.\n\n**FINANCIAL IMPLICATIONS (REQUIRED)**  \nState costs of recommended option (e.g., {{cost_details}}). If none: \"No financial implications.\" Note SFO approval if applicable. Put funding history in BACKGROUND.\n\n**STAKEHOLDER REACTION (REQUIRED)**  \nIdentify stakeholders and positions. Detail consultations (who, by whom, when). Anticipate reactions/topics raised; suggest responses for officials.\n\n**NEXT STEPS (REQUIRED)**  \nOutline implementation: actions, timelines/milestones (e.g., {{timelines}} ), who involved/how. Use future tense.\n\n**ATTACHMENT(S) (DELETE IF NO ATTACHMENTS)**  \nIf one: \"ATTACHMENT\"  \nIf multiple: Numbered list with exact titles (e.g., 1. {{title1}} )  \nMatch ARTS titles; no numbers in file names.\n\n**CONTACT**  \n{{contact_details}}  \nIf multiple: \"CONTACTS\" and list all.\n\nBased on the above, generate the complete briefing note."
+            },
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "stage-1760011441029",
+        "name": "Stage 4",
+        "nodes": [
+          {
+            "id": "agent-1760011552497",
+            "nodeType": "agent",
+            "name": "Briefing Note Writer",
+            "type": "custom-1760011550320",
+            "systemPrompt": "You are a briefing expert for the Government of Alberta. You prepare clear Deputy Minister, Minister, and Premier briefings on a range of topics. Following the provided template, you prepare a clear, professional, concise, and unopinionated briefing of the topic provided.",
+            "userPrompt": "Evaluate the following input and template and then complete the template with the materials provided. The original topic is \"{prompt}\" and below are the research completed as well as the template for this briefing: {input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760011734766",
+        "name": "Stage 5",
+        "nodes": [
+          {
+            "id": "function-1760011740592",
+            "nodeType": "function",
+            "name": "Export to Word",
+            "functionType": "export_word",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn-1760011312389",
+        "fromNodeId": "function-1760011151827",
+        "toNodeId": "function-1760011310045",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1760011414207",
+        "fromNodeId": "function-1760011310045",
+        "toNodeId": "agent-1760011324321",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1760011556122",
+        "fromNodeId": "agent-1760011324321",
+        "toNodeId": "agent-1760011552497"
+      },
+      {
+        "id": "conn-1760011578207",
+        "fromNodeId": "function-1760011561898",
+        "toNodeId": "agent-1760011552497",
+        "fromOutputPort": "output"
+      },
+      {
+        "id": "conn-1760011744015",
+        "fromNodeId": "agent-1760011552497",
+        "toNodeId": "function-1760011740592"
+      },
+      {
+        "id": "conn-1760012021306",
+        "fromNodeId": "agent-1760011181252",
+        "toNodeId": "function-1760012018048"
+      },
+      {
+        "id": "conn-1760012139799",
+        "fromNodeId": "function-1760012018048",
+        "toNodeId": "agent-1760011324321",
+        "fromOutputPort": "output"
+      }
+    ]
+  },
+  "userInput": "Alberta's TIER program and how it may impact relates to AI Data Centres",
+  "workflowName": "Research to Minister Briefing",
+  "customAgents": [
+    {
+      "id": "custom-1760011550320",
+      "name": "Briefing Note Writer",
+      "iconName": "Bot",
+      "description": "Custom agent",
+      "defaultSystemPrompt": "You are a briefing expert for the Government of Alberta. You prepare clear Deputy Minister, Minister, and Premier briefings on a range of topics. Following the provided template, you prepare a clear, professional, concise, and unopinionated briefing of the topic provided.",
+      "defaultUserPrompt": "Evaluate the following input and template and then complete the template with the materials provided. The original topic is \"{prompt}\" and below are the research completed as well as the template for this briefing: {input}"
+    }
+  ]
+}

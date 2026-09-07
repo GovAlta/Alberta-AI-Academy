@@ -1,0 +1,64 @@
+# Builds the Vite frontend and publishes frontend/dist to GitHub Pages.
+# Triggered on every push to main. Pages source must be set to "GitHub Actions"
+# (Settings → Pages → Build and deployment → Source).
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deployment at a time; let an in-progress deploy finish
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build
+        working-directory: frontend
+        run: npm run build
+
+      - name: Prepare for GitHub Pages
+        working-directory: frontend/dist
+        run: |
+          # SPA fallback: Vue Router uses HTML5 history mode, so deep links
+          # (e.g. /level/level1) must resolve to index.html.
+          cp index.html 404.html
+          # Disable Jekyll processing so nothing in dist/ is skipped.
+          touch .nojekyll
+          # GitHub Pages hard limit is 1 GB per published site.
+          echo "Site size: $(du -sh . | cut -f1)"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

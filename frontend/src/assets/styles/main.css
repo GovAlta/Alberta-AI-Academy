@@ -1,0 +1,266 @@
+/* Main application styles */
+
+/* Layout variables — update here if header height changes */
+:root {
+  --site-header-height: 60px;
+}
+
+/* Content type badge colours */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--goa-space-2xs);
+  padding: var(--goa-space-3xs) var(--goa-space-xs);
+  border-radius: 999px;
+  font-size: var(--goa-font-size-1);
+  font-weight: var(--goa-font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.badge--video    { background: #fde8e8; color: #b91c1c; }
+.badge--article  { background: #e8f4fd; color: #1d4ed8; }
+.badge--tool     { background: #e8fdf0; color: #065f46; }
+.badge--download { background: #fdf6e8; color: #92400e; }
+.badge--social   { background: #f3e8fd; color: #6b21a8; }
+.badge--link     { background: #f0f9ff; color: #075985; }
+.badge--module   { background: #fef3c7; color: #78350f; }
+
+/* Difficulty badge */
+.badge--beginner     { background: var(--goa-color-success-background); color: var(--goa-color-success-default); }
+.badge--intermediate { background: var(--goa-color-warning-background); color: #92400e; }
+.badge--advanced     { background: var(--goa-color-info-background);    color: var(--goa-color-info-default); }
+
+/* Card base */
+.card {
+  background: var(--goa-color-greyscale-white);
+  border-radius: var(--goa-border-radius-xl);
+  box-shadow: var(--goa-shadow-200);
+  transition: box-shadow var(--goa-transition-base), transform var(--goa-transition-base);
+  overflow: hidden;
+}
+
+.card:hover,
+.card:focus-within {
+  box-shadow: var(--goa-shadow-400);
+  transform: translateY(-2px);
+}
+
+/* Button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--goa-space-xs);
+  padding: var(--goa-space-s) var(--goa-space-l);
+  border: var(--goa-border-width-m) solid transparent;
+  border-radius: var(--goa-border-radius-l);
+  font-family: inherit;
+  font-size: var(--goa-font-size-3);
+  font-weight: var(--goa-font-weight-bold);
+  line-height: 1.5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--goa-transition-fast), border-color var(--goa-transition-fast), color var(--goa-transition-fast);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--goa-color-interactive-focus);
+  outline-offset: 2px;
+}
+
+.btn--primary {
+  background-color: var(--goa-color-interactive-default);
+  border-color: var(--goa-color-interactive-default);
+  color: var(--goa-color-text-light);
+}
+
+/* :visited has higher specificity than a plain class — explicitly reset so
+   anchor-based buttons (RouterLink, <a class="btn">) keep white text after navigation */
+.btn--primary:visited,
+.btn--primary:hover,
+.btn--primary:active {
+  color: var(--goa-color-text-light);
+}
+
+.btn--primary:hover {
+  background-color: var(--goa-color-interactive-hover);
+  border-color: var(--goa-color-interactive-hover);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  border-color: var(--goa-color-interactive-default);
+  color: var(--goa-color-interactive-default);
+}
+
+.btn--secondary:visited,
+.btn--secondary:active {
+  color: var(--goa-color-interactive-default);
+}
+
+.btn--secondary:hover {
+  background-color: var(--goa-color-brand-light);
+  border-color: var(--goa-color-interactive-hover);
+  color: var(--goa-color-interactive-hover);
+}
+
+.btn--ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--goa-color-interactive-default);
+}
+
+.btn--ghost:visited,
+.btn--ghost:active {
+  color: var(--goa-color-interactive-default);
+}
+
+.btn--ghost:hover {
+  background-color: var(--goa-color-greyscale-100);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  background-color: var(--goa-color-greyscale-200);
+  border-color: var(--goa-color-greyscale-200);
+  color: var(--goa-color-greyscale-600);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Input styles */
+.input {
+  width: 100%;
+  padding: var(--goa-space-s) var(--goa-space-m);
+  border: var(--goa-border-width-m) solid var(--goa-color-greyscale-300);
+  border-radius: var(--goa-border-radius-l);
+  font-family: inherit;
+  font-size: var(--goa-font-size-3);
+  color: var(--goa-color-text-default);
+  background-color: var(--goa-color-greyscale-white);
+  transition: border-color var(--goa-transition-fast);
+  appearance: none;
+}
+
+.input:focus {
+  outline: 3px solid var(--goa-color-interactive-focus);
+  outline-offset: 1px;
+  border-color: var(--goa-color-interactive-default);
+}
+
+.input::placeholder {
+  color: var(--goa-color-greyscale-400);
+}
+
+/* Spinner */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Page layout */
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-main {
+  flex: 1;
+}
+
+/* Modal overlay — fullscreen */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--goa-color-greyscale-white);
+  z-index: 1000;
+  display: flex;
+}
+
+.modal-panel {
+  background: var(--goa-color-greyscale-white);
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* Notification banner */
+.notification {
+  padding: var(--goa-space-m) var(--goa-space-l);
+  border-radius: var(--goa-border-radius-l);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--goa-space-m);
+}
+
+.notification--info {
+  background: var(--goa-color-info-background);
+  border-left: var(--goa-border-width-xl) solid var(--goa-color-info-default);
+  color: var(--goa-color-info-default);
+}
+
+.notification--warning {
+  background: var(--goa-color-warning-background);
+  border-left: var(--goa-border-width-xl) solid var(--goa-color-warning-default);
+  color: #92400e;
+}
+
+.notification--error {
+  background: var(--goa-color-emergency-background);
+  border-left: var(--goa-border-width-xl) solid var(--goa-color-emergency-default);
+  color: var(--goa-color-emergency-default);
+}
+
+.notification--success {
+  background: var(--goa-color-success-background);
+  border-left: var(--goa-border-width-xl) solid var(--goa-color-success-default);
+  color: var(--goa-color-success-default);
+}
+
+/* YouTube embed responsive wrapper */
+.youtube-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--goa-border-radius-xl);
+  background: var(--goa-color-greyscale-black);
+}
+
+.youtube-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Transition animations */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity var(--goa-transition-base);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: opacity var(--goa-transition-slow), transform var(--goa-transition-slow);
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(16px);
+}

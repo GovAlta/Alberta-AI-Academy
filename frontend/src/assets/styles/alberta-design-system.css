@@ -1,0 +1,238 @@
+/* Alberta.ca Government of Alberta Design System — CSS Custom Properties
+   Source: SKILL3-FRONTEND.md — Alberta Design System Implementation
+   Standard: Government of Alberta Brand Guidelines
+*/
+
+:root {
+  /* Typography */
+  --goa-font-family-sans: acumin-pro-semi-condensed, 'Helvetica Neue', arial, sans-serif;
+  --goa-font-family-number: 'Roboto Mono', monospace;
+  --goa-font-weight-regular: 400;
+  --goa-font-weight-medium: 500;
+  --goa-font-weight-bold: 700;
+
+  /* Font sizes */
+  --goa-font-size-1: 0.75rem;
+  --goa-font-size-2: 0.875rem;
+  --goa-font-size-3: 1rem;
+  --goa-font-size-4: 1.125rem;
+  --goa-font-size-5: 1.25rem;
+  --goa-font-size-6: 1.375rem;
+  --goa-font-size-7: 1.5rem;
+  --goa-font-size-8: 2rem;
+  --goa-font-size-9: 2.25rem;
+  --goa-font-size-10: 3rem;
+
+  /* Line heights */
+  --goa-line-height-1: 1.25rem;
+  --goa-line-height-2: 1.5rem;
+  --goa-line-height-3: 1.75rem;
+  --goa-line-height-4: 2rem;
+  --goa-line-height-5: 2.5rem;
+  --goa-line-height-6: 2.75rem;
+  --goa-line-height-7: 3.5rem;
+
+  /* Brand colors */
+  --goa-color-brand-default: #0081a2;
+  --goa-color-brand-dark: #005072;
+  --goa-color-brand-light: #c8eefa;
+
+  /* Interactive colors */
+  --goa-color-interactive-default: #0070c4;
+  --goa-color-interactive-hover: #004f84;
+  --goa-color-interactive-disabled: #80b7e1;
+  --goa-color-interactive-focus: #feba35;
+  --goa-color-interactive-visited: #756693;
+  --goa-color-interactive-error: #ec040b;
+  --goa-color-interactive-error-hover: #ba0000;
+
+  /* Status colors */
+  --goa-color-info-default: #004a8f;
+  --goa-color-info-background: #eff8ff;
+  --goa-color-success-default: #006f4c;
+  --goa-color-success-background: #f2fffa;
+  --goa-color-warning-default: #f9ce2d;
+  --goa-color-warning-background: #fff6e5;
+  --goa-color-emergency-default: #da291c;
+  --goa-color-emergency-background: #fff6f6;
+
+  /* Greyscale */
+  --goa-color-greyscale-white: #ffffff;
+  --goa-color-greyscale-50: #f8f8f8;
+  --goa-color-greyscale-100: #f1f1f1;
+  --goa-color-greyscale-200: #dcdcdc;
+  --goa-color-greyscale-300: #c2c2c2;
+  --goa-color-greyscale-400: #adadad;
+  --goa-color-greyscale-600: #858585;
+  --goa-color-greyscale-700: #666666;
+  --goa-color-greyscale-black: #333333;
+
+  /* Text colors */
+  --goa-color-text-default: #333333;
+  --goa-color-text-secondary: #666666;
+  --goa-color-text-light: #ffffff;
+
+  /* Spacing */
+  --goa-space-none: 0rem;
+  --goa-space-3xs: 0.125rem;
+  --goa-space-2xs: 0.25rem;
+  --goa-space-xs: 0.5rem;
+  --goa-space-s: 0.75rem;
+  --goa-space-m: 1rem;
+  --goa-space-l: 1.5rem;
+  --goa-space-xl: 2rem;
+  --goa-space-2xl: 3rem;
+  --goa-space-3xl: 4rem;
+
+  /* Borders */
+  --goa-border-width-s: 1px;
+  --goa-border-width-m: 2px;
+  --goa-border-width-l: 3px;
+  --goa-border-width-xl: 4px;
+  --goa-border-radius-m: 0.25rem;
+  --goa-border-radius-l: 0.375rem;
+  --goa-border-radius-xl: 0.5rem;
+
+  /* Shadows */
+  --goa-shadow-100: 0px 1px 2px rgba(26, 26, 26, 0.06);
+  --goa-shadow-200: 0px 3px 1px -1px rgba(26, 26, 26, 0.07);
+  --goa-shadow-300: 0px 4px 6px -2px rgba(26, 26, 26, 0.2);
+  --goa-shadow-400: 0px 8px 16px -4px rgba(26, 26, 26, 0.22);
+
+  /* Layout */
+  --goa-container-max-width: 1200px;
+  --goa-container-padding: var(--goa-space-xl);
+
+  /* Transitions */
+  --goa-transition-fast: 150ms ease;
+  --goa-transition-base: 200ms ease;
+  --goa-transition-slow: 300ms ease;
+}
+
+/* Base reset and body styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--goa-font-family-sans);
+  font-size: var(--goa-font-size-4);
+  line-height: var(--goa-line-height-3);
+  color: var(--goa-color-text-default);
+  background-color: var(--goa-color-greyscale-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1 {
+  font-size: var(--goa-font-size-10);
+  font-weight: var(--goa-font-weight-bold);
+  line-height: var(--goa-line-height-7);
+  margin: 0 0 var(--goa-space-l) 0;
+}
+
+h2 {
+  font-size: var(--goa-font-size-9);
+  font-weight: var(--goa-font-weight-regular);
+  line-height: var(--goa-line-height-6);
+  margin: 0 0 var(--goa-space-m) 0;
+}
+
+h3 {
+  font-size: var(--goa-font-size-7);
+  font-weight: var(--goa-font-weight-regular);
+  line-height: var(--goa-line-height-4);
+  margin: 0 0 var(--goa-space-m) 0;
+}
+
+h4 {
+  font-size: var(--goa-font-size-5);
+  font-weight: var(--goa-font-weight-bold);
+  line-height: var(--goa-line-height-3);
+  margin: 0 0 var(--goa-space-s) 0;
+}
+
+/* Mobile heading adjustments */
+@media screen and (max-width: 623px) {
+  h1 {
+    font-size: var(--goa-font-size-9);
+    line-height: var(--goa-line-height-6);
+  }
+
+  h2 {
+    font-size: var(--goa-font-size-8);
+  }
+}
+
+/* Links */
+a {
+  color: var(--goa-color-interactive-default);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--goa-color-interactive-hover);
+}
+
+a:visited {
+  color: var(--goa-color-interactive-visited);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--goa-color-interactive-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Focus styles for all interactive elements */
+:focus-visible {
+  outline: 3px solid var(--goa-color-interactive-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Button base reset */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Number styling */
+.goa-number {
+  font-family: var(--goa-font-family-number);
+  font-weight: var(--goa-font-weight-medium);
+}
+
+/* Container utility */
+.goa-container {
+  width: 100%;
+  max-width: var(--goa-container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--goa-container-padding);
+  padding-right: var(--goa-container-padding);
+}
+
+@media screen and (max-width: 623px) {
+  .goa-container {
+    padding-left: var(--goa-space-m);
+    padding-right: var(--goa-space-m);
+  }
+}

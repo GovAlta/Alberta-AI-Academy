@@ -1,0 +1,206 @@
+{
+  "workflow": {
+    "stages": [
+      {
+        "id": "stage-1760014626650",
+        "name": "Stage 1",
+        "nodes": [
+          {
+            "id": "agent-1760014969845",
+            "nodeType": "agent",
+            "name": "Enterprise App Innovator",
+            "type": "custom-1760014964947",
+            "systemPrompt": "You make creative options analysis on application development for the Government of Alberta. You should provide a range of SaaS and custom options based on the objective.",
+            "userPrompt": "Consider this request and come up with 10 innovative application ideas which push the boundaries on creativity but which are also highly achievable using standard Vue/Node and hosted in Azure, using Cloud based services, built with or integrated to a range of AI solutions for multimodal generative AI solutions.\n\nHere is my app idea: \"{input}\"",
+            "tools": []
+          },
+          {
+            "id": "agent-1760015036923",
+            "nodeType": "agent",
+            "name": "Enterprise App Innovator",
+            "type": "custom-1760014964947",
+            "systemPrompt": "You make creative options analysis on application development for the Government of Alberta. You should provide a range of SaaS and custom options based on the objective.",
+            "userPrompt": "Consider this request and come up with 10 innovative application ideas which push the boundaries on creativity but which are also highly achievable using standard Vue/Node and hosted in Azure, using Cloud based services, built with or integrated to a range of AI solutions for multimodal generative AI solutions.\n\nHere is my app idea: \"{input}\"\n\n",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760015056176",
+        "name": "Stage 2",
+        "nodes": [
+          {
+            "id": "agent-1760015233829",
+            "nodeType": "agent",
+            "name": "App Critic",
+            "type": "custom-1760015230994",
+            "systemPrompt": "You review application ideas and consider them from a business impact and feasibility standpoint. You pick you top 1-3 application ideas based on the needs and priorities of the Government of Alberta",
+            "userPrompt": "Consider these application ideas and consider them from a range of different perspectives\nCost to implement and maintain\nFeasability\nImpact\nUsability\nChange Management \nCriticality\nImpact\nStakeholder reception: consider how Albertans will react to this application. Will they be excited for this? What concerns might they have (cost, usability, privacy, security,) and pick the application solution or solutions which are best aligned. \n\nScreen out any obviously bad ideas which would be difficult to implement, offer limited value, are untested, or would be the subject of ridicule if they fail to achieve their business value.\n\nHere are the ideas:\n\n{input}",
+            "tools": []
+          },
+          {
+            "id": "agent-1760015520172",
+            "nodeType": "agent",
+            "name": "Cyber Critic",
+            "type": "custom-1760015515354",
+            "systemPrompt": "You are a Cyber Security specialist who is considering a range of application ideas. You are concerned with the security, integrity, availability and reliability of data and systems within the Government of Alberta. You consider a range of factors and provide a table of recommendations on which applications you think have the best combination of usefulness and security considerations. You provide recommendations to strengthen each application in a markdown table format.",
+            "userPrompt": "Evaluate these application ideas and make recommendations based on the top 1-3 applications being proposed and then provide a series of cyber recommendations based on OWASP Top 10, and any known cyber vulnerabilities relating to these technologies.\nHere are the application ideas: \n{input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760015765733",
+        "name": "Stage 4",
+        "nodes": [
+          {
+            "id": "agent-1760015941388",
+            "nodeType": "agent",
+            "name": "Application Proposal Builder",
+            "type": "custom-1760015938972",
+            "systemPrompt": "You are a senior business analysis and advisor to the Deputy Minister who prepares clear application proposals based on business need.",
+            "userPrompt": "Based on the top proposals, prepare a clear document which breaks down the recommended options, pros and cons for each options, stakeholder and cyber considerations, and then puts forward these as options for management consideration.\n\nHere is the raw input to utilize in the proposal you're building.\n{input}",
+            "tools": [
+              {
+                "id": "tool-1760016748267",
+                "toolId": "time",
+                "config": {}
+              }
+            ]
+          },
+          {
+            "id": "agent-1760016083769",
+            "nodeType": "agent",
+            "name": "Lovable App Builder",
+            "type": "custom-1760016079054",
+            "systemPrompt": "You define clear application definitions to support the creation of Lovable applications. You provide a clear page description, workflows, interface design requirements, and style requirements.",
+            "userPrompt": "Evaluate the top application idea here and create a clear Application Specification, which clearly lays out all the elements that any React developer could follow to build a comprehensive and robust application. Define the pages, the features, the integrations, and the users roles. Define the landing page and copy material to describe the application.\n\nHere are my app ideas for you to pick the top one:\n{input}",
+            "tools": []
+          }
+        ]
+      },
+      {
+        "id": "stage-1760015947044",
+        "name": "Stage 5",
+        "nodes": [
+          {
+            "id": "function-1760016099961",
+            "nodeType": "function",
+            "name": "Export to Word",
+            "functionType": "export_word",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          },
+          {
+            "id": "function-1760016102391",
+            "nodeType": "function",
+            "name": "Export to Markdown",
+            "functionType": "export_markdown",
+            "config": {},
+            "outputPorts": [
+              "output"
+            ]
+          }
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "conn-1760015237380",
+        "fromNodeId": "agent-1760014969845",
+        "toNodeId": "agent-1760015233829"
+      },
+      {
+        "id": "conn-1760015240079",
+        "fromNodeId": "agent-1760015036923",
+        "toNodeId": "agent-1760015233829"
+      },
+      {
+        "id": "conn-1760015523230",
+        "fromNodeId": "agent-1760014969845",
+        "toNodeId": "agent-1760015520172"
+      },
+      {
+        "id": "conn-1760015526131",
+        "fromNodeId": "agent-1760015036923",
+        "toNodeId": "agent-1760015520172"
+      },
+      {
+        "id": "conn-1760016105022",
+        "fromNodeId": "agent-1760015941388",
+        "toNodeId": "function-1760016099961"
+      },
+      {
+        "id": "conn-1760016107113",
+        "fromNodeId": "agent-1760016083769",
+        "toNodeId": "function-1760016102391"
+      },
+      {
+        "id": "conn-1760017183978",
+        "fromNodeId": "agent-1760015233829",
+        "toNodeId": "agent-1760015941388"
+      },
+      {
+        "id": "conn-1760017186885",
+        "fromNodeId": "agent-1760015520172",
+        "toNodeId": "agent-1760015941388"
+      },
+      {
+        "id": "conn-1760017190051",
+        "fromNodeId": "agent-1760015233829",
+        "toNodeId": "agent-1760016083769"
+      },
+      {
+        "id": "conn-1760017191862",
+        "fromNodeId": "agent-1760015520172",
+        "toNodeId": "agent-1760016083769"
+      }
+    ]
+  },
+  "userInput": "I want to build a mobile app for Environment and Protected Areas staff in Alberta  to help with boat inspections",
+  "workflowName": "Iterative App Ideas",
+  "customAgents": [
+    {
+      "id": "custom-1760014964947",
+      "name": "Enterprise App Innovator",
+      "iconName": "Bot",
+      "description": "Custom agent",
+      "defaultSystemPrompt": "You make creative options analysis on application development for the Government of Alberta. You should provide a range of SaaS and custom options based on the objective.",
+      "defaultUserPrompt": "Consider this request and come up with 10 innovative application ideas which push the boundaries on creativity but which are also highly achievable using standard Vue/Node and hosted in Azure, using Cloud based services, built with or integrated to a range of AI solutions for multimodal generative AI solutions."
+    },
+    {
+      "id": "custom-1760015230994",
+      "name": "App Critic",
+      "iconName": "Bot",
+      "description": "Custom agent",
+      "defaultSystemPrompt": "You review application ideas and consider them from a business impact and feasibility standpoint. You pick you top 1-3 application ideas based on the needs and priorities of the Government of Alberta",
+      "defaultUserPrompt": "Consider these 10 application ideas and consider them from a range of different perspectives\nCost to implement and maintain\nFeasability\nImpact\nUsability\nChange Management \nCriticality\nImpact\nStakeholder reception: consider how Albertans will react to this application. Will they be excited for this? What concerns might they have (cost, usability, privacy, security,) and pick the application solution or solutions which are best aligned. Here are the ideas:\n\n{input}"
+    },
+    {
+      "id": "custom-1760015515354",
+      "name": "Cyber Critic",
+      "iconName": "Bot",
+      "description": "Custom agent",
+      "defaultSystemPrompt": "You are a Cyber Security specialist who is considering a range of application ideas. You are concerned with the security, integrity, availability and reliability of data and systems within the Government of Alberta. You consider a range of factors and provide a table of recommendations on which applications you think have the best combination of usefulness and security considerations. You provide recommendations to strengthen each application in a markdown table format.",
+      "defaultUserPrompt": "Evaluate these application ideas and make recommendations based on the top 1-3 applications being proposed and then provide a series of cyber recommendations based on OWASP Top 10, and any known cyber vulnerabilities relating to these technologies.\nHere are the application ideas: \n{input}"
+    },
+    {
+      "id": "custom-1760015938972",
+      "name": "Application Proposal Builder",
+      "iconName": "Bot",
+      "description": "Custom agent",
+      "defaultSystemPrompt": "You are a senior business analysis and advisor to the Deputy Minister who prepares clear application proposals based on business need.",
+      "defaultUserPrompt": "Based on the top proposals, prepare a clear document which breaks down the recommended options, pros and cons for each options, stakeholder and cyber considerations, and then puts forward these as options for management consideration.\n\nHere is the raw input to utilize in the proposal you're building.\n{input}"
+    },
+    {
+      "id": "custom-1760016079054",
+      "name": "Lovable App Builder",
+      "iconName": "Bot",
+      "description": "Custom agent",
+      "defaultSystemPrompt": "You define clear application definitions to support the creation of Lovable applications. You provide a clear page description, workflows, interface design requirements, and style requirements.",
+      "defaultUserPrompt": "Evaluate the top application idea here and create a clear Application Specification, which clearly lays out all the elements that any React developer could follow to build a comprehensive and robust application. Define the pages, the features, the integrations, and the users roles. Define the landing page and copy material to describe the application."
+    }
+  ]
+}
