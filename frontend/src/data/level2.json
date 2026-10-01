@@ -7023,8 +7023,7 @@
                 "en": "**Skill name:** Alberta Red Tape Counter\n\n**Purpose:** Create a skill that counts red tape or regulatory burden items in Alberta Acts and Regulations.\n\n**Source rules:** Use the attached document as the authoritative source for the red tape counting rules. Convert those rules into clear markdown and encode them directly into the skill instructions. The skill must apply only those rules when analyzing Acts or Regulations.\n\n**Skill behaviour:** The skill must allow me to invoke it and point it to a folder containing multiple Alberta Acts or Regulations. It must process each document one at a time. For each Act or Regulation processed, the skill must output exactly one Word document.\n\nThe Word document must include:\n\n1. Title of the Act or Regulation analyzed\n2. Total count of red tape items\n3. A detailed table with the following columns:\n   - Extract of text considered red tape\n   - Counting rule applied\n   - Explanation of why the rule was applied\n   - Count from that section\n   - Confidence level that the count from that section is accurate as a percentage\n\nThe skill must also output one JSON audit file for the full run. The JSON file must include:\n\n- Files processed\n- Timestamp of processing\n- User who ran the skill\n- Source document name\n- Rules version or hash, if available\n- Total count per document\n- Extracts counted\n- Rule applied to each extract\n- Explanation for each count\n- Any files skipped or errors encountered\n\n**Quality requirements:**\n\n- Do not double-count the same obligation.\n- Treat each document independently.\n- Preserve traceability from each count back to the source text.\n- Clearly flag uncertain cases rather than forcing a count.\n- Ensure the Word report and JSON audit file reconcile to the same totals.",
                 "fr": "**Nom de la competence :** Alberta Red Tape Counter\n\n**Objectif :** Creer une competence qui compte les elements de fardeau reglementaire dans les lois et reglements de l'Alberta.\n\n**Regles sources :** Utiliser le document joint comme source faisant autorite pour les regles de comptage. Convertir ces regles en markdown clair et les encoder directement dans les instructions de la competence. La competence ne doit appliquer que ces regles lors de l'analyse des lois et reglements.\n\n**Comportement de la competence :** La competence doit me permettre de l'invoquer et de la pointer vers un dossier contenant plusieurs lois ou reglements de l'Alberta. Elle doit traiter chaque document un a la fois. Pour chaque loi ou reglement traite, la competence doit produire exactement un document Word.\n\nLe document Word doit inclure :\n\n1. Titre de la loi ou du reglement analyse\n2. Nombre total d'elements de fardeau administratif\n3. Un tableau detaille avec les colonnes suivantes :\n   - Extrait du texte considere comme fardeau administratif\n   - Regle de comptage appliquee\n   - Explication de la raison pour laquelle la regle a ete appliquee\n   - Decompte pour cette section\n   - Niveau de confiance que le decompte de cette section est exact, en pourcentage\n\nLa competence doit egalement produire un fichier d'audit JSON pour l'ensemble de l'execution. Le fichier JSON doit inclure :\n\n- Fichiers traites\n- Horodatage du traitement\n- Utilisateur ayant execute la competence\n- Nom du document source\n- Version ou hachage des regles, si disponible\n- Nombre total par document\n- Extraits comptes\n- Regle appliquee a chaque extrait\n- Explication pour chaque decompte\n- Tous les fichiers ignores ou erreurs rencontrees\n\n**Exigences de qualite :**\n\n- Ne pas compter deux fois la meme obligation.\n- Traiter chaque document independamment.\n- Conserver la tracabilite de chaque decompte vers le texte source.\n- Signaler clairement les cas incertains plutot que de forcer un decompte.\n- S'assurer que le rapport Word et le fichier d'audit JSON concordent sur les memes totaux."
               }
-            }
-            ,
+            },
             {
               "type": "text",
               "content": {
@@ -8531,7 +8530,7 @@
         "en": "This module provides a detailed, non-technical walkthrough for creating custom Gems in Google Gemini assistants.",
         "fr": "Ce module fournit un guide détaillé et non technique pour créer des Gems personnalisés dans les assistants Google Gemini."
       },
-      "imageUrl": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1763360532190-1gnp62lv4hl.png",
+      "imageUrl": "/images/b9f6271dae9b.jpg",
       "youtubeId": null,
       "url": null,
       "downloadUrl": null,
@@ -8589,7 +8588,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1763393411729-6nbhz2rsfna.png",
+              "url": "/images/86912b248b90.jpg",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -8619,7 +8618,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1763360520583-5ptyhciyd4j.png",
+              "url": "/images/3de7d2aafa78.jpg",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -8641,7 +8640,7 @@
             },
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1763360037498-zy7q2cfbwrj.png",
+              "url": "/images/b5c58643540b.jpg",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -8656,7 +8655,7 @@
             },
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1763360004463-3pyw8p1xvi7.png",
+              "url": "/images/e430a827b200.jpg",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -8671,7 +8670,7 @@
             },
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1763360167182-ujv75j2qaca.png",
+              "url": "/images/8c0798faaa8d.jpg",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -8686,7 +8685,7 @@
             },
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1763361123721-rlj8uvt51xb.png",
+              "url": "/images/c4b5f706eb8c.jpg",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -8701,7 +8700,7 @@
             },
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1763361380570-24co5n6ur5hj.png",
+              "url": "/images/bb6e09f45370.jpg",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -8781,7 +8780,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1763407836641-8c8wea4u07r.png",
+              "url": "/images/e17d083c03ab.jpg",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9021,7 +9020,7 @@
         "en": "In this module, we will focus on understanding agents in Microsoft 365 Copilot.",
         "fr": "Dans ce module, nous nous concentrerons sur la compréhension des agents dans Microsoft 365 Copilot."
       },
-      "imageUrl": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768371300864-nryrq947bsg.jpg",
+      "imageUrl": "/images/m365-agents-slide-01.png",
       "youtubeId": null,
       "url": null,
       "downloadUrl": null,
@@ -9111,7 +9110,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768371062911-rnljwrldtu.PNG",
+              "url": "/images/m365-agents-slide-01.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9134,7 +9133,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768371361677-7fc11fk0g5n.PNG",
+              "url": "/images/m365-agents-slide-02.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9157,7 +9156,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768371747919-7f6eh1pp0hm.PNG",
+              "url": "/images/m365-agents-slide-03.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9180,7 +9179,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768372960740-zh4socnk27o.PNG",
+              "url": "/images/m365-agents-slide-04.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9203,7 +9202,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768373136451-e0lz0n5whd.PNG",
+              "url": "/images/m365-agents-slide-05.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9226,7 +9225,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768373433539-ip9fqwuc3m.PNG",
+              "url": "/images/m365-agents-slide-06.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9249,7 +9248,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768373628142-49qhwxqddz6.PNG",
+              "url": "/images/m365-agents-slide-07.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9272,7 +9271,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768373772426-n5xzujt88g.PNG",
+              "url": "/images/m365-agents-slide-08.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9295,7 +9294,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768373918942-8pgqb0cvkqa.PNG",
+              "url": "/images/m365-agents-slide-09.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9318,7 +9317,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768374280847-b2v1zwhym2u.PNG",
+              "url": "/images/m365-agents-slide-10.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9341,7 +9340,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768374539258-36wfu0afkb8.PNG",
+              "url": "/images/m365-agents-slide-11.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9364,7 +9363,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768374729160-cdyc2af5utc.PNG",
+              "url": "/images/m365-agents-slide-12.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9387,7 +9386,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768375024703-0qiutv7kwaqi.PNG",
+              "url": "/images/m365-agents-slide-13.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9410,7 +9409,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768375158631-3soafqx34f4.PNG",
+              "url": "/images/m365-agents-slide-14.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9433,7 +9432,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768375306302-ejls9gkn6jf.PNG",
+              "url": "/images/m365-agents-slide-15.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9456,7 +9455,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768375487785-xkq3jjb7nyc.PNG",
+              "url": "/images/m365-agents-slide-16.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9479,7 +9478,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768375659055-uxeuyyv7km.PNG",
+              "url": "/images/m365-agents-slide-17.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9502,7 +9501,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768375799204-ur0s5h9vlrs.PNG",
+              "url": "/images/m365-agents-slide-18.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9525,7 +9524,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768375937782-jyh84owiohm.PNG",
+              "url": "/images/m365-agents-slide-19.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9548,7 +9547,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768376265963-e9nxh6vzb1e.PNG",
+              "url": "/images/m365-agents-slide-20.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"
@@ -9571,7 +9570,7 @@
           "content": [
             {
               "type": "image",
-              "url": "https://hzttqloyamcivctsfxkk.supabase.co/storage/v1/object/public/module-assets/images/1768376413908-wzcrsi7ih7.PNG",
+              "url": "/images/m365-agents-slide-21.png",
               "alt": {
                 "en": "Uploaded image",
                 "fr": "Image téléchargée"

@@ -528,7 +528,7 @@ function retakeModule() {
                 allowfullscreen
               />
             </div>
-            <div v-else-if="item.imageUrl" class="detail-modal__image-wrapper">
+            <div v-else-if="item.imageUrl && item.type !== 'article'" class="detail-modal__image-wrapper">
               <img :src="assetUrl(item.imageUrl)" alt="" class="detail-modal__image" loading="lazy" />
             </div>
 
